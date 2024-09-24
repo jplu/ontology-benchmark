@@ -1,0 +1,699 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Age a owl:Class ;
+    rdfs:label "Âge" ;
+    rdfs:comment "Âge de l'individu" ;
+    rdfs:subClassOf ont:FacteurIndividuel .
+
+ont:Cellule a owl:Class ;
+    rdfs:label "Cellule" ;
+    rdfs:comment "Unité structurelle et fonctionnelle de base des organismes vivants" .
+
+ont:Cereale a owl:Class ;
+    rdfs:label "Céréale" ;
+    rdfs:comment "Groupe alimentaire comprenant les céréales et les produits céréaliers" ;
+    rdfs:subClassOf ont:GroupeAlimentaire .
+
+ont:Culture a owl:Class ;
+    rdfs:label "Culture" ;
+    rdfs:comment "Ensemble des traits distinctifs caractérisant un groupe social ou une société" .
+
+ont:Environnement a owl:Class ;
+    rdfs:label "Environnement" ;
+    rdfs:comment "Ensemble des éléments naturels et artificiels entourant un être vivant" .
+
+ont:EtatSante a owl:Class ;
+    rdfs:label "État de santé" ;
+    rdfs:comment "État de santé général de l'individu" ;
+    rdfs:subClassOf ont:FacteurIndividuel .
+
+ont:Fruit a owl:Class ;
+    rdfs:label "Fruit" ;
+    rdfs:comment "Groupe alimentaire comprenant les fruits" ;
+    rdfs:subClassOf ont:GroupeAlimentaire .
+
+ont:Legume a owl:Class ;
+    rdfs:label "Légume" ;
+    rdfs:comment "Groupe alimentaire comprenant les légumes" ;
+    rdfs:subClassOf ont:GroupeAlimentaire .
+
+ont:NiveauActivite a owl:Class ;
+    rdfs:label "Niveau d'activité" ;
+    rdfs:comment "Niveau d'activité physique de l'individu" ;
+    rdfs:subClassOf ont:FacteurIndividuel .
+
+ont:Proteine a owl:Class ;
+    rdfs:label "Protéine" ;
+    rdfs:comment "Groupe alimentaire comprenant les sources de protéines" ;
+    rdfs:subClassOf ont:GroupeAlimentaire .
+
+ont:Sexe a owl:Class ;
+    rdfs:label "Sexe" ;
+    rdfs:comment "Sexe biologique de l'individu" ;
+    rdfs:subClassOf ont:FacteurIndividuel .
+
+ont:Theorie a owl:Class ;
+    rdfs:label "Théorie" ;
+    rdfs:comment "Ensemble de principes fondamentaux qui sous-tendent une science" .
+
+ont:Vitamine a owl:Class ;
+    rdfs:label "Vitamine" ;
+    rdfs:comment "Composé organique essentiel en petites quantités pour le métabolisme" ;
+    rdfs:subClassOf ont:SubstanceChimique .
+
+ont:aEffetAntioxydant a owl:ObjectProperty ;
+    rdfs:label "a effet antioxydant" ;
+    rdfs:comment "Relation indiquant qu'une substance chimique a des propriétés antioxydantes" ;
+    rdfs:domain ont:SubstanceChimique ;
+    rdfs:range ont:Antioxydant .
+
+ont:aEteInfluencePar a owl:ObjectProperty ;
+    rdfs:label "a été influencé par" ;
+    rdfs:comment "Relation inverse de a influencé" ;
+    rdfs:domain ont:DisciplineScientifique ;
+    rdfs:range ont:EvenementHistorique ;
+    owl:inverseOf ont:aInfluence .
+
+ont:aImpactEnvironnemental a owl:ObjectProperty ;
+    rdfs:label "a impact environnemental" ;
+    rdfs:comment "Relation entre un aliment et son impact environnemental" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:ImpactEnvironnemental .
+
+ont:aPortionRecommandee a owl:ObjectProperty ;
+    rdfs:label "a portion recommandée" ;
+    rdfs:comment "Relation entre un aliment et sa portion recommandée" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:PortionAlimentaire .
+
+ont:aQualiteNutritionnelle a owl:ObjectProperty ;
+    rdfs:label "a qualité nutritionnelle" ;
+    rdfs:comment "Relation entre un aliment et sa qualité nutritionnelle" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:QualiteNutritionnelle .
+
+ont:cible a owl:ObjectProperty ;
+    rdfs:label "cible" ;
+    rdfs:comment "Relation inverse de ciblé par" ;
+    rdfs:domain ont:RecommandationNutritionnelle ;
+    rdfs:range ont:GroupeDemographique ;
+    owl:inverseOf ont:ciblePar .
+
+ont:compose a owl:ObjectProperty ;
+    rdfs:label "compose" ;
+    rdfs:comment "Relation inverse de est composé de" ;
+    rdfs:domain ont:Molecule ;
+    rdfs:range ont:Aliment ;
+    owl:inverseOf ont:estComposeDe .
+
+ont:declenche a owl:ObjectProperty ;
+    rdfs:label "déclenche" ;
+    rdfs:comment "Relation inverse de déclenché par" ;
+    rdfs:domain ont:ProcessusBiologique ;
+    rdfs:range ont:Sensation ;
+    owl:inverseOf ont:declenchePar .
+
+ont:estAffectePar a owl:ObjectProperty ;
+    rdfs:label "est affecté par" ;
+    rdfs:comment "Relation inverse de affecte" ;
+    rdfs:domain ont:SystemeCorporel ;
+    rdfs:range ont:Pathologie ;
+    owl:inverseOf ont:affecte .
+
+ont:estAmelioreePar a owl:ObjectProperty ;
+    rdfs:label "est améliorée par" ;
+    rdfs:comment "Relation entre le comportement alimentaire et l'éducation nutritionnelle" ;
+    rdfs:domain ont:ComportementAlimentaire ;
+    rdfs:range ont:EducationNutritionnelle .
+
+ont:estCatalysePar a owl:ObjectProperty ;
+    rdfs:label "est catalysé par" ;
+    rdfs:comment "Relation inverse de catalyse" ;
+    rdfs:domain ont:ProcessusBiologique ;
+    rdfs:range ont:Enzyme ;
+    owl:inverseOf ont:catalyse .
+
+ont:estConsommePar a owl:ObjectProperty ;
+    rdfs:label "est consommé par" ;
+    rdfs:comment "Relation inverse de consomme" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:Organisme ;
+    owl:inverseOf ont:consomme .
+
+ont:estContenuDans a owl:ObjectProperty ;
+    rdfs:label "est contenu dans" ;
+    rdfs:comment "Relation inverse de contient",
+        "Relation inverse de contient nutriment" ;
+    rdfs:domain ont:ComposeOrganique,
+        ont:Nutriment ;
+    rdfs:range ont:Aliment ;
+    owl:inverseOf ont:contient,
+        ont:contientNutriment .
+
+ont:estEmisPar a owl:ObjectProperty ;
+    rdfs:label "est émis par" ;
+    rdfs:comment "Relation inverse de émet" ;
+    rdfs:domain ont:RecommandationNutritionnelle ;
+    rdfs:range ont:Institution ;
+    owl:inverseOf ont:emet .
+
+ont:estEtudiePar a owl:ObjectProperty ;
+    rdfs:label "est étudié par" ;
+    rdfs:comment "Relation inverse de étudie" ;
+    rdfs:domain ont:ProcessusBiologique ;
+    rdfs:range ont:DisciplineScientifique ;
+    owl:inverseOf ont:etudie .
+
+ont:estExercePar a owl:ObjectProperty ;
+    rdfs:label "est exercé par" ;
+    rdfs:comment "Relation inverse de exerce" ;
+    rdfs:domain ont:TechniqueMedicale ;
+    rdfs:range ont:ProfessionMedicale ;
+    owl:inverseOf ont:exerce .
+
+ont:estImpliqueDans a owl:ObjectProperty ;
+    rdfs:label "est impliqué dans" ;
+    rdfs:comment "Relation inverse de implique" ;
+    rdfs:domain ont:ElementChimique,
+        ont:Organe ;
+    rdfs:range ont:MecanismePhysiologique,
+        ont:ProcessusBiologique ;
+    owl:inverseOf ont:implique .
+
+ont:estInfluencePar a owl:ObjectProperty ;
+    rdfs:label "est influencé par" ;
+    rdfs:comment "Relation entre une recommandation nutritionnelle et les facteurs individuels qui l'influencent" ;
+    rdfs:domain ont:RecommandationNutritionnelle ;
+    rdfs:range ont:FacteurIndividuel .
+
+ont:estPreparePar a owl:ObjectProperty ;
+    rdfs:label "est préparé par" ;
+    rdfs:comment "Relation entre un aliment et sa méthode de préparation" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:MethodePreparation .
+
+ont:estPrevenuepar a owl:ObjectProperty ;
+    rdfs:label "est prévenue par" ;
+    rdfs:comment "Relation inverse de prévient" ;
+    rdfs:domain ont:Maladie ;
+    rdfs:range ont:SubstanceChimique ;
+    owl:inverseOf ont:previent .
+
+ont:estQuantifiePar a owl:ObjectProperty ;
+    rdfs:label "est quantifié par" ;
+    rdfs:comment "Relation inverse de quantifie" ;
+    rdfs:domain owl:Class ;
+    rdfs:range ont:Mesure ;
+    owl:inverseOf ont:quantifie .
+
+ont:estRegulePar a owl:ObjectProperty ;
+    rdfs:label "est régulé par" ;
+    rdfs:comment "Relation inverse de régule" ;
+    rdfs:domain ont:ProcessusBiologique ;
+    rdfs:range ont:Hormone ;
+    owl:inverseOf ont:regule .
+
+ont:estStockeDans a owl:ObjectProperty ;
+    rdfs:label "est stocké dans" ;
+    rdfs:comment "Relation inverse de stocke" ;
+    rdfs:domain ont:Nutriment ;
+    rdfs:range ont:Organe ;
+    owl:inverseOf ont:stocke .
+
+ont:estUtiliseDans a owl:ObjectProperty ;
+    rdfs:label "est utilisé dans" ;
+    rdfs:comment "Relation inverse de utilise" ;
+    rdfs:domain ont:MethodeScientifique ;
+    rdfs:range ont:EtudeScientifique ;
+    owl:inverseOf ont:utilise .
+
+ont:estUtilisePar a owl:ObjectProperty ;
+    rdfs:label "est utilisé par" ;
+    rdfs:comment "Relation inverse de utilise" ;
+    rdfs:domain ont:EquipementMedical ;
+    rdfs:range ont:TechniqueMedicale ;
+    owl:inverseOf ont:utilise .
+
+ont:etablit a owl:ObjectProperty ;
+    rdfs:label "établit" ;
+    rdfs:comment "Relation inverse de établit par" ;
+    rdfs:domain ont:PolitiqueDeSante ;
+    rdfs:range ont:RecommandationNutritionnelle ;
+    owl:inverseOf ont:etablitPar .
+
+ont:evolueVers a owl:ObjectProperty ;
+    rdfs:label "évolue vers" ;
+    rdfs:comment "Relation entre un régime alimentaire et son évolution dans le temps" ;
+    rdfs:domain ont:RegimeAlimentaire ;
+    rdfs:range ont:EvolutionAlimentaire .
+
+ont:inclut a owl:ObjectProperty ;
+    rdfs:label "inclut" ;
+    rdfs:comment "Relation inverse de est lié à",
+        "Relation inverse de fait partie de" ;
+    rdfs:domain ont:Nutrition,
+        ont:RegimeAlimentaire ;
+    rdfs:range ont:Aliment,
+        ont:ConceptNutritionnel ;
+    owl:inverseOf ont:estLieA,
+        ont:faitPartieDe .
+
+ont:inclutPlanification a owl:ObjectProperty ;
+    rdfs:label "inclut planification" ;
+    rdfs:comment "Relation entre un régime alimentaire et la planification des repas" ;
+    rdfs:domain ont:RegimeAlimentaire ;
+    rdfs:range ont:PlanificationRepas .
+
+ont:influence a owl:ObjectProperty ;
+    rdfs:label "influence" ;
+    rdfs:comment "Relation inverse de influencé par" ;
+    rdfs:domain owl:Class ;
+    rdfs:range ont:ComportementAlimentaire ;
+    owl:inverseOf ont:influencePar .
+
+ont:mesure a owl:ObjectProperty ;
+    rdfs:label "mesure" ;
+    rdfs:comment "Relation inverse de est mesuré en" ;
+    rdfs:domain ont:Unite ;
+    rdfs:range ont:Nutriment ;
+    owl:inverseOf ont:estMesureEn .
+
+ont:necessiteLecture a owl:ObjectProperty ;
+    rdfs:label "nécessite lecture" ;
+    rdfs:comment "Relation entre le comportement alimentaire et la lecture des étiquettes nutritionnelles" ;
+    rdfs:domain ont:ComportementAlimentaire ;
+    rdfs:range ont:LectureEtiquetteNutritionnelle .
+
+ont:publie a owl:ObjectProperty ;
+    rdfs:label "publie" ;
+    rdfs:comment "Relation inverse de est publié dans" ;
+    rdfs:domain ont:PublicationScientifique ;
+    rdfs:range ont:DecouverteScientifique ;
+    owl:inverseOf ont:estPublieDans .
+
+ont:reglemente a owl:ObjectProperty ;
+    rdfs:label "réglemente" ;
+    rdfs:comment "Relation inverse de réglementé par" ;
+    rdfs:domain ont:Reglementation ;
+    rdfs:range ont:IndustrieAlimentaire ;
+    owl:inverseOf ont:reglementePar .
+
+ont:resulteDe a owl:ObjectProperty ;
+    rdfs:label "résulte de" ;
+    rdfs:comment "Relation inverse de conduit à" ;
+    rdfs:domain ont:DecouverteScientifique ;
+    rdfs:range ont:EtudeScientifique ;
+    owl:inverseOf ont:conduitA .
+
+ont:subitTransformation a owl:ObjectProperty ;
+    rdfs:label "subit transformation" ;
+    rdfs:comment "Relation entre un aliment et le processus de transformation qu'il subit" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:TransformationAlimentaire .
+
+ont:unite a owl:DatatypeProperty ;
+    rdfs:label "unité" ;
+    rdfs:comment "Unité de mesure associée à une valeur numérique" ;
+    rdfs:domain ont:Mesure ;
+    rdfs:range xsd:string .
+
+ont:valeurNumerique a owl:DatatypeProperty ;
+    rdfs:label "valeur numérique" ;
+    rdfs:comment "Valeur numérique associée à une mesure" ;
+    rdfs:domain ont:Mesure ;
+    rdfs:range xsd:decimal .
+
+ont:Antioxydant a owl:Class ;
+    rdfs:label "Antioxydant" ;
+    rdfs:comment "Molécule capable de ralentir ou prévenir l'oxydation d'autres molécules" ;
+    rdfs:subClassOf ont:SubstanceChimique .
+
+ont:EducationNutritionnelle a owl:Class ;
+    rdfs:label "Éducation nutritionnelle" ;
+    rdfs:comment "Enseignement des principes de nutrition et d'alimentation saine" .
+
+ont:EvolutionAlimentaire a owl:Class ;
+    rdfs:label "Évolution alimentaire" ;
+    rdfs:comment "Changement dans les habitudes alimentaires au fil du temps" .
+
+ont:ImpactEnvironnemental a owl:Class ;
+    rdfs:label "Impact environnemental" ;
+    rdfs:comment "Effet de la production et de la consommation d'un aliment sur l'environnement" .
+
+ont:LectureEtiquetteNutritionnelle a owl:Class ;
+    rdfs:label "Lecture d'étiquette nutritionnelle" ;
+    rdfs:comment "Compréhension et interprétation des informations nutritionnelles sur les emballages alimentaires" .
+
+ont:MethodePreparation a owl:Class ;
+    rdfs:label "Méthode de préparation" ;
+    rdfs:comment "Technique utilisée pour préparer un aliment" .
+
+ont:PlanificationRepas a owl:Class ;
+    rdfs:label "Planification des repas" ;
+    rdfs:comment "Organisation et préparation des repas à l'avance" .
+
+ont:PortionAlimentaire a owl:Class ;
+    rdfs:label "Portion alimentaire" ;
+    rdfs:comment "Quantité recommandée d'un aliment à consommer" .
+
+ont:QualiteNutritionnelle a owl:Class ;
+    rdfs:label "Qualité nutritionnelle" ;
+    rdfs:comment "Évaluation de la valeur nutritive d'un aliment ou d'un régime alimentaire" .
+
+ont:TransformationAlimentaire a owl:Class ;
+    rdfs:label "Transformation alimentaire" ;
+    rdfs:comment "Processus industriel de modification des aliments" .
+
+ont:aInfluence a owl:ObjectProperty ;
+    rdfs:label "a influencé" ;
+    rdfs:comment "Relation entre un événement historique et son influence sur une discipline scientifique" ;
+    rdfs:domain ont:EvenementHistorique ;
+    rdfs:range ont:DisciplineScientifique .
+
+ont:affecte a owl:ObjectProperty ;
+    rdfs:label "affecte" ;
+    rdfs:comment "Relation entre une pathologie et le système corporel qu'elle affecte" ;
+    rdfs:domain ont:Pathologie ;
+    rdfs:range ont:SystemeCorporel .
+
+ont:catalyse a owl:ObjectProperty ;
+    rdfs:label "catalyse" ;
+    rdfs:comment "Relation entre une enzyme et le processus biologique qu'elle catalyse" ;
+    rdfs:domain ont:Enzyme ;
+    rdfs:range ont:ProcessusBiologique .
+
+ont:ciblePar a owl:ObjectProperty ;
+    rdfs:label "ciblé par" ;
+    rdfs:comment "Relation entre un groupe démographique et les recommandations nutritionnelles qui le ciblent" ;
+    rdfs:domain ont:GroupeDemographique ;
+    rdfs:range ont:RecommandationNutritionnelle .
+
+ont:conduitA a owl:ObjectProperty ;
+    rdfs:label "conduit à" ;
+    rdfs:comment "Relation entre une étude scientifique et la découverte qui en résulte" ;
+    rdfs:domain ont:EtudeScientifique ;
+    rdfs:range ont:DecouverteScientifique .
+
+ont:consomme a owl:ObjectProperty ;
+    rdfs:label "consomme" ;
+    rdfs:comment "Relation entre un organisme et les aliments qu'il consomme" ;
+    rdfs:domain ont:Organisme ;
+    rdfs:range ont:Aliment .
+
+ont:contient a owl:ObjectProperty ;
+    rdfs:label "contient" ;
+    rdfs:comment "Relation entre un aliment et les composés organiques qu'il contient" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:ComposeOrganique .
+
+ont:contientNutriment a owl:ObjectProperty ;
+    rdfs:label "contient nutriment" ;
+    rdfs:comment "Relation entre un aliment et les nutriments qu'il contient" ;
+    rdfs:domain ont:Aliment ;
+    rdfs:range ont:Nutriment .
+
+ont:declenchePar a owl:ObjectProperty ;
+    rdfs:label "déclenché par" ;
+    rdfs:comment "Relation entre une sensation et le processus biologique qui la déclenche" ;
+    rdfs:domain ont:Sensation ;
+    rdfs:range ont:ProcessusBiologique .
+
+ont:emet a owl:ObjectProperty ;
+    rdfs:label "émet" ;
+    rdfs:comment "Relation entre une institution et les recommandations nutritionnelles qu'elle émet" ;
+    rdfs:domain ont:Institution ;
+    rdfs:range ont:RecommandationNutritionnelle .
+
+ont:estLieA a owl:ObjectProperty ;
+    rdfs:label "est lié à" ;
+    rdfs:comment "Relation entre un concept nutritionnel et la discipline de la nutrition" ;
+    rdfs:domain ont:ConceptNutritionnel ;
+    rdfs:range ont:Nutrition .
+
+ont:estMesureEn a owl:ObjectProperty ;
+    rdfs:label "est mesuré en" ;
+    rdfs:comment "Relation entre un nutriment et l'unité utilisée pour le mesurer" ;
+    rdfs:domain ont:Nutriment ;
+    rdfs:range ont:Unite .
+
+ont:estPublieDans a owl:ObjectProperty ;
+    rdfs:label "est publié dans" ;
+    rdfs:comment "Relation entre une découverte scientifique et sa publication" ;
+    rdfs:domain ont:DecouverteScientifique ;
+    rdfs:range ont:PublicationScientifique .
+
+ont:etablitPar a owl:ObjectProperty ;
+    rdfs:label "établit par" ;
+    rdfs:comment "Relation entre une recommandation nutritionnelle et la politique de santé qui l'établit" ;
+    rdfs:domain ont:RecommandationNutritionnelle ;
+    rdfs:range ont:PolitiqueDeSante .
+
+ont:etudie a owl:ObjectProperty ;
+    rdfs:label "étudie" ;
+    rdfs:comment "Relation entre une discipline scientifique et les processus qu'elle étudie" ;
+    rdfs:domain ont:DisciplineScientifique ;
+    rdfs:range ont:ProcessusBiologique .
+
+ont:exerce a owl:ObjectProperty ;
+    rdfs:label "exerce" ;
+    rdfs:comment "Relation entre une profession médicale et les techniques qu'elle utilise" ;
+    rdfs:domain ont:ProfessionMedicale ;
+    rdfs:range ont:TechniqueMedicale .
+
+ont:faitPartieDe a owl:ObjectProperty ;
+    rdfs:label "fait partie de" ;
+    rdfs:comment "Relation entre un aliment et le régime alimentaire dont il fait partie",
+        "Relation inverse de est composé de" ;
+    rdfs:domain ont:Aliment,
+        ont:TissuBiologique ;
+    rdfs:range ont:RegimeAlimentaire,
+        ont:SystemeCorporel ;
+    owl:inverseOf ont:estComposeDe .
+
+ont:implique a owl:ObjectProperty ;
+    rdfs:label "implique" ;
+    rdfs:comment "Relation entre un mécanisme physiologique et les organes qu'il implique",
+        "Relation entre un processus biologique et les éléments chimiques qu'il implique" ;
+    rdfs:domain ont:MecanismePhysiologique,
+        ont:ProcessusBiologique ;
+    rdfs:range ont:ElementChimique,
+        ont:Organe .
+
+ont:influencePar a owl:ObjectProperty ;
+    rdfs:label "influencé par" ;
+    rdfs:comment "Relation entre le comportement alimentaire et les facteurs qui l'influencent" ;
+    rdfs:domain ont:ComportementAlimentaire ;
+    rdfs:range owl:Class .
+
+ont:previent a owl:ObjectProperty ;
+    rdfs:label "prévient" ;
+    rdfs:comment "Relation entre une substance chimique et les maladies qu'elle peut prévenir" ;
+    rdfs:domain ont:SubstanceChimique ;
+    rdfs:range ont:Maladie .
+
+ont:quantifie a owl:ObjectProperty ;
+    rdfs:label "quantifie" ;
+    rdfs:comment "Relation entre une mesure et ce qu'elle quantifie" ;
+    rdfs:domain ont:Mesure ;
+    rdfs:range owl:Class .
+
+ont:reglementePar a owl:ObjectProperty ;
+    rdfs:label "réglementé par" ;
+    rdfs:comment "Relation entre l'industrie alimentaire et les réglementations qui la régissent" ;
+    rdfs:domain ont:IndustrieAlimentaire ;
+    rdfs:range ont:Reglementation .
+
+ont:regule a owl:ObjectProperty ;
+    rdfs:label "régule" ;
+    rdfs:comment "Relation entre une hormone et les processus biologiques qu'elle régule" ;
+    rdfs:domain ont:Hormone ;
+    rdfs:range ont:ProcessusBiologique .
+
+ont:stocke a owl:ObjectProperty ;
+    rdfs:label "stocke" ;
+    rdfs:comment "Relation entre un organe et les nutriments qu'il stocke" ;
+    rdfs:domain ont:Organe ;
+    rdfs:range ont:Nutriment .
+
+ont:ComposeOrganique a owl:Class ;
+    rdfs:label "Composé organique" ;
+    rdfs:comment "Molécule contenant du carbone liée à d'autres éléments" .
+
+ont:ConceptNutritionnel a owl:Class ;
+    rdfs:label "Concept nutritionnel" ;
+    rdfs:comment "Idée ou principe fondamental en nutrition" .
+
+ont:ElementChimique a owl:Class ;
+    rdfs:label "Élément chimique" ;
+    rdfs:comment "Substance pure composée d'atomes ayant le même nombre de protons" .
+
+ont:Enzyme a owl:Class ;
+    rdfs:label "Enzyme" ;
+    rdfs:comment "Protéine catalysant des réactions biochimiques spécifiques" .
+
+ont:EquipementMedical a owl:Class ;
+    rdfs:label "Équipement médical" ;
+    rdfs:comment "Appareil ou instrument utilisé dans le domaine médical" .
+
+ont:EvenementHistorique a owl:Class ;
+    rdfs:label "Événement historique" ;
+    rdfs:comment "Fait marquant dans l'histoire ayant eu un impact significatif" .
+
+ont:GroupeDemographique a owl:Class ;
+    rdfs:label "Groupe démographique" ;
+    rdfs:comment "Ensemble de personnes partageant des caractéristiques démographiques communes" .
+
+ont:Hormone a owl:Class ;
+    rdfs:label "Hormone" ;
+    rdfs:comment "Substance chimique produite par l'organisme pour réguler certaines fonctions" .
+
+ont:IndustrieAlimentaire a owl:Class ;
+    rdfs:label "Industrie alimentaire" ;
+    rdfs:comment "Secteur économique lié à la production et à la transformation des aliments" .
+
+ont:Institution a owl:Class ;
+    rdfs:label "Institution" ;
+    rdfs:comment "Organisation établie pour un but social, éducatif ou scientifique" .
+
+ont:Maladie a owl:Class ;
+    rdfs:label "Maladie" ;
+    rdfs:comment "Altération de l'état de santé se manifestant par des symptômes" .
+
+ont:MecanismePhysiologique a owl:Class ;
+    rdfs:label "Mécanisme physiologique" ;
+    rdfs:comment "Processus par lequel un organisme maintient ses fonctions vitales" .
+
+ont:MethodeScientifique a owl:Class ;
+    rdfs:label "Méthode scientifique" ;
+    rdfs:comment "Processus systématique pour acquérir de nouvelles connaissances" .
+
+ont:Molecule a owl:Class ;
+    rdfs:label "Molécule" ;
+    rdfs:comment "Groupe d'atomes liés chimiquement" .
+
+ont:Nutrition a owl:Class ;
+    rdfs:label "Nutrition" ;
+    rdfs:comment "Discipline scientifique étudiant les relations entre l'alimentation et la santé" ;
+    rdfs:subClassOf ont:DisciplineScientifique .
+
+ont:Organisme a owl:Class ;
+    rdfs:label "Organisme" ;
+    rdfs:comment "Être vivant ayant une structure organisée" .
+
+ont:Pathologie a owl:Class ;
+    rdfs:label "Pathologie" ;
+    rdfs:comment "Étude des maladies et des troubles de santé" .
+
+ont:PolitiqueDeSante a owl:Class ;
+    rdfs:label "Politique de santé" ;
+    rdfs:comment "Ensemble de décisions et d'actions visant à améliorer la santé publique" .
+
+ont:ProfessionMedicale a owl:Class ;
+    rdfs:label "Profession médicale" ;
+    rdfs:comment "Métier lié à la pratique de la médecine ou aux soins de santé" .
+
+ont:PublicationScientifique a owl:Class ;
+    rdfs:label "Publication scientifique" ;
+    rdfs:comment "Document présentant les résultats d'une recherche scientifique" .
+
+ont:Reglementation a owl:Class ;
+    rdfs:label "Réglementation" ;
+    rdfs:comment "Ensemble de règles et de normes régissant un domaine spécifique" .
+
+ont:Sensation a owl:Class ;
+    rdfs:label "Sensation" ;
+    rdfs:comment "Perception physiologique résultant de la stimulation d'un organe sensoriel" .
+
+ont:TissuBiologique a owl:Class ;
+    rdfs:label "Tissu biologique" ;
+    rdfs:comment "Ensemble de cellules ayant une structure et une fonction similaires" .
+
+ont:Unite a owl:Class ;
+    rdfs:label "Unité" ;
+    rdfs:comment "Grandeur de référence utilisée pour mesurer une quantité" .
+
+ont:estComposeDe a owl:ObjectProperty ;
+    rdfs:label "est composé de" ;
+    rdfs:comment "Relation entre un aliment et les molécules qui le composent",
+        "Relation entre un système corporel et les tissus biologiques qui le composent" ;
+    rdfs:domain ont:Aliment,
+        ont:SystemeCorporel ;
+    rdfs:range ont:Molecule,
+        ont:TissuBiologique .
+
+ont:utilise a owl:ObjectProperty ;
+    rdfs:label "utilise" ;
+    rdfs:comment "Relation entre une technique médicale et l'équipement qu'elle utilise",
+        "Relation entre une étude scientifique et la méthode qu'elle emploie" ;
+    rdfs:domain ont:EtudeScientifique,
+        ont:TechniqueMedicale ;
+    rdfs:range ont:EquipementMedical,
+        ont:MethodeScientifique .
+
+ont:ComportementAlimentaire a owl:Class ;
+    rdfs:label "Comportement alimentaire" ;
+    rdfs:comment "Ensemble des conduites d'un individu vis-à-vis de la consommation d'aliments" .
+
+ont:DecouverteScientifique a owl:Class ;
+    rdfs:label "Découverte scientifique" ;
+    rdfs:comment "Nouvelle connaissance ou compréhension acquise par la recherche scientifique" .
+
+ont:EtudeScientifique a owl:Class ;
+    rdfs:label "Étude scientifique" ;
+    rdfs:comment "Investigation systématique pour établir des faits ou principes" .
+
+ont:GroupeAlimentaire a owl:Class ;
+    rdfs:label "Groupe alimentaire" ;
+    rdfs:comment "Catégorie d'aliments ayant des caractéristiques nutritionnelles similaires" .
+
+ont:Mesure a owl:Class ;
+    rdfs:label "Mesure" ;
+    rdfs:comment "Quantification d'une propriété ou d'un phénomène" .
+
+ont:Organe a owl:Class ;
+    rdfs:label "Organe" ;
+    rdfs:comment "Partie du corps ayant une fonction spécifique" .
+
+ont:RegimeAlimentaire a owl:Class ;
+    rdfs:label "Régime alimentaire" ;
+    rdfs:comment "Ensemble des habitudes et des choix alimentaires d'un individu ou d'un groupe" .
+
+ont:SystemeCorporel a owl:Class ;
+    rdfs:label "Système corporel" ;
+    rdfs:comment "Ensemble d'organes travaillant ensemble pour une fonction spécifique" .
+
+ont:TechniqueMedicale a owl:Class ;
+    rdfs:label "Technique médicale" ;
+    rdfs:comment "Procédé ou méthode utilisé dans la pratique médicale" .
+
+ont:DisciplineScientifique a owl:Class ;
+    rdfs:label "Discipline scientifique" ;
+    rdfs:comment "Branche spécifique de la connaissance scientifique" .
+
+ont:FacteurIndividuel a owl:Class ;
+    rdfs:label "Facteur individuel" ;
+    rdfs:comment "Caractéristique personnelle influençant les besoins nutritionnels" .
+
+ont:SubstanceChimique a owl:Class ;
+    rdfs:label "Substance chimique" ;
+    rdfs:comment "Forme de matière ayant une composition chimique constante" .
+
+ont:Nutriment a owl:Class ;
+    rdfs:label "Nutriment" ;
+    rdfs:comment "Substance nécessaire au fonctionnement de l'organisme" .
+
+ont:RecommandationNutritionnelle a owl:Class ;
+    rdfs:label "Recommandation nutritionnelle" ;
+    rdfs:comment "Conseils ou directives concernant l'alimentation et la nutrition" .
+
+ont:ProcessusBiologique a owl:Class ;
+    rdfs:label "Processus biologique" ;
+    rdfs:comment "Série d'événements ou d'actions dans un système biologique" .
+
+ont:Aliment a owl:Class ;
+    rdfs:label "Aliment" ;
+    rdfs:comment "Substance consommée pour fournir des nutriments à l'organisme" .
+

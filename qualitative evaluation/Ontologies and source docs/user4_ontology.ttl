@@ -1,0 +1,540 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Appearance a owl:Class ;
+    rdfs:label "Appearance" ;
+    rdfs:comment "The visual characteristics of a cocktail" ;
+    rdfs:subClassOf ont:CocktailAttribute .
+
+ont:BaseSpirit a owl:Class ;
+    rdfs:label "Base Spirit" ;
+    rdfs:comment "The primary alcoholic ingredient in a cocktail" ;
+    rdfs:subClassOf ont:IngredientRole .
+
+ont:Bitter a owl:Class ;
+    rdfs:label "Bitter" ;
+    rdfs:comment "The taste sensation of bitterness" ;
+    rdfs:subClassOf ont:TasteCategory .
+
+ont:FlavoringAgent a owl:Class ;
+    rdfs:label "Flavoring Agent" ;
+    rdfs:comment "An ingredient that adds specific flavors to a cocktail" ;
+    rdfs:subClassOf ont:IngredientRole .
+
+ont:Fruit a owl:Class ;
+    rdfs:label "Fruit" ;
+    rdfs:comment "A fruit used as an ingredient in cocktails" ;
+    rdfs:subClassOf ont:Ingredient .
+
+ont:Herb a owl:Class ;
+    rdfs:label "Herb" ;
+    rdfs:comment "An herb used as an ingredient in cocktails" ;
+    rdfs:subClassOf ont:Ingredient .
+
+ont:Liquor a owl:Class ;
+    rdfs:label "Liquor" ;
+    rdfs:comment "An alcoholic beverage used as a base in cocktails" ;
+    rdfs:subClassOf ont:Ingredient .
+
+ont:Mixer a owl:Class ;
+    rdfs:label "Mixer" ;
+    rdfs:comment "A non-alcoholic ingredient used to dilute or flavor a cocktail" ;
+    rdfs:subClassOf ont:Ingredient .
+
+ont:Modifier a owl:Class ;
+    rdfs:label "Modifier" ;
+    rdfs:comment "An ingredient that alters the flavor profile of the base spirit" ;
+    rdfs:subClassOf ont:IngredientRole .
+
+ont:Muddling a owl:Class ;
+    rdfs:label "Muddling" ;
+    rdfs:comment "A method of crushing ingredients to release flavors" ;
+    rdfs:subClassOf ont:PreparationMethod .
+
+ont:Shaking a owl:Class ;
+    rdfs:label "Shaking" ;
+    rdfs:comment "A method of mixing cocktails by shaking in a cocktail shaker" ;
+    rdfs:subClassOf ont:PreparationMethod .
+
+ont:Sour a owl:Class ;
+    rdfs:label "Sour" ;
+    rdfs:comment "The taste sensation of sourness" ;
+    rdfs:subClassOf ont:TasteCategory .
+
+ont:Spirit a owl:Class ;
+    rdfs:label "Spirit" ;
+    rdfs:comment "An alcoholic beverage used as a base in cocktails" ;
+    rdfs:subClassOf ont:Ingredient .
+
+ont:Stirring a owl:Class ;
+    rdfs:label "Stirring" ;
+    rdfs:comment "A method of mixing cocktails by stirring with a bar spoon" ;
+    rdfs:subClassOf ont:PreparationMethod .
+
+ont:Sweet a owl:Class ;
+    rdfs:label "Sweet" ;
+    rdfs:comment "The taste sensation of sweetness" ;
+    rdfs:subClassOf ont:TasteCategory .
+
+ont:Texture a owl:Class ;
+    rdfs:label "Texture" ;
+    rdfs:comment "The mouthfeel or consistency of a cocktail" ;
+    rdfs:subClassOf ont:CocktailAttribute .
+
+ont:Umami a owl:Class ;
+    rdfs:label "Umami" ;
+    rdfs:comment "The taste sensation of savoriness" ;
+    rdfs:subClassOf ont:TasteCategory .
+
+ont:hasDominantFlavor a owl:ObjectProperty ;
+    rdfs:label "has dominant flavor" ;
+    rdfs:comment "Relates a cocktail to its most prominent flavor" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:SpecificFlavor .
+
+ont:hasFlavorIntensity a owl:ObjectProperty ;
+    rdfs:label "has flavor intensity" ;
+    rdfs:comment "Relates a cocktail to the intensity of its flavor" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:FlavorIntensity .
+
+ont:hasQuantity a owl:ObjectProperty ;
+    rdfs:label "has quantity" ;
+    rdfs:comment "Relates an ingredient to its quantity in a cocktail recipe" ;
+    rdfs:domain ont:Ingredient ;
+    rdfs:range ont:Measurement .
+
+ont:hasRole a owl:ObjectProperty ;
+    rdfs:label "has role" ;
+    rdfs:comment "Relates an ingredient to its role in a cocktail" ;
+    rdfs:domain ont:Ingredient ;
+    rdfs:range ont:IngredientRole .
+
+ont:hasStep a owl:ObjectProperty ;
+    rdfs:label "has step" ;
+    rdfs:comment "Relates a cocktail to a step in its preparation" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:RecipeStep .
+
+ont:hasSubstitute a owl:ObjectProperty ;
+    rdfs:label "has substitute" ;
+    rdfs:comment "Relates an ingredient to possible substitutes" ;
+    rdfs:domain ont:Ingredient ;
+    rdfs:range ont:Ingredient .
+
+ont:hasVariation a owl:ObjectProperty ;
+    rdfs:label "has variation" ;
+    rdfs:comment "Relates a cocktail to its variations" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailVariation .
+
+ont:hosts a owl:ObjectProperty ;
+    rdfs:label "hosts" ;
+    rdfs:comment "Relates a time period to the cocktail industry events it hosts" ;
+    rdfs:domain ont:TimePeriod ;
+    rdfs:range ont:CocktailIndustry ;
+    owl:inverseOf ont:hostedBy .
+
+ont:includesCocktail a owl:ObjectProperty ;
+    rdfs:label "includes cocktail" ;
+    rdfs:comment "Relates a cocktail family to the cocktails it includes" ;
+    rdfs:domain ont:CocktailFamily ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:belongsTo .
+
+ont:influences a owl:ObjectProperty ;
+    rdfs:label "influences" ;
+    rdfs:comment "Relates bar culture to the cocktails it influences" ;
+    rdfs:domain ont:BarCulture ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:influencedBy .
+
+ont:influencesCocktail a owl:ObjectProperty ;
+    rdfs:label "influences cocktail" ;
+    rdfs:comment "Relates a trend to the cocktails it influences" ;
+    rdfs:domain ont:Trend ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:influencedByTrend .
+
+ont:isAttributeOf a owl:ObjectProperty ;
+    rdfs:label "is attribute of" ;
+    rdfs:comment "Relates an attribute to the cocktails that possess it" ;
+    rdfs:domain ont:CocktailAttribute ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasAttribute .
+
+ont:isCertificationOf a owl:ObjectProperty ;
+    rdfs:label "is certification of" ;
+    rdfs:comment "Relates a certification to the bartenders who hold it" ;
+    rdfs:domain ont:Certification ;
+    rdfs:range ont:Bartender ;
+    owl:inverseOf ont:hasCertification .
+
+ont:isComponentOf a owl:ObjectProperty ;
+    rdfs:label "is component of" ;
+    rdfs:comment "Relates a component to the cocktails it is part of" ;
+    rdfs:domain ont:CocktailComponent ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasComponent .
+
+ont:isCreatedBy a owl:ObjectProperty ;
+    rdfs:label "is created by" ;
+    rdfs:comment "Relates a cocktail to the bartender who created it" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Bartender ;
+    owl:inverseOf ont:creates .
+
+ont:isFlavorProfileOf a owl:ObjectProperty ;
+    rdfs:label "is flavor profile of" ;
+    rdfs:comment "Relates a flavor profile to the cocktails that have it" ;
+    rdfs:domain ont:FlavorProfile ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasFlavorProfile .
+
+ont:isGarnishFor a owl:ObjectProperty ;
+    rdfs:label "is garnish for" ;
+    rdfs:comment "Relates a garnish to the cocktails it is used for" ;
+    rdfs:domain ont:Garnish ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:garnishedWith .
+
+ont:isGlasswareFor a owl:ObjectProperty ;
+    rdfs:label "is glassware for" ;
+    rdfs:comment "Relates glassware to the cocktails typically served in it" ;
+    rdfs:domain ont:Glassware ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:servedIn .
+
+ont:isIdealTemperatureFor a owl:ObjectProperty ;
+    rdfs:label "is ideal temperature for" ;
+    rdfs:comment "Relates a temperature to the cocktails ideally served at that temperature" ;
+    rdfs:domain ont:Temperature ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasIdealTemperature .
+
+ont:isInfluencedBy a owl:ObjectProperty ;
+    rdfs:label "is influenced by" ;
+    rdfs:comment "Relates an aroma to the glassware that influences it" ;
+    rdfs:domain ont:Aroma ;
+    rdfs:range ont:Glassware ;
+    owl:inverseOf ont:influencesAroma .
+
+ont:isIngredientOf a owl:ObjectProperty ;
+    rdfs:label "is ingredient of" ;
+    rdfs:comment "Relates an ingredient to the cocktails it is used in" ;
+    rdfs:domain ont:Ingredient ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasIngredient .
+
+ont:isMeasurementFor a owl:ObjectProperty ;
+    rdfs:label "is measurement for" ;
+    rdfs:comment "Relates a measurement to the ingredients it quantifies" ;
+    rdfs:domain ont:Measurement ;
+    rdfs:range ont:Ingredient ;
+    owl:inverseOf ont:usesMeasurement .
+
+ont:isPossessedBy a owl:ObjectProperty ;
+    rdfs:label "is possessed by" ;
+    rdfs:comment "Relates a mixology skill to the bartenders who possess it" ;
+    rdfs:domain ont:MixologySkill ;
+    rdfs:range ont:Bartender ;
+    owl:inverseOf ont:hasMixologySkill .
+
+ont:isPreparationMethodFor a owl:ObjectProperty ;
+    rdfs:label "is preparation method for" ;
+    rdfs:comment "Relates a preparation method to the cocktails it is used for" ;
+    rdfs:domain ont:PreparationMethod ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:preparedUsing .
+
+ont:isPresentationOf a owl:ObjectProperty ;
+    rdfs:label "is presentation of" ;
+    rdfs:comment "Relates a presentation style to the cocktails that use it" ;
+    rdfs:domain ont:CocktailPresentation ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasPresentation .
+
+ont:isServingStyleOf a owl:ObjectProperty ;
+    rdfs:label "is serving style of" ;
+    rdfs:comment "Relates a serving style to the cocktails that use it" ;
+    rdfs:domain ont:ServingStyle ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasServingStyle .
+
+ont:isUsedIn a owl:ObjectProperty ;
+    rdfs:label "is used in" ;
+    rdfs:comment "Relates a bar tool to the preparation methods it is used in" ;
+    rdfs:domain ont:BarTool ;
+    rdfs:range ont:PreparationMethod ;
+    owl:inverseOf ont:requiresTool .
+
+ont:providesContextFor a owl:ObjectProperty ;
+    rdfs:label "provides context for" ;
+    rdfs:comment "Relates historical context to the cocktails it describes" ;
+    rdfs:domain ont:CocktailHistory ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:hasHistoricalContext .
+
+ont:sawOriginOf a owl:ObjectProperty ;
+    rdfs:label "saw origin of" ;
+    rdfs:comment "Relates a time period to the cocktails that originated during it" ;
+    rdfs:domain ont:TimePeriod ;
+    rdfs:range ont:Cocktail ;
+    owl:inverseOf ont:originatedIn .
+
+ont:stepOrder a owl:DatatypeProperty ;
+    rdfs:label "step order" ;
+    rdfs:comment "The order of a step in the cocktail preparation process" ;
+    rdfs:domain ont:RecipeStep ;
+    rdfs:range xsd:integer .
+
+ont:CocktailVariation a owl:Class ;
+    rdfs:label "Cocktail Variation" ;
+    rdfs:comment "A variation of a base cocktail recipe" .
+
+ont:FlavorIntensity a owl:Class ;
+    rdfs:label "Flavor Intensity" ;
+    rdfs:comment "The strength or potency of a flavor in a cocktail" .
+
+ont:SpecificFlavor a owl:Class ;
+    rdfs:label "Specific Flavor" ;
+    rdfs:comment "A particular flavor note in a cocktail" .
+
+ont:belongsTo a owl:ObjectProperty ;
+    rdfs:label "belongs to" ;
+    rdfs:comment "Relates a cocktail to its family" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailFamily .
+
+ont:creates a owl:ObjectProperty ;
+    rdfs:label "creates" ;
+    rdfs:comment "Relates a bartender to the cocktails they create" ;
+    rdfs:domain ont:Bartender ;
+    rdfs:range ont:Cocktail .
+
+ont:garnishedWith a owl:ObjectProperty ;
+    rdfs:label "garnished with" ;
+    rdfs:comment "Relates a cocktail to its garnish" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Garnish .
+
+ont:hasAttribute a owl:ObjectProperty ;
+    rdfs:label "has attribute" ;
+    rdfs:comment "Relates a cocktail to its attributes" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailAttribute .
+
+ont:hasCertification a owl:ObjectProperty ;
+    rdfs:label "has certification" ;
+    rdfs:comment "Relates a bartender to their professional certifications" ;
+    rdfs:domain ont:Bartender ;
+    rdfs:range ont:Certification .
+
+ont:hasComponent a owl:ObjectProperty ;
+    rdfs:label "has component" ;
+    rdfs:comment "Relates a cocktail to its specific components" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailComponent .
+
+ont:hasFlavorProfile a owl:ObjectProperty ;
+    rdfs:label "has flavor profile" ;
+    rdfs:comment "Relates a cocktail to its flavor profile" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:FlavorProfile .
+
+ont:hasHistoricalContext a owl:ObjectProperty ;
+    rdfs:label "has historical context" ;
+    rdfs:comment "Relates a cocktail to its historical background" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailHistory .
+
+ont:hasIdealTemperature a owl:ObjectProperty ;
+    rdfs:label "has ideal temperature" ;
+    rdfs:comment "Relates a cocktail to its ideal serving temperature" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Temperature .
+
+ont:hasIngredient a owl:ObjectProperty ;
+    rdfs:label "has ingredient" ;
+    rdfs:comment "Relates a cocktail to its ingredients" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Ingredient .
+
+ont:hasMixologySkill a owl:ObjectProperty ;
+    rdfs:label "has mixology skill" ;
+    rdfs:comment "Relates a bartender to their mixology skills" ;
+    rdfs:domain ont:Bartender ;
+    rdfs:range ont:MixologySkill .
+
+ont:hasPresentation a owl:ObjectProperty ;
+    rdfs:label "has presentation" ;
+    rdfs:comment "Relates a cocktail to its presentation style" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:CocktailPresentation .
+
+ont:hasServingStyle a owl:ObjectProperty ;
+    rdfs:label "has serving style" ;
+    rdfs:comment "Relates a cocktail to its serving style" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:ServingStyle .
+
+ont:hostedBy a owl:ObjectProperty ;
+    rdfs:label "hosted by" ;
+    rdfs:comment "Relates a cocktail industry event to the time period it occurs in" ;
+    rdfs:domain ont:CocktailIndustry ;
+    rdfs:range ont:TimePeriod .
+
+ont:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influenced by" ;
+    rdfs:comment "Relates a cocktail to the bar culture that influenced it" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:BarCulture .
+
+ont:influencedByTrend a owl:ObjectProperty ;
+    rdfs:label "influenced by trend" ;
+    rdfs:comment "Relates a cocktail to the trends that influenced it" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Trend .
+
+ont:influencesAroma a owl:ObjectProperty ;
+    rdfs:label "influences aroma" ;
+    rdfs:comment "Relates glassware to the aroma it influences" ;
+    rdfs:domain ont:Glassware ;
+    rdfs:range ont:Aroma .
+
+ont:originatedIn a owl:ObjectProperty ;
+    rdfs:label "originated in" ;
+    rdfs:comment "Relates a cocktail to the time period it originated in" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:TimePeriod .
+
+ont:preparedUsing a owl:ObjectProperty ;
+    rdfs:label "prepared using" ;
+    rdfs:comment "Relates a cocktail to its preparation method" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:PreparationMethod .
+
+ont:requiresTool a owl:ObjectProperty ;
+    rdfs:label "requires tool" ;
+    rdfs:comment "Relates a preparation method to the bar tools it requires" ;
+    rdfs:domain ont:PreparationMethod ;
+    rdfs:range ont:BarTool .
+
+ont:servedIn a owl:ObjectProperty ;
+    rdfs:label "served in" ;
+    rdfs:comment "Relates a cocktail to the glassware it is typically served in" ;
+    rdfs:domain ont:Cocktail ;
+    rdfs:range ont:Glassware .
+
+ont:usesMeasurement a owl:ObjectProperty ;
+    rdfs:label "uses measurement" ;
+    rdfs:comment "Relates an ingredient to its measurement in a cocktail recipe" ;
+    rdfs:domain ont:Ingredient ;
+    rdfs:range ont:Measurement .
+
+ont:Aroma a owl:Class ;
+    rdfs:label "Aroma" ;
+    rdfs:comment "The scent or fragrance of a cocktail" ;
+    rdfs:subClassOf ont:CocktailAttribute .
+
+ont:BarCulture a owl:Class ;
+    rdfs:label "Bar Culture" ;
+    rdfs:comment "The customs, social behavior, and ideas associated with bars and cocktail consumption" .
+
+ont:BarTool a owl:Class ;
+    rdfs:label "Bar Tool" ;
+    rdfs:comment "Equipment used in the preparation of cocktails" .
+
+ont:Certification a owl:Class ;
+    rdfs:label "Certification" ;
+    rdfs:comment "A professional qualification in mixology or bartending" .
+
+ont:CocktailComponent a owl:Class ;
+    rdfs:label "Cocktail Component" ;
+    rdfs:comment "A specific part or element of a cocktail" .
+
+ont:CocktailFamily a owl:Class ;
+    rdfs:label "Cocktail Family" ;
+    rdfs:comment "A group of cocktails with similar characteristics" .
+
+ont:CocktailHistory a owl:Class ;
+    rdfs:label "Cocktail History" ;
+    rdfs:comment "The historical background and evolution of cocktails" .
+
+ont:CocktailIndustry a owl:Class ;
+    rdfs:label "Cocktail Industry" ;
+    rdfs:comment "The commercial sector related to cocktails and mixology" .
+
+ont:CocktailPresentation a owl:Class ;
+    rdfs:label "Cocktail Presentation" ;
+    rdfs:comment "The way a cocktail is visually presented and served" .
+
+ont:FlavorProfile a owl:Class ;
+    rdfs:label "Flavor Profile" ;
+    rdfs:comment "The taste characteristics of a cocktail" .
+
+ont:Garnish a owl:Class ;
+    rdfs:label "Garnish" ;
+    rdfs:comment "A decorative element added to a cocktail" .
+
+ont:MixologySkill a owl:Class ;
+    rdfs:label "Mixology Skill" ;
+    rdfs:comment "A specific ability or technique in cocktail preparation" .
+
+ont:RecipeStep a owl:Class ;
+    rdfs:label "Recipe Step" ;
+    rdfs:comment "A single step in the preparation of a cocktail" .
+
+ont:ServingStyle a owl:Class ;
+    rdfs:label "Serving Style" ;
+    rdfs:comment "The manner in which a cocktail is served" .
+
+ont:Temperature a owl:Class ;
+    rdfs:label "Temperature" ;
+    rdfs:comment "The degree of heat of a cocktail or its components" .
+
+ont:Trend a owl:Class ;
+    rdfs:label "Trend" ;
+    rdfs:comment "A current popular style or practice in mixology" .
+
+ont:Measurement a owl:Class ;
+    rdfs:label "Measurement" ;
+    rdfs:comment "A quantity or amount used in cocktail preparation" .
+
+ont:Glassware a owl:Class ;
+    rdfs:label "Glassware" ;
+    rdfs:comment "The type of glass used to serve a cocktail" .
+
+ont:IngredientRole a owl:Class ;
+    rdfs:label "Ingredient Role" ;
+    rdfs:comment "The function of an ingredient in a cocktail" .
+
+ont:TasteCategory a owl:Class ;
+    rdfs:label "Taste Category" ;
+    rdfs:comment "A basic taste sensation category" .
+
+ont:TimePeriod a owl:Class ;
+    rdfs:label "Time Period" ;
+    rdfs:comment "A specific era in history" .
+
+ont:CocktailAttribute a owl:Class ;
+    rdfs:label "Cocktail Attribute" ;
+    rdfs:comment "A characteristic or property of a cocktail" .
+
+ont:Bartender a owl:Class ;
+    rdfs:label "Bartender" ;
+    rdfs:comment "A person who prepares and serves cocktails" .
+
+ont:PreparationMethod a owl:Class ;
+    rdfs:label "Preparation Method" ;
+    rdfs:comment "The technique used to mix or create a cocktail" .
+
+ont:Ingredient a owl:Class ;
+    rdfs:label "Ingredient" ;
+    rdfs:comment "A component used in making a cocktail" .
+
+ont:Cocktail a owl:Class ;
+    rdfs:label "Cocktail" ;
+    rdfs:comment "A mixed alcoholic beverage" .

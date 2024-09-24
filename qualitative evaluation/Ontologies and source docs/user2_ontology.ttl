@@ -1,0 +1,414 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:RootModel a owl:Class ;
+    rdfs:label "RootModel" ;
+    rdfs:comment "A special Pydantic model class for single-value root models." .
+
+ont:appropriateFor a owl:ObjectProperty ;
+    rdfs:label "appropriate for" ;
+    rdfs:comment "Relates a DebuggingStep to the UserSkillLevel it's most appropriate for." ;
+    rdfs:domain ont:DebuggingStep ;
+    rdfs:range ont:UserSkillLevel .
+
+ont:canDeserialize a owl:ObjectProperty ;
+    rdfs:label "can deserialize" ;
+    rdfs:comment "Relates a Deserialization process to the Model it can deserialize." ;
+    rdfs:domain ont:Deserialization ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:canBeDeserialized .
+
+ont:canSerialize a owl:ObjectProperty ;
+    rdfs:label "can serialize" ;
+    rdfs:comment "Relates a Serialization process to the Model it can serialize." ;
+    rdfs:domain ont:Serialization ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:canBeSerialized .
+
+ont:compatibleWith a owl:ObjectProperty ;
+    rdfs:label "compatible with" ;
+    rdfs:comment "Relates a Model to the Pydantic versions it's compatible with." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:PydanticVersion .
+
+ont:containsModel a owl:ObjectProperty ;
+    rdfs:label "contains model" ;
+    rdfs:comment "Relates a PythonFile to the Pydantic Models it contains." ;
+    rdfs:domain ont:PythonFile ;
+    rdfs:range ont:Model .
+
+ont:hasBestPractice a owl:ObjectProperty ;
+    rdfs:label "has best practice" ;
+    rdfs:comment "Relates a Model to relevant best practices for its use." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:BestPractice .
+
+ont:hasDocumentation a owl:ObjectProperty ;
+    rdfs:label "has documentation" ;
+    rdfs:comment "Relates a Model to relevant documentation resources." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:DocumentationResource .
+
+ont:hasErrorLocation a owl:ObjectProperty ;
+    rdfs:label "has error location" ;
+    rdfs:comment "Relates a ValidationError to the specific CodeLine where it occurred." ;
+    rdfs:domain ont:ValidationError ;
+    rdfs:range ont:CodeLine .
+
+ont:hasErrorMessage a owl:ObjectProperty ;
+    rdfs:label "has error message" ;
+    rdfs:comment "Relates a ValidationError to its specific ErrorMessage." ;
+    rdfs:domain ont:ValidationError ;
+    rdfs:range ont:ErrorMessage .
+
+ont:hasErrorType a owl:ObjectProperty ;
+    rdfs:label "has error type" ;
+    rdfs:comment "Relates a ValidationError to its specific ErrorType." ;
+    rdfs:domain ont:ValidationError ;
+    rdfs:range ont:ErrorType .
+
+ont:isAliasOf a owl:ObjectProperty ;
+    rdfs:label "is alias of" ;
+    rdfs:comment "Relates an Alias to the Field it represents." ;
+    rdfs:domain ont:Alias ;
+    rdfs:range ont:Field ;
+    owl:inverseOf ont:hasAlias .
+
+ont:isCoercedBy a owl:ObjectProperty ;
+    rdfs:label "is coerced by" ;
+    rdfs:comment "Relates a Coercion process to the Model that performs it." ;
+    rdfs:domain ont:Coercion ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:performsCoercion .
+
+ont:isConfigOf a owl:ObjectProperty ;
+    rdfs:label "is config of" ;
+    rdfs:comment "Relates a Config to the Model it configures." ;
+    rdfs:domain ont:Config ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:hasConfig .
+
+ont:isConstraintOf a owl:ObjectProperty ;
+    rdfs:label "is constraint of" ;
+    rdfs:comment "Relates a Constraint to its Field." ;
+    rdfs:domain ont:Constraint ;
+    rdfs:range ont:Field ;
+    owl:inverseOf ont:hasConstraint .
+
+ont:isDefaultOf a owl:ObjectProperty ;
+    rdfs:label "is default of" ;
+    rdfs:comment "Relates a Default value to the Field it belongs to." ;
+    rdfs:domain ont:Default ;
+    rdfs:range ont:Field ;
+    owl:inverseOf ont:hasDefault .
+
+ont:isFactoryOf a owl:ObjectProperty ;
+    rdfs:label "is factory of" ;
+    rdfs:comment "Relates a Factory to the Field it generates values for." ;
+    rdfs:domain ont:Factory ;
+    rdfs:range ont:Field ;
+    owl:inverseOf ont:hasFactory .
+
+ont:isFieldOf a owl:ObjectProperty ;
+    rdfs:label "is field of" ;
+    rdfs:comment "Relates a Field to its Model." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:hasField .
+
+ont:isFrozen a owl:DatatypeProperty ;
+    rdfs:label "is frozen" ;
+    rdfs:comment "Indicates whether a Model is frozen." ;
+    rdfs:domain ont:Model ;
+    rdfs:range xsd:boolean .
+
+ont:isGeneric a owl:DatatypeProperty ;
+    rdfs:label "is generic" ;
+    rdfs:comment "Indicates whether a Model is generic." ;
+    rdfs:domain ont:Model ;
+    rdfs:range xsd:boolean .
+
+ont:isImmutable a owl:DatatypeProperty ;
+    rdfs:label "is immutable" ;
+    rdfs:comment "Indicates whether a Model is immutable." ;
+    rdfs:domain ont:Model ;
+    rdfs:range xsd:boolean .
+
+ont:isInheritedBy a owl:ObjectProperty ;
+    rdfs:label "is inherited by" ;
+    rdfs:comment "Relates BaseModel to the Models that inherit from it." ;
+    rdfs:domain ont:BaseModel ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:inheritsFrom .
+
+ont:isOptional a owl:DatatypeProperty ;
+    rdfs:label "is optional" ;
+    rdfs:comment "Indicates whether a Field is optional in a Pydantic model." ;
+    rdfs:domain ont:Field ;
+    rdfs:range xsd:boolean .
+
+ont:isPrivateAttrOf a owl:ObjectProperty ;
+    rdfs:label "is private attribute of" ;
+    rdfs:comment "Relates a PrivateAttr to the Model it belongs to." ;
+    rdfs:domain ont:PrivateAttr ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:hasPrivateAttr .
+
+ont:isRaisedBy a owl:ObjectProperty ;
+    rdfs:label "is raised by" ;
+    rdfs:comment "Relates a ValidationError to the Validation process that raised it." ;
+    rdfs:domain ont:ValidationError ;
+    rdfs:range ont:Validation ;
+    owl:inverseOf ont:raisesError .
+
+ont:isRequired a owl:DatatypeProperty ;
+    rdfs:label "is required" ;
+    rdfs:comment "Indicates whether a Field is required in a Pydantic model." ;
+    rdfs:domain ont:Field ;
+    rdfs:range xsd:boolean .
+
+ont:isSchemaOf a owl:ObjectProperty ;
+    rdfs:label "is schema of" ;
+    rdfs:comment "Relates a Schema to the Model it describes." ;
+    rdfs:domain ont:Schema ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:hasSchema .
+
+ont:isTypeParameterOf a owl:ObjectProperty ;
+    rdfs:label "is type parameter of" ;
+    rdfs:comment "Relates a Model to the Generic model it parameterizes." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Generic ;
+    owl:inverseOf ont:hasTypeParameter .
+
+ont:isValidatedBy a owl:ObjectProperty ;
+    rdfs:label "is validated by" ;
+    rdfs:comment "Relates a Validation process to the Model that performs it." ;
+    rdfs:domain ont:Validation ;
+    rdfs:range ont:Model ;
+    owl:inverseOf ont:performsValidation .
+
+ont:isValidatorOf a owl:ObjectProperty ;
+    rdfs:label "is validator of" ;
+    rdfs:comment "Relates a Validator to the Field it validates." ;
+    rdfs:domain ont:Validator ;
+    rdfs:range ont:Field ;
+    owl:inverseOf ont:hasValidator .
+
+ont:nextStep a owl:ObjectProperty ;
+    rdfs:label "next step" ;
+    rdfs:comment "Relates a DebuggingStep to the next step in the debugging process." ;
+    rdfs:domain ont:DebuggingStep ;
+    rdfs:range ont:DebuggingStep .
+
+ont:relatedMistake a owl:ObjectProperty ;
+    rdfs:label "related mistake" ;
+    rdfs:comment "Relates an ErrorType to common mistakes that might cause it." ;
+    rdfs:domain ont:ErrorType ;
+    rdfs:range ont:CommonMistake .
+
+ont:BestPractice a owl:Class ;
+    rdfs:label "Best Practice" ;
+    rdfs:comment "A recommended pattern or approach for using Pydantic effectively." .
+
+ont:CodeLine a owl:Class ;
+    rdfs:label "Code Line" ;
+    rdfs:comment "A specific line of code in a Python file." .
+
+ont:CommonMistake a owl:Class ;
+    rdfs:label "Common Mistake" ;
+    rdfs:comment "A frequent error or misunderstanding in Pydantic usage." .
+
+ont:DocumentationResource a owl:Class ;
+    rdfs:label "Documentation Resource" ;
+    rdfs:comment "A reference to Pydantic documentation or learning resources." .
+
+ont:ErrorMessage a owl:Class ;
+    rdfs:label "Error Message" ;
+    rdfs:comment "The specific message associated with a Pydantic error." .
+
+ont:PydanticVersion a owl:Class ;
+    rdfs:label "Pydantic Version" ;
+    rdfs:comment "A specific version of the Pydantic library." .
+
+ont:PythonFile a owl:Class ;
+    rdfs:label "Python File" ;
+    rdfs:comment "A Python file containing Pydantic code." .
+
+ont:UserSkillLevel a owl:Class ;
+    rdfs:label "User Skill Level" ;
+    rdfs:comment "The level of expertise a user has with Python and Pydantic." .
+
+ont:canBeDeserialized a owl:ObjectProperty ;
+    rdfs:label "can be deserialized" ;
+    rdfs:comment "Relates a Model to the Deserialization process it can undergo." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Deserialization .
+
+ont:canBeSerialized a owl:ObjectProperty ;
+    rdfs:label "can be serialized" ;
+    rdfs:comment "Relates a Model to the Serialization process it can undergo." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Serialization .
+
+ont:hasAlias a owl:ObjectProperty ;
+    rdfs:label "has alias" ;
+    rdfs:comment "Relates a Field to its Alias." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Alias .
+
+ont:hasConfig a owl:ObjectProperty ;
+    rdfs:label "has config" ;
+    rdfs:comment "Relates a Model to its Config." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Config .
+
+ont:hasConstraint a owl:ObjectProperty ;
+    rdfs:label "has constraint" ;
+    rdfs:comment "Relates a Field to its Constraints." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Constraint .
+
+ont:hasDefault a owl:ObjectProperty ;
+    rdfs:label "has default" ;
+    rdfs:comment "Relates a Field to its Default value." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Default .
+
+ont:hasFactory a owl:ObjectProperty ;
+    rdfs:label "has factory" ;
+    rdfs:comment "Relates a Field to its Factory." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Factory .
+
+ont:hasField a owl:ObjectProperty ;
+    rdfs:label "has field" ;
+    rdfs:comment "Relates a Model to its Fields." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Field .
+
+ont:hasPrivateAttr a owl:ObjectProperty ;
+    rdfs:label "has private attribute" ;
+    rdfs:comment "Relates a Model to its PrivateAttr." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:PrivateAttr .
+
+ont:hasSchema a owl:ObjectProperty ;
+    rdfs:label "has schema" ;
+    rdfs:comment "Relates a Model to its Schema." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Schema .
+
+ont:hasTypeParameter a owl:ObjectProperty ;
+    rdfs:label "has type parameter" ;
+    rdfs:comment "Relates a Generic model to its type parameters." ;
+    rdfs:domain ont:Generic ;
+    rdfs:range ont:Model .
+
+ont:hasValidator a owl:ObjectProperty ;
+    rdfs:label "has validator" ;
+    rdfs:comment "Relates a Field to its Validators." ;
+    rdfs:domain ont:Field ;
+    rdfs:range ont:Validator .
+
+ont:inheritsFrom a owl:ObjectProperty ;
+    rdfs:label "inherits from" ;
+    rdfs:comment "Relates a Model to the BaseModel it inherits from." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:BaseModel .
+
+ont:performsCoercion a owl:ObjectProperty ;
+    rdfs:label "performs coercion" ;
+    rdfs:comment "Relates a Model to the Coercion process it performs." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Coercion .
+
+ont:performsValidation a owl:ObjectProperty ;
+    rdfs:label "performs validation" ;
+    rdfs:comment "Relates a Model to the Validation process it performs." ;
+    rdfs:domain ont:Model ;
+    rdfs:range ont:Validation .
+
+ont:raisesError a owl:ObjectProperty ;
+    rdfs:label "raises error" ;
+    rdfs:comment "Relates a Validation process to the ValidationError it may raise." ;
+    rdfs:domain ont:Validation ;
+    rdfs:range ont:ValidationError .
+
+ont:Alias a owl:Class ;
+    rdfs:label "Alias" ;
+    rdfs:comment "An alternative name for a field in a Pydantic model." .
+
+ont:BaseModel a owl:Class ;
+    rdfs:label "BaseModel" ;
+    rdfs:comment "The base class for all Pydantic models." .
+
+ont:Coercion a owl:Class ;
+    rdfs:label "Coercion" ;
+    rdfs:comment "The process of converting input data to the expected type in Pydantic." .
+
+ont:Config a owl:Class ;
+    rdfs:label "Config" ;
+    rdfs:comment "A class used to configure behavior of Pydantic models." .
+
+ont:Constraint a owl:Class ;
+    rdfs:label "Constraint" ;
+    rdfs:comment "A rule or condition applied to a field for validation purposes." .
+
+ont:Default a owl:Class ;
+    rdfs:label "Default" ;
+    rdfs:comment "A default value for a field in a Pydantic model." .
+
+ont:Deserialization a owl:Class ;
+    rdfs:label "Deserialization" ;
+    rdfs:comment "The process of converting data from a format like JSON or dict to a Pydantic model instance." .
+
+ont:ErrorType a owl:Class ;
+    rdfs:label "Error Type" ;
+    rdfs:comment "A specific type of error that can occur in Pydantic code." .
+
+ont:Factory a owl:Class ;
+    rdfs:label "Factory" ;
+    rdfs:comment "A function that generates a default value for a field in a Pydantic model." .
+
+ont:Generic a owl:Class ;
+    rdfs:label "Generic" ;
+    rdfs:comment "A type of Pydantic model that can be parameterized with other types." .
+
+ont:PrivateAttr a owl:Class ;
+    rdfs:label "PrivateAttr" ;
+    rdfs:comment "A private attribute in a Pydantic model." .
+
+ont:Schema a owl:Class ;
+    rdfs:label "Schema" ;
+    rdfs:comment "A representation of the structure and constraints of a Pydantic model." .
+
+ont:Serialization a owl:Class ;
+    rdfs:label "Serialization" ;
+    rdfs:comment "The process of converting a Pydantic model instance to a format like JSON or dict." .
+
+ont:Validator a owl:Class ;
+    rdfs:label "Validator" ;
+    rdfs:comment "A function or method used to validate fields in a Pydantic model." .
+
+ont:DebuggingStep a owl:Class ;
+    rdfs:label "Debugging Step" ;
+    rdfs:comment "A step in the process of identifying and fixing a Pydantic error." .
+
+ont:Validation a owl:Class ;
+    rdfs:label "Validation" ;
+    rdfs:comment "The process of checking data against defined constraints." .
+
+ont:ValidationError a owl:Class ;
+    rdfs:label "ValidationError" ;
+    rdfs:comment "An exception raised when Pydantic finds an error in the data it's validating." .
+
+ont:Field a owl:Class ;
+    rdfs:label "Field" ;
+    rdfs:comment "A component of a Pydantic model representing a single data attribute." .
+
+ont:Model a owl:Class ;
+    rdfs:label "Model" ;
+    rdfs:comment "A Pydantic model class for data validation and serialization." .

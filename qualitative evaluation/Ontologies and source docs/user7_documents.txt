@@ -1,0 +1,1734 @@
+﻿On me demande souvent si le blues, c’est du jazz ou si le jazz, c’est du blues. En fait, ni l’un ni l’autre.
+Le blues est le papa historique du jazz
+Il est né dans un contexte pas véritablement folichon dans le sud des USA à l’époque de l’esclavage des populations afro-américaines. C’est un art vocal au tout début, intuitif, qui naît tout de même au XIXe siècle !
+Il se chantait sur une pentatonique (une “gamme” à 5 notes) spéciale, une majeure 7 (septième diminuée) à laquelle les chanteurs ajoutaient spontanément une note bien spécifique, la quarte augmentée. Cette fameuse note étrange est la “blue note”. C’est ce qui donne cette patine au blues. Malgré tout, le blues est une musique tonale (qui est devenue tonimodale ensuite, c’est un peu compliqué cette histoire…) qui reste une musique spontanée, et donc une musique improvisée avec des chorus (des impros) après le thème.
+Mais le blues s’est formalisé après-guerre selon une grille assez stricte, en 8, 12 ou 16 mesures (surtout 12), qui reprend un schéma de base I7 — IV7 – V7. Cependant, malgré cette formalisation classique (qui ressemble un peu à celle qu’on connaît pour écrire un sonnet !), le blues n’est pas mort ni resté enterré une fois le jazz naissant. Il a continué son chemin, toujours formalisé, mais avec un son bien différent selon ses interprètes.
+Le Blues, la racine de beaucoup de genres !
+Mais cette forme a inauguré beaucoup d’autres choses. Le rock est directement, historiquement, inspiré du blues dans ses premières structures en 12 mesures avec des pentatoniques blues et le schéma de base. Mais les accords ont été “simplifiés” et le rythme est devenu binaire, avec un accent sur les 2 et 4e mesures (“afterbeat”).
+Pendant ce temps, le jazz a suivi son petit bonhomme de chemin. Sans aucune ambiguïté, il est un descendant direct du blues. L’histoire est un peu compliquée parce qu’elle comporte de nombreux “forks”. En gros, on peut dire que le negro spiritual donne le blues, qui va rester du blues mais aussi, parallèlement, donner naissance au ragtime (dans les bordels du sud des USA), puis le stomp, le dixie, puis le swing, puis, miracle absolu, dans les années 30 (vers 1936 de mémoire), naît le be-bop. Autrement dit, le jazz moderne.
+Il faut noter qu’à la fin du swing et au début du be-bop, la frontière entre les deux est très mince. Par exemple, sans Coleman Hawkins ou Lester Young, sans Art Tatum ou Count Basie, jamais le bop ne serait né. Ils ont défriché le terrain en amenant le swing à son paroxysme, et se sont retrouvés devant la nécessité de développer autre chose. C’est à ce moment qu’une nouvelle génération est arrivée en s’appuyant sur la précédente, composée de Dizzy Gillespie, de Charlie Parker, Thelonius Monk, Miles Davis, Dodo Marmarosa, Kenny Clarke, Art Blakey, Max Roach, Ron Carter, Sam Johnes et ainsi de suite…
+Le be-bop, là où blues et jazz divergent…
+Ici, il y a de grandes différences qui naissent par rapport au blues. On utilise encore, au début, le schéma blues (comme dans par exemple Now’s the Time de Charlie Parker). Mais on sort du tonal pour entrer dans l’univers de la musique modale. La grille blues se complexifie (typiquement I7 — IV7 — I7 — VI7b9 — IImin7 — V7b9). Ce qui ouvre d’immenses perspectives du point de vue de l’improvisation. À tel point que certains morceaux issus du blues ne sont pas facilement identifiables comme tels.
+Dans la période d’avant, dans le courant swing, on improvise déjà, bien sûr, et même parfois de manière collective (plusieurs musiciens en même temps) sans que ce soit la cacophonie pour autant. Parce que tout le monde joue sur les mêmes gammes. Dans le be-bop, il y a un soliste qui est mis en avant, et qui peut s’exprimer sans limite de temps en construisant son chorus sur une grille d’accords, jouée cycliquement. Autour de lui, les autres musiciens ont une fonction rythmique et de soutien harmonique. Mais on sort totalement d’une structure entièrement écrite. Tout le monde a la même grille de base, mais le jeu s’ancre uniquement dans l’interprétation et la relecture. Donc, le morceau évolue selon les idées des solistes, il n’est jamais joué deux fois de la même manière.
+La musique modale qui change tout
+Comme on est ici en musique modale, le vocabulaire se complexifie et les musiciens autour du soliste (on dit en “side”) font évoluer le thème en suivant les idées du soliste en temps réel. Nous ne possédons malheureusement aujourd’hui de cette époque que des 78 tours, donc des morceaux qui ne durent pas plus de 3 minutes. Mais en vrai, sur scène, certains chorus pouvaient durer 30 minutes, certains morceaux 1 heure. Chaque soliste rivalisait d’audace et dialoguait avec les autres : c’était une nouvelle manière de concevoir et d’approcher la musique. Il y avait un aspect “performance” qui existait déjà au temps du swing, mais qui s’envolait complètement. Performance en dextérité, en imagination, mais aussi en invention.
+On raconte (enfin plus précisément, Miles Davis raconte dans son autobiographie) que Charlie Parker, un soir, complètement bourré et shooté, s’est ramené au milieu d’un concert. On sait, autre fait notable, qu’en jazz, les “jam sessions” sont fondamentales : il y a sur scène un pianiste, un contrebassiste et un batteur, et tout soliste peut monter sur scène au moment de la session pour venir se frotter à ses collègues. Ce n’était pas simple et on pouvait très vite se faire jeter. Mais c’est aussi comme cela que cette musique évoluait, en confrontant les vocabulaires et les ego.
+Donc, Parker titube jusqu’à la scène et tout le monde ricane : il ne tient pas debout et est habillé comme un clodo. Il commence à faire un chorus qui, au bout de 20 minutes, était devenu tellement ébouriffant, tellement nouveau, tellement puissant que les musiciens qui l’accompagnaient arrêtèrent de jouer pour l’écouter… et apprendre ! On prétend que c’est de là qu’est né le “stop chorus”, quand un soliste joue tout seul au milieu d’un morceau. Ceci n’est pas historiquement vérifié…
+Quand le jazz devient une éponge
+Bref, on a à cette époque revisité tous les vieux chants folkloriques des années 1900–1920, en les réécrivant de sorte qu’ils deviennent seulement des thèmes et des grilles d’accords, et en les remodelant pour pouvoir improviser dessus. On est sorti de la pentatonique blues en inventant (beaucoup) de nouveaux modes, de nouvelles notes de transition, de nouveaux rythmes. Et on a commencé à intégrer beaucoup de sources d’inspiration inédites jusque là, en allant de Stravinski à la musique afro-cubaine, en passant par les musiques brésiliennes ou Jean-Sébastien Bach. En gros, tout était bon à prendre, à intégrer puis à relire pour avancer.
+La fusion des genres, ADN du jazz
+Cette fusion des genres est restée inscrite dans l’ADN du jazz — ce qui n’est pas le cas pour le blues. En gros, le jazz n’a eu de cesse d’évoluer à travers ses rencontres, ses relectures, ses tentatives, pour au fur et à mesure sortir des cadres le plus possible. Sans doute comme un instrument de liberté… Jusqu’au free jazz, dans les années 50, véritable point de rupture. Entre le be-bop et le free jazz, historiquement (en 20 ans donc), il y a eu différentes “écoles” entre le “cool” et le “hard”, selon les provenances des musiciens (Côte Ouest ou Côte Est), les directions de recherche, etc. Mais en gros, c’était du be-bop qui évoluait.
+Le free jazz n’était plus du tout du be-bop. L’une des figures fondamentales de la transition est, bien sûr, John Coltrane. Le free a été un douloureux moment, parfois un moment de n’importe quoi. En littérature, il est comparable au surréalisme. Ayant fait sauter tous les cadres, tout le monde pouvait tout jouer en même temps sans rythme, sans grille, sans mode. Cela devenait parfois du bruit. Miles Davis disait de Cecil Tailor qu’il ne savait pas jouer.
+L’après-free : assumer toutes les musiques
+Mais après cette outrance, avec l’émergence du rock (et un désintérêt affirmé du public pour le free jazz, et donc pour le jazz en général), le jazz a intégré la plus populaire des musiques pour donner naissance au jazz-rock, autrement appelé jazz fusion. Il a gardé les codes du jazz d’avant le free-jazz, s’en est approprié certains même du free, et a intégré de nouvelles lois conformes à son ADN : musique modale, improvisations, recherche, dialogues entre solistes, imagination. Il y a ajouté une approche (complexe) de la musique binaire, les rythmes asymétriques, ou la lutherie électrique puis électronique (entre autres). Et en tant que fusion culturelle assumée, c’est devenu une musique plus universelle, moins socialement récriminatrice — même si des Blancs jouaient aussi du be-bop, un peu plus tardivement, notamment en France (“Jazz Hexagonal”).
+Tout cela pour quoi ? Pour rechercher le Son. Une notion un peu mystique et bizarre, comme s’il existait un son idéal à atteindre. Ce “Son”, ce “groove”, n’est pas quelque chose de simple à décrire et je ne pourrai pas trop m’y risquer. Mais le blues n’a pas nécessairement vocation à l’atteindre. Il cherche autre chose. Sans doute des racines originelles et la liberté perdue.
+Le jazz, en revanche, court depuis toujours derrière cette notion où l’expression compte avant tout, beaucoup plus que la précision comme en musique classique. Je crois secrètement qu’en jazz, la recherche du Son, c’est la recherche de soi…
+Du corps à l’esprit, des racines à l’idéal
+Ainsi, autant le blues est une musique qui vient de l’intérieur, des entrailles, d’une douleur aussi. Autant le jazz est plus “mystique” et en même temps plus intellectuel. Il est plus théorisé car pour sortir d’un cadre, on doit parfaitement connaître ce cadre. Les deux ont bien une racine historique commune, mais pas nécessairement les mêmes objectifs. Et au vu de l’histoire de ces deux genres, il est logique que le jazz soit plus complexe à jouer ou à entendre.
+Sa recherche était de sortir d’une logique de musique de danse ou de plainte, pour se placer dans de la nouveauté, de la création, de la déstructuration. Le blues était en revanche, autant que le jazz, un liant social et culturel fort pour la communauté Noire. C’est aussi en cela qu’ils ne peuvent pas être dissociés. Mais autant le blues a — et est encore — longtemps été injecté dans le jazz, autant l’inverse est moins vrai. Parce qu’un blues joué en be-bop est du be-bop, et non du blues.
+Donc, pour résumer, le blues est le père de beaucoup de choses. Et le jazz est une relecture progressive, puis totale, du blues. Le blues est resté ancré dans ses origines, fièrement, tandis que le jazz est une musique fugace en éternelle transformation. Les deux ont donc leur raison d’être, mais sont bien distincts, même si des codes historiques les lieront toujours.
+
+
+
+
+— — —
+
+
+Pour tous ceux qui souhaitent élargir leur culture musicale, découvrir les grands noms de l'histoire de la guitare et s'inspirer des meilleurs, voici notre sélection des 10 plus impressionnants guitaristes de Blues !
+‍
+1. Meilleur guitariste blues : Stevie Ray Vaughan
+‍
+Malgré une carrière musicale d'une dizaine d'années seulement, Stevie Ray Vaughan a marqué un tournant dans l'histoire du Blues. Il est considéré comme un des pionniers du renouveau du genre dans les années 1980.
+‍
+Très inspiré par la musique de Jimi Hendrix et le Blues des trois Kings, il a développé une technique de jeu et un son inimitables.
+‍
+Il crée en 1978 le trio Double Trouble avec le batteur Chris Layton et le bassiste Tommy Shannon. Il jouera avec eux jusqu'à sa mort, allant jusqu'à refuser de partir en tournée avec Bowie qui souhaitait travailler avec lui sans le groupe.
+‍
+Repéré par David Bowie au Montreux Jazz Festival, c'est sa participation à l'album Let's Dance qui le propulse au devant de la scène.
+‍
+Le morceau Pride and Joy est extrait du premier album du groupe, Texas Flood, sorti en 1983.
+‍
+‍
+SRV sombre dans l'alcool et la drogue dans les années 1980 mais réussit à s'en extraire complètement suite à une cure de désintoxication. Malheureusement, son retour sur scène ne durera que peu de temps. Il décède dans un accident d'hélicoptère au retour d'un concert en 1990.
+‍
+Il aura néanmoins marqué l'histoire du Blues par son jeu incroyable et sa présence scénique d'une rare intensité.
+De nombreux guitaristes aujourd'hui encore s'inspirent de son style.
+2. Le roi de la guitare blues BB King
+‍
+‍
+Né dans les champs de coton du Mississipi en 1925, BB King, de son vrai nom Riley B. King, est considéré comme le roi du Blues.
+‍
+Sa précision et la subtilité de son jeu, notamment son vibrato caractéristique du poignet gauche, ont fait une bonne partie de sa renommée.
+‍
+Ses premières chansons sont produites par Sam Philips, qui créera plus tard Sun Records, et lancera Elvis Presley.
+‍
+BB King s'impose dans les années 1950 comme une figure incontournable du Blues. Mais c'est le titre The Thrill is Gone, tiré de son album Live at the Regal, qui assoit sa renommée internationale, au delà du milieu Blues.
+‍
+‍
+La même année, il fait la première partie de la tournée américaine des Rolling Stones, ce qui lui apporte la reconnaissance du milieu Rock.
+‍
+S'ensuit une immense carrière avec une soixantaine d'albums, des tournées à travers le monde entier et une quinzaine de Grammy Awards. Le tout accompagné de sa guitare baptisée Lucille, à laquelle il dédiera un album.
+Par la suite, Gibson créera même une guitare nommée Lucille en hommage à BB King.
+‍
+Le King décède en 2015 après 66 ans de carrière et plusieurs générations de guitaristes influencés par son style unique.
+3. Robert Johnson, une icône de la guitare blues
+‍
+Robert Johnson est sans doute une des plus grandes icônes qui existe parmi les guitaristes de blues ! Sa vie est nimbée de mystère.
+Johnson raconte qu'il a fait un pacte secret avec le diable, un soir à un carrefour, et que c'est de là qu'il tirerait son extraordinaire talent à la guitare.
+‍
+Il en a d'ailleurs fait une chanson : Cross Road Blues, reprise plus tard par de nombreux artistes rock, notamment Eric Clapton.
+‍
+‍
+Ayant su mêler différents styles, il n'a commencé à enregistrer des albums que deux ans avant sa mort !
+Celle-ci est aussi mystérieuse que sa vie l'a été, il aurait été empoisonné par un mari jaloux.
+Il a été le premier membre du malheureux "Club des 27".
+‍
+Robert Johnson a influencé de nombreux artistes, dont les Rolling Stones, Eric Clapton et Jimi Hendrix.
+4. Muddy Waters, roi du solo blues
+Roi du solo, sachant alterner guitare et chant comme personne, Muddy Waters a eu une carrière extraordinaire sur plus de cinq décennies.
+‍
+‍
+Il a influencé de nombreux domaines musicaux comme le Rhythm and blues, le Rock ou la Folk.
+C'est même grâce à lui que Chuck Berry enregistra son premier disque !
+Ou que les Rolling Stones trouvèrent leur nom, un hommage à une de ses chansons, Rollin Stone, également connue sous le nom de Catfish Blues.
+‍
+Voici un de ses plus grands succès : Mannish Boy, enregistré en 1955.
+‍
+‍
+5. John Lee Hooker
+Immense nom de la guitare blues électrique, John Lee Hooker a eu une influence incontournable sur toutes les générations suivantes.
+‍
+‍
+Après avoir fugué de son domicile à l'âge de 15 ans, John Lee Hooker finit par s'installer à Détroit et y travaille en tant qu'ouvrier.
+Il commence à se produire dans les bars et rencontre progressivement le succès.
+Mais il reste très mal payé à cause de sa couleur de peau.
+‍
+Au début des années 1960, avec le "British blues boom", des musiciens britanniques, comme Clapton ou les Stones, redécouvrent le blues et le remettent au goût du jour.
+Cela propulse la carrière internationale de John Lee Hooker.
+‍
+Il sera l'auteur de titres mythiques, comme Boom Boom qu'il jouera dans le film The Blues Brothers.
+‍
+‍
+6. Albert King
+‍
+‍
+Albert King a inspiré tous les grands guitaristes de Blues qui lui ont succédés.
+On ne compte plus les hommages que lui ont rendus Hendrix, Clapton, Moore, Vaughan et les autres.
+‍
+‍Son style a très largement influencé la musique contemporaine.
+‍
+‍
+7. Albert Collins
+Albert Collins est surnommé "The Iceman" parce que ses chansons tournaient majoritairement autour du thème du froid. Cela correspond aussi à son style de jeu inimitable, vif et tranchant.
+‍
+‍
+Il occupe vraiment la scène internationale à partie de la fin des années 1970.
+‍
+Il décède à 61 ans d'un cancer des poumons diagnostiqué lors de sa dernière tournée internationale.
+‍
+Il reste aujourd'hui une références parmi les guitaristes du blues urbain.
+‍
+‍
+8. Gary Moore
+Ayant enregistré plusieurs albums blues d'une rare intensité, Gary Moore ne peut être considéré uniquement comme une star de rock. Il a joué avec les meilleurs noms du genre et a su créer son propre son blues-rock.
+‍
+‍
+9. Buddy Guy
+Même si on le connait un peu moins aujourd'hui, Buddy Guy a été l'une des principales influences d'Hendrix ou de Clapton... C'est dire à quel point son jeu mérite d'être connu !
+‍
+Il était réputé pour ses solos incroyables, mais aussi et surtout pour avoir participé au passage entre le blues et le rock.
+‍
+Eric Clapton disait même de lui qu'il était le meilleur guitariste blues encore en vie.
+‍
+‍
+10. Chuck Berry
+Tu vas me dire que Chuck Berry n'est pas un guitariste de blues... Qu'il fait du rock, du vrai ! En fait, c'est un peu plus subtil que ça...‍
+‍
+‍
+Chuck Berry marque à lui tout seul le passage ô combien délicat entre le blues et le rock !
+Et en conséquent, on ne pouvait manquer de lui rendre hommage dans ce top 10 des meilleurs guitaristes de blues.
+‍
+Ce serait un manquement regrettable à l'histoire de la musique !
+‍
+Conclusion
+On aurait bien évidemment pu citer d'autres artistes mythiques qui valent largement d'avoir leur nom dans un top tel que celui-ci.
+‍
+Mais en commençant par découvrir ceux-là, en t'intéressant à leur musique, leur influence, leur biographie, tu découvriras d'autres grands guitaristes.
+Et tu comprendras avec le temps de quelle façon ils ont, chacun à leur manière, fait vivre la musique Blues dans l'histoire du XXe siècle.
+
+
+
+
+
+
+— — —
+
+
+Blues is a music genre[3] and musical form that originated amongst African-Americans in the Deep South of the United States around the 1860s.[2] Blues has incorporated spirituals, work songs, field hollers, shouts, chants, and rhymed simple narrative ballads from the African-American culture. The blues form is ubiquitous in jazz, rhythm and blues, and rock and roll, and is characterized by the call-and-response pattern, the blues scale, and specific chord progressions, of which the twelve-bar blues is the most common. Blue notes (or "worried notes"), usually thirds, fifths or sevenths flattened in pitch, are also an essential part of the sound. Blues shuffles or walking bass reinforce the trance-like rhythm and form a repetitive effect known as the groove.
+Blues music is characterized by its lyrics, bass lines, and instrumentation. Early traditional blues verses consisted of a single line repeated four times. It was only in the first decades of the 20th century that the most common current structure became standard: the AAB pattern, consisting of a line sung over the four first bars, its repetition over the next four, and then a longer concluding line over the last bars. Early blues frequently took the form of a loose narrative, often relating the racial discrimination and other challenges experienced by African-Americans.[4]
+Many elements, such as the call-and-response format and the use of blue notes, can be traced back to the music of Africa. The origins of the blues are also closely related to the religious music of the African-American community, the spirituals. The first appearance of the blues is often dated to after the ending of slavery, with the development of juke joints occurring later. It is associated with the newly acquired freedom of the former slaves. Chroniclers began to report about blues music at the dawn of the 20th century. The first publication of blues sheet music was in 1908. Blues has since evolved from unaccompanied vocal music and oral traditions of slaves into a wide variety of styles and subgenres. Blues subgenres include country blues, Delta blues and Piedmont blues, as well as urban blues styles such as Chicago blues and West Coast blues. World War II marked the transition from acoustic to electric blues and the progressive opening of blues music to a wider audience, especially white listeners. In the 1960s and 1970s, a hybrid form called blues rock developed, which blended blues styles with rock music.
+Etymology[edit]
+The term 'Blues' may have originated from "blue devils", meaning melancholy and sadness. An early use of the term in this sense is in George Colman's one-act farce Blue Devils (1798).[5] The phrase 'blue devils' may also have been derived from a British usage of the 1600s referring to the "intense visual hallucinations that can accompany severe alcohol withdrawal".[6] As time went on, the phrase lost the reference to devils and came to mean a state of agitation or depression. By the 1800s in the United States, the term "blues" was associated with drinking alcohol, a meaning which survives in the phrase 'blue law', which prohibits the sale of alcohol on Sunday.[6]
+In 1827, it was in the sense of a sad state of mind that John James Audubon wrote to his wife that he "had the blues".[7]
+In Henry David Thoreau's book Walden, he mentions "the blues" in the chapter reflecting on his time in solitude. He wrote his account of his personal quest in 1845, although it was not published until 1854.[8]
+The phrase "the blues" was written by Charlotte Forten, then aged 25, in her diary on December 14, 1862. She was a free-born black woman from Pennsylvania who was working as a schoolteacher in South Carolina, instructing both slaves and freedmen, and wrote that she "came home with the blues" because she felt lonesome and pitied herself. She overcame her depression and later noted a number of songs, such as "Poor Rosy", that were popular among the slaves. Although she admitted being unable to describe the manner of singing she heard, Forten wrote that the songs "can't be sung without a full heart and a troubled spirit", conditions that have inspired countless blues songs.[9]
+Though the use of the phrase in African-American music may be older, it has been attested to in print since 1912, when Hart Wand's "Dallas Blues" became the first copyrighted blues composition.[10][11] In lyrics, the phrase is often used to describe a depressed mood.[12]
+Lyrics[edit]
+American blues singer Ma Rainey (1886–1939), the "Mother of the Blues"
+Early traditional blues verses often consisted of a single line repeated four times. However, the most common structure of blues lyrics today was established in the first few decades of the 20th century, known as the "AAB" pattern. This structure consists of a line sung over the first four bars, its repetition over the next four, and a longer concluding line over the last bars.[13] This pattern can be heard in some of the first published blues songs, such as "Dallas Blues" (1912) and "Saint Louis Blues" (1914). According to W.C. Handy, the "AAB" pattern was adopted to avoid the monotony of lines repeated three times.[14] The lyrics are often sung in a rhythmic talk style rather than a melody, resembling a form of talking blues.
+Early blues frequently took the form of a loose narrative. African-American singers voiced their "personal woes in a world of harsh reality: a lost love, the cruelty of police officers, oppression at the hands of white folk, [and] hard times".[15] This melancholy has led to the suggestion of an Igbo origin for blues, because of the reputation the Igbo had throughout plantations in the Americas for their melancholic music and outlook on life when they were enslaved.[16][17] Other historians have argued that there is little evidence of Sub-Sahelian influence in the blues as "elaborate polyrhythm, percussion on African drums (as opposed to European drums), [and] collective participation" which are characteristic of West-Central African music below the savannah, are conspicuously absent. According to the historian Paul Oliver, "the roots of the blues were not to be found in the coastal and forest regions of Africa. Rather... the blues was rooted in ... the savanna hinterland, from Senegambia through Mali, Burkina Faso, Northern Ghana, Niger, and northern Nigeria". Additionally, ethnomusicologist John Storm Roberts has argued that "The parallels between African savanna-belt string-playing and the techniques of many blues guitarists are remarkable. The big kora of Senegal and Guinea are played in a rhythmic-melodic style that uses constantly changing rhythms, often providing a ground bass overlaid with complex treble patterns, while vocal supplies a third rhythmic layer. Similar techniques can be found in hundreds of blues records".[18]
+The lyrics often relate troubles experienced within African American society. For instance Blind Lemon Jefferson's "Rising High Water Blues" (1927) tells of the Great Mississippi Flood of 1927:
+Backwater rising, Southern peoples can't make no time
+I said, backwater rising, Southern peoples can't make no time
+And I can't get no hearing from that Memphis girl of mine
+Although the blues gained an association with misery and oppression, the lyrics could also be humorous and raunchy:[19]
+Rebecca, Rebecca, get your big legs off of me,
+Rebecca, Rebecca, get your big legs off of me,
+It may be sending you baby, but it's worrying the hell out of me.[20]
+Hokum blues celebrated both comedic lyrical content and a boisterous, farcical performance style.[21] Tampa Red and Georgia Tom's "It's Tight Like That" (1928)[22] is a sly wordplay with the double meaning of being "tight" with someone, coupled with a more salacious physical familiarity. Blues songs with sexually explicit lyrics were known as dirty blues. The lyrical content became slightly simpler in postwar blues, which tended to focus on relationship woes or sexual worries. Lyrical themes that frequently appeared in prewar blues, such as economic depression, farming, devils, gambling, magic, floods and drought, were less common in postwar blues.[23]
+The writer Ed Morales claimed that Yoruba mythology played a part in early blues, citing Robert Johnson's "Cross Road Blues" as a "thinly veiled reference to Eleggua, the orisha in charge of the crossroads".[24] However, the Christian influence was far more obvious.[25] The repertoires of many seminal blues artists, such as Charley Patton and Skip James, included religious songs or spirituals.[26] Reverend Gary Davis[27] and Blind Willie Johnson[28] are examples of artists often categorized as blues musicians for their music, although their lyrics clearly belong to spirituals.
+Form[edit]
+The blues form is a cyclic musical form in which a repeating progression of chords mirrors the call and response scheme commonly found in African and African-American music. During the first decades of the 20th century blues music was not clearly defined in terms of a particular chord progression.[29] With the popularity of early performers, such as Bessie Smith, use of the twelve-bar blues spread across the music industry during the 1920s and 1930s.[30] Other chord progressions, such as 8-bar forms, are still considered blues; examples include "How Long Blues", "Trouble in Mind", and Big Bill Broonzy's "Key to the Highway". There are also 16-bar blues, such as Ray Charles's instrumental "Sweet 16 Bars" and Herbie Hancock's "Watermelon Man". Idiosyncratic numbers of bars are occasionally used, such as the 9-bar progression in "Sitting on Top of the World", by Walter Vinson.
+The basic 12-bar lyric framework of many blues compositions is reflected by a standard harmonic progression of 12 bars in a 4/4 time signature. The blues chords associated to a twelve-bar blues are typically a set of three different chords played over a 12-bar scheme. They are labeled by Roman numbers referring to the degrees of the progression. For instance, for a blues in the key of C, C is the tonic chord (I) and F is the subdominant (IV).
+The last chord is the dominant (V) turnaround, marking the transition to the beginning of the next progression. The lyrics generally end on the last beat of the tenth bar or the first beat of the 11th bar, and the final two bars are given to the instrumentalist as a break; the harmony of this two-bar break, the turnaround, can be extremely complex, sometimes consisting of single notes that defy analysis in terms of chords.
+Much of the time, some or all of these chords are played in the harmonic seventh (7th) form. The use of the harmonic seventh interval is characteristic of blues and is popularly called the "blues seven".[31] Blues seven chords add to the harmonic chord a note with a frequency in a 7:4 ratio to the fundamental note. At a 7:4 ratio, it is not close to any interval on the conventional Western diatonic scale.[32] For convenience or by necessity it is often approximated by a minor seventh interval or a dominant seventh chord.
+A minor pentatonic scale; playⓘ
+In melody, blues is distinguished by the use of the flattened third, fifth and seventh of the associated major scale.[33]
+Blues shuffles or walking bass reinforce the trance-like rhythm and call-and-response, and they form a repetitive effect called a groove. Characteristic of the blues since its Afro-American origins, the shuffles played a central role in swing music.[34] The simplest shuffles, which were the clearest signature of the R&B wave that started in the mid-1940s,[35] were a three-note riff on the bass strings of the guitar. When this riff was played over the bass and the drums, the groove "feel" was created. Shuffle rhythm is often vocalized as "dow, da dow, da dow, da" or "dump, da dump, da dump, da":[36] it consists of uneven, or "swung", eighth notes. On a guitar this may be played as a simple steady bass or it may add to that stepwise quarter note motion from the fifth to the sixth of the chord and back.
+History[edit]Origins[edit]
+Main article: Origins of the blues
+Hart Wand's "Dallas Blues" was published in 1912; W.C. Handy's "The Memphis Blues" followed in the same year. The first recording by an African American singer was Mamie Smith's 1920 rendition of Perry Bradford's "Crazy Blues". But the origins of the blues were some decades earlier, probably around 1890.[37] This music is poorly documented, partly because of racial discrimination in U.S. society, including academic circles,[38] and partly because of the low rate of literacy among rural African Americans at the time.[39]
+Reports of blues music in southern Texas and the Deep South were written at the dawn of the 20th century. Charles Peabody mentioned the appearance of blues music at Clarksdale, Mississippi, and Gate Thomas reported similar songs in southern Texas around 1901–1902. These observations coincide more or less with the recollections of Jelly Roll Morton, who said he first heard blues music in New Orleans in 1902; Ma Rainey, who remembered first hearing the blues in the same year in Missouri; and W.C. Handy, who first heard the blues in Tutwiler, Mississippi, in 1903. The first extensive research in the field was performed by Howard W. Odum, who published an anthology of folk songs from Lafayette County, Mississippi, and Newton County, Georgia, between 1905 and 1908.[40] The first non-commercial recordings of blues music, termed proto-blues by Paul Oliver, were made by Odum for research purposes at the beginning of the 20th century. They are now lost.[41]
+Musicologist John Lomax (left) shaking hands with musician "Uncle" Rich Brown in Sumterville, Alabama
+Other recordings that are still available were made in 1924 by Lawrence Gellert. Later, several recordings were made by Robert W. Gordon, who became head of the Archive of American Folk Songs of the Library of Congress. Gordon's successor at the library was John Lomax. In the 1930s, Lomax and his son Alan made a large number of non-commercial blues recordings that testify to the huge variety of proto-blues styles, such as field hollers and ring shouts.[42] A record of blues music as it existed before 1920 can also be found in the recordings of artists such as Lead Belly[43] and Henry Thomas.[44] All these sources show the existence of many different structures distinct from twelve-, eight-, or sixteen-bar.[45][46] The social and economic reasons for the appearance of the blues are not fully known.[47] The first appearance of the blues is usually dated after the Emancipation Act of 1863,[38] between 1860s and 1890s,[2] a period that coincides with post-emancipation and later, the establishment of juke joints as places where African-Americans went to listen to music, dance, or gamble after a hard day's work.[48] This period corresponds to the transition from slavery to sharecropping, small-scale agricultural production, and the expansion of railroads in the southern United States. Several scholars characterize the development of blues music in the early 1900s as a move from group performance to individualized performance. They argue that the development of the blues is associated with the newly acquired freedom of the enslaved people.[49]
+According to Lawrence Levine, "there was a direct relationship between the national ideological emphasis upon the individual, the popularity of Booker T. Washington's teachings, and the rise of the blues." Levine stated that "psychologically, socially, and economically, African-Americans were being acculturated in a way that would have been impossible during slavery, and it is hardly surprising that their secular music reflected this as much as their religious music did."[49]
+There are few characteristics common to all blues music, because the genre took its shape from the idiosyncrasies of individual performers.[50] However, there are some characteristics that were present long before the creation of the modern blues. Call-and-response shouts were an early form of blues-like music; they were a "functional expression ... style without accompaniment or harmony and unbounded by the formality of any particular musical structure".[51] A form of this pre-blues was heard in slave ring shouts and field hollers, expanded into "simple solo songs laden with emotional content".[52]
+Blues has evolved from the unaccompanied vocal music and oral traditions of slaves imported from West Africa and rural blacks into a wide variety of styles and subgenres, with regional variations across the United States. Although blues (as it is now known) can be seen as a musical style based on both European harmonic structure and the African call-and-response tradition that transformed into an interplay of voice and guitar,[53][54] the blues form itself bears no resemblance to the melodic styles of the West African griots.[55][56] Additionally, there are theories that the four-beats-per-measure structure of the blues might have its origins in the Native American tradition of pow wow drumming.[57] Some scholars identify strong influences on the blues from the melodic structures of certain West African musical styles of the savanna and sahel. Lucy Durran finds similarities with the melodies of the Bambara people, and to a lesser degree, the Soninke people and Wolof people, but not as much of the Mandinka people.[58] Gerard Kubik finds similarities to the melodic styles of both the west African savanna and central Africa, both of which were sources of enslaved people.[59]
+No specific African musical form can be identified as the single direct ancestor of the blues.[60] However the call-and-response format can be traced back to the music of Africa. That blue notes predate their use in blues and have an African origin is attested to by "A Negro Love Song", by the English composer Samuel Coleridge-Taylor, from his African Suite for Piano, written in 1898, which contains blue third and seventh notes.[61]
+The Diddley bow (a homemade one-stringed instrument found in parts of the American South sometimes referred to as a jitterbug or a one-string in the early twentieth century) and the banjo are African-derived instruments that may have helped in the transfer of African performance techniques into the early blues instrumental vocabulary.[62] The banjo seems to be directly imported from West African music. It is similar to the musical instrument that griots and other Africans such as the Igbo[63] played (called halam or akonting by African peoples such as the Wolof, Fula and Mandinka).[64] However, in the 1920s, when country blues began to be recorded, the use of the banjo in blues music was quite marginal and limited to individuals such as Papa Charlie Jackson and later Gus Cannon.[65]
+Blues music also adopted elements from the "Ethiopian airs", minstrel shows and Negro spirituals, including instrumental and harmonic accompaniment.[66] The style also was closely related to ragtime, which developed at about the same time, though the blues better preserved "the original melodic patterns of African music".[67]
+The musical forms and styles that are now considered the blues as well as modern country music arose in the same regions of the southern United States during the 19th century. Recorded blues and country music can be found as far back as the 1920s, when the record industry created the marketing categories "race music" and "hillbilly music" to sell music by blacks for blacks and by whites for whites, respectively. At the time, there was no clear musical division between "blues" and "country", except for the ethnicity of the performer, and even that was sometimes documented incorrectly by record companies.[68][69]
+Though musicologists can now attempt to define the blues narrowly in terms of certain chord structures and lyric forms thought to have originated in West Africa, audiences originally heard the music in a far more general way: it was simply the music of the rural south, notably the Mississippi Delta. Black and white musicians shared the same repertoire and thought of themselves as "songsters" rather than blues musicians. The notion of blues as a separate genre arose during the black migration from the countryside to urban areas in the 1920s and the simultaneous development of the recording industry. Blues became a code word for a record designed to sell to black listeners.[70]
+The origins of the blues are closely related to the religious music of Afro-American community, the spirituals. The origins of spirituals go back much further than the blues, usually dating back to the middle of the 18th century, when the slaves were Christianized and began to sing and play Christian hymns, in particular those of Isaac Watts, which were very popular.[71] Before the blues gained its formal definition in terms of chord progressions, it was defined as the secular counterpart of spirituals. It was the low-down music played by rural blacks.[25]
+Depending on the religious community a musician belonged to, it was more or less considered a sin to play this low-down music: blues was the devil's music. Musicians were therefore segregated into two categories: gospel singers and blues singers, guitar preachers and songsters. However, when rural black music began to be recorded in the 1920s, both categories of musicians used similar techniques: call-and-response patterns, blue notes, and slide guitars. Gospel music was nevertheless using musical forms that were compatible with Christian hymns and therefore less marked by the blues form than its secular counterpart.[25]
+Pre-war blues[edit]
+The American sheet music publishing industry produced a great deal of ragtime music. By 1912, the sheet music industry had published three popular blues-like compositions, precipitating the Tin Pan Alley adoption of blues elements: "Baby Seals' Blues", by Baby Franklin Seals (arranged by Artie Matthews); "Dallas Blues", by Hart Wand; and "The Memphis Blues", by W.C. Handy.[72]
+Sheet music from "Saint Louis Blues" (1914)
+Handy was a formally trained musician, composer and arranger who helped to popularize the blues by transcribing and orchestrating blues in an almost symphonic style, with bands and singers. He became a popular and prolific composer, and billed himself as the "Father of the Blues"; however, his compositions can be described as a fusion of blues with ragtime and jazz, a merger facilitated using the Cuban habanera rhythm that had long been a part of ragtime;[24][73] Handy's signature work was the "Saint Louis Blues".
+In the 1920s, the blues became a major element of African American and American popular music, also reaching white audiences via Handy's arrangements and the classic female blues performers. These female performers became perhaps the first African American "superstars", and their recording sales demonstrated "a huge appetite for records made by and for black people."[74] The blues evolved from informal performances in bars to entertainment in theaters. Blues performances were organized by the Theater Owners Booking Association in nightclubs such as the Cotton Club and juke joints such as the bars along Beale Street in Memphis. Several record companies, such as the American Record Corporation, Okeh Records, and Paramount Records, began to record African-American music.
+As the recording industry grew, country blues performers like Bo Carter, Jimmie Rodgers, Blind Lemon Jefferson, Lonnie Johnson, Tampa Red and Blind Blake became more popular in the African American community. Kentucky-born Sylvester Weaver was in 1923 the first to record the slide guitar style, in which a guitar is fretted with a knife blade or the sawed-off neck of a bottle.[75] The slide guitar became an important part of the Delta blues.[76] The first blues recordings from the 1920s are categorized as a traditional, rural country blues and a more polished city or urban blues.
+Country blues performers often improvised, either without accompaniment or with only a banjo or guitar. Regional styles of country blues varied widely in the early 20th century. The (Mississippi) Delta blues was a rootsy sparse style with passionate vocals accompanied by slide guitar. The little-recorded Robert Johnson[77] combined elements of urban and rural blues. In addition to Robert Johnson, influential performers of this style included his predecessors Charley Patton and Son House. Singers such as Blind Willie McTell and Blind Boy Fuller performed in the southeastern "delicate and lyrical" Piedmont blues tradition, which used an elaborate ragtime-based fingerpicking guitar technique. Georgia also had an early slide tradition,[78] with Curley Weaver, Tampa Red, "Barbecue Bob" Hicks and James "Kokomo" Arnold as representatives of this style.[79]
+The lively Memphis blues style, which developed in the 1920s and 1930s near Memphis, Tennessee, was influenced by jug bands such as the Memphis Jug Band or the Gus Cannon's Jug Stompers. Performers such as Frank Stokes, Sleepy John Estes, Robert Wilkins, Kansas Joe McCoy, Casey Bill Weldon and Memphis Minnie used a variety of unusual instruments such as washboard, fiddle, kazoo or mandolin. Memphis Minnie was famous for her virtuoso guitar style. Pianist Memphis Slim began his career in Memphis, but his distinct style was smoother and had some swing elements. Many blues musicians based in Memphis moved to Chicago in the late 1930s or early 1940s and became part of the urban blues movement.[80][81]
+Bessie Smith, an early blues singer, known for her powerful voice
+Urban blues[edit]
+City or urban blues styles were more codified and elaborate, as a performer was no longer within their local, immediate community, and had to adapt to a larger, more varied audience's aesthetic.[82] Classic female urban and vaudeville blues singers were popular in the 1920s, among them "the big three"—Gertrude "Ma" Rainey, Bessie Smith, and Lucille Bogan. Mamie Smith, more a vaudeville performer than a blues artist, was the first African American to record a blues song, in 1920; her second record, "Crazy Blues", sold 75,000 copies in its first month.[83] Ma Rainey, the "Mother of Blues", and Bessie Smith each "[sang] around center tones, perhaps in order to project her voice more easily to the back of a room". Smith would "sing a song in an unusual key, and her artistry in bending and stretching notes with her beautiful, powerful contralto to accommodate her own interpretation was unsurpassed".[84]
+In 1920, the vaudeville singer Lucille Hegamin became the second black woman to record blues when she recorded "The Jazz Me Blues",[85] and Victoria Spivey, sometimes called Queen Victoria or Za Zu Girl, had a recording career that began in 1926 and spanned forty years. These recordings were typically labeled "race records" to distinguish them from records sold to white audiences. Nonetheless, the recordings of some of the classic female blues singers were purchased by white buyers as well.[86] These blueswomen's contributions to the genre included "increased improvisation on melodic lines, unusual phrasing which altered the emphasis and impact of the lyrics, and vocal dramatics using shouts, groans, moans, and wails. The blues women thus effected changes in other types of popular singing that had spin-offs in jazz, Broadway musicals, torch songs of the 1930s and 1940s, gospel, rhythm and blues, and eventually rock and roll."[87]
+Urban male performers included popular black musicians of the era, such as Tampa Red, Big Bill Broonzy and Leroy Carr. An important label of this era was the Chicago-based Bluebird Records. Before World War II, Tampa Red was sometimes referred to as "the Guitar Wizard". Carr accompanied himself on the piano with Scrapper Blackwell on guitar, a format that continued well into the 1950s with artists such as Charles Brown and even Nat "King" Cole.[76]
+A typical boogie-woogie bass line Playⓘ
+Boogie-woogie was another important style of 1930s and early 1940s urban blues. While the style is often associated with solo piano, boogie-woogie was also used to accompany singers and, as a solo part, in bands and small combos. Boogie-woogie style was characterized by a regular bass figure, an ostinato or riff and shifts of level in the left hand, elaborating each chord and trills and decorations in the right hand. Boogie-woogie was pioneered by the Chicago-based Jimmy Yancey and the Boogie-Woogie Trio (Albert Ammons, Pete Johnson and Meade Lux Lewis).[88] Chicago boogie-woogie performers included Clarence "Pine Top" Smith and Earl Hines, who "linked the propulsive left-hand rhythms of the ragtime pianists with melodic figures similar to those of Armstrong's trumpet in the right hand".[82] The smooth Louisiana style of Professor Longhair and, more recently, Dr. John blends classic rhythm and blues with blues styles.
+Another development in this period was big band blues. The "territory bands" operating out of Kansas City, the Bennie Moten orchestra, Jay McShann, and the Count Basie Orchestra were also concentrating on the blues, with 12-bar blues instrumentals such as Basie's "One O'Clock Jump" and "Jumpin' at the Woodside" and boisterous "blues shouting" by Jimmy Rushing on songs such as "Going to Chicago" and "Sent for You Yesterday". A well-known big band blues tune is Glenn Miller's "In the Mood". In the 1940s, the jump blues style developed. Jump blues grew up from the boogie-woogie wave and was strongly influenced by big band music. It uses saxophone or other brass instruments and the guitar in the rhythm section to create a jazzy, up-tempo sound with declamatory vocals. Jump blues tunes by Louis Jordan and Big Joe Turner, based in Kansas City, Missouri, influenced the development of later styles such as rock and roll and rhythm and blues.[89] Dallas-born T-Bone Walker, who is often associated with the California blues style,[90] performed a successful transition from the early urban blues à la Lonnie Johnson and Leroy Carr to the jump blues style and dominated the blues-jazz scene at Los Angeles during the 1940s.[91]
+1950s[edit]
+The transition from country blues to urban blues that began in the 1920s was driven by the successive waves of economic crisis and booms that led many rural blacks to move to urban areas, in a movement known as the Great Migration. The long boom following World War II induced another massive migration of the African-American population, the Second Great Migration, which was accompanied by a significant increase of the real income of the urban blacks. The new migrants constituted a new market for the music industry. The term race record, initially used by the music industry for African-American music, was replaced by the term rhythm and blues. This rapidly evolving market was mirrored by Billboard magazine's Rhythm & Blues chart. This marketing strategy reinforced trends in urban blues music such as the use of electric instruments and amplification and the generalization of the blues beat, the blues shuffle, which became ubiquitous in rhythm and blues (R&B). This commercial stream had important consequences for blues music, which, together with jazz and gospel music, became a component of R&B.[92]
+John Lee Hooker
+After World War II, new styles of electric blues became popular in cities such as Chicago,[93] Memphis,[94] Detroit[95][96] and St. Louis. Electric blues used electric guitars, double bass (gradually replaced by bass guitar), drums, and harmonica (or "blues harp") played through a microphone and a PA system or an overdriven guitar amplifier. Chicago became a center for electric blues from 1948 on, when Muddy Waters recorded his first success, "I Can't Be Satisfied".[97] Chicago blues is influenced to a large extent by Delta blues, because many performers had migrated from the Mississippi region.
+Howlin' Wolf, Muddy Waters, Willie Dixon and Jimmy Reed were all born in Mississippi and moved to Chicago during the Great Migration. Their style is characterized by the use of electric guitar, sometimes slide guitar, harmonica, and a rhythm section of bass and drums.[98] The saxophonist J. T. Brown played in bands led by Elmore James and by J. B. Lenoir, but the saxophone was used as a backing instrument for rhythmic support more than as a lead instrument.
+Little Walter, Sonny Boy Williamson (Rice Miller) and Sonny Terry are well known harmonica (called "harp" by blues musicians) players of the early Chicago blues scene. Other harp players such as Big Walter Horton were also influential. Muddy Waters and Elmore James were known for their innovative use of slide electric guitar. Howlin' Wolf and Muddy Waters were known for their deep, "gravelly" voices.
+The bassist and prolific songwriter and composer Willie Dixon played a major role on the Chicago blues scene. He composed and wrote many standard blues songs of the period, such as "Hoochie Coochie Man", "I Just Want to Make Love to You" (both penned for Muddy Waters) and, "Wang Dang Doodle" and "Back Door Man" for Howlin' Wolf. Most artists of the Chicago blues style recorded for the Chicago-based Chess Records and Checker Records labels. Smaller blues labels of this era included Vee-Jay Records and J.O.B. Records. During the early 1950s, the dominating Chicago labels were challenged by Sam Phillips' Sun Records company in Memphis, which recorded B. B. King and Howlin' Wolf before he moved to Chicago in 1960.[99] After Phillips discovered Elvis Presley in 1954, the Sun label turned to the rapidly expanding white audience and started recording mostly rock 'n' roll.[100]
+In the 1950s, blues had a huge influence on mainstream American popular music. While popular musicians like Bo Diddley[95] and Chuck Berry,[101] both recording for Chess, were influenced by the Chicago blues, their enthusiastic playing styles departed from the melancholy aspects of blues. Chicago blues also influenced Louisiana's zydeco music,[102] with Clifton Chenier[103] using blues accents. Zydeco musicians used electric solo guitar and cajun arrangements of blues standards.
+In England, electric blues took root there during a much acclaimed Muddy Waters tour in 1958. Waters, unsuspecting of his audience's tendency towards skiffle, an acoustic, softer brand of blues, turned up his amp and started to play his Chicago brand of electric blues. Although the audience was largely jolted by the performance, the performance influenced local musicians such as Alexis Korner and Cyril Davies to emulate this louder style, inspiring the British Invasion of the Rolling Stones and the Yardbirds.[104]
+In the late 1950s, a new blues style emerged on Chicago's West Side pioneered by Magic Sam, Buddy Guy and Otis Rush on Cobra Records.[105] The "West Side sound" had strong rhythmic support from a rhythm guitar, bass guitar and drums and as perfected by Guy, Freddie King, Magic Slim and Luther Allison was dominated by amplified electric lead guitar.[106][107] Expressive guitar solos were a key feature of this music.
+Other blues artists, such as John Lee Hooker, had influences not directly related to the Chicago style. John Lee Hooker's blues is more "personal", based on Hooker's deep rough voice accompanied by a single electric guitar. Though not directly influenced by boogie-woogie, his "groovy" style is sometimes called "guitar boogie". His first hit, "Boogie Chillen", reached number 1 on the R&B charts in 1949.[108]
+By the late 1950s, the swamp blues genre developed near Baton Rouge, with performers such as Lightnin' Slim,[109] Slim Harpo,[110] Sam Myers and Jerry McCain around the producer J. D. "Jay" Miller and the Excello label. Strongly influenced by Jimmy Reed, swamp blues has a slower pace and a simpler use of the harmonica than the Chicago blues style performers such as Little Walter or Muddy Waters. Songs from this genre include "Scratch my Back", "She's Tough" and "I'm a King Bee". Alan Lomax's recordings of Mississippi Fred McDowell would eventually bring him wider attention on both the blues and folk circuit, with McDowell's droning style influencing North Mississippi hill country blues musicians.[111]
+1960s and 1970s[edit]
+Blues legend B.B. King with his guitar, "Lucille"
+By the beginning of the 1960s, genres influenced by African American music such as rock and roll and soul were part of mainstream popular music. White performers such as the Rolling Stones and the Beatles had brought African-American music to new audiences, within the U.S. and abroad. However, the blues wave that brought artists such as Muddy Waters to the foreground had stopped. Bluesmen such as Big Bill Broonzy and Willie Dixon started looking for new markets in Europe. Dick Waterman and the blues festivals he organized in Europe played a major role in propagating blues music abroad. In the UK, bands emulated U.S. blues legends, and UK blues rock-based bands had an influential role throughout the 1960s.[112]
+Blues performers such as John Lee Hooker and Muddy Waters continued to perform to enthusiastic audiences, inspiring new artists steeped in traditional blues, such as New York–born Taj Mahal. John Lee Hooker blended his blues style with rock elements and playing with younger white musicians, creating a musical style that can be heard on the 1971 album Endless Boogie. B. B. King's singing and virtuoso guitar technique earned him the eponymous title "king of the blues". King introduced a sophisticated style of guitar soloing based on fluid string bending and shimmering vibrato that influenced many later electric blues guitarists.[113] In contrast to the Chicago style, King's band used strong brass support from a saxophone, trumpet, and trombone, instead of using slide guitar or harp. Tennessee-born Bobby "Blue" Bland, like B. B. King, also straddled the blues and R&B genres. During this period, Freddie King and Albert King often played with rock and soul musicians (Eric Clapton and Booker T & the MGs) and had a major influence on those styles of music.
+The music of the civil rights movement[114] and Free Speech Movement in the U.S. prompted a resurgence of interest in American roots music and early African American music. As well festivals such as the Newport Folk Festival[115] brought traditional blues to a new audience, which helped to revive interest in prewar acoustic blues and performers such as Son House, Mississippi John Hurt, Skip James, and Reverend Gary Davis.[114] Many compilations of classic prewar blues were republished by the Yazoo Records. J. B. Lenoir from the Chicago blues movement in the 1950s recorded several LPs using acoustic guitar, sometimes accompanied by Willie Dixon on the acoustic bass or drums. His songs, originally distributed only in Europe,[116] commented on political issues such as racism or Vietnam War issues, which was unusual for this period. His album Alabama Blues contained a song with the following lyric:
+I never will go back to Alabama, that is not the place for me,
+I never will go back to Alabama, that is not the place for me.
+You know they killed my sister and my brother
+and the whole world let them peoples go down there free
+Texas blues guitarist Stevie Ray Vaughan, 1983
+White audiences' interest in the blues during the 1960s increased due to the Chicago-based Paul Butterfield Blues Band featuring guitarist Michael Bloomfield and singer/songwriter Nick Gravenites, and the British blues movement. The style of British blues developed in the UK, when musicians such as Cyril Davies, Alexis Korner's Blues Incorporated, Fleetwood Mac, John Mayall & the Bluesbreakers, the Rolling Stones, Animals, the Yardbirds, Aynsley Dunbar Retaliation,[117] Chicken Shack,[118] early Jethro Tull, Cream and the Irish musician Rory Gallagher performed classic blues songs from the Delta or Chicago blues traditions.
+In 1963, Amiri Baraka, then known as LeRoi Jones, was the first to write a book on the social history of the blues in Blues People: The Negro Music in White America. The British and blues musicians of the early 1960s inspired a number of American blues rock performers, including Canned Heat, Janis Joplin, Johnny Winter, the J. Geils Band, Ry Cooder, and the Allman Brothers Band. One blues rock performer, Jimi Hendrix, was a rarity in his field at the time: a Black man who played psychedelic rock. Hendrix was a skilled guitarist, and a pioneer in the innovative use of distortion and audio feedback in his music.[119] Through these artists and others, blues music influenced the development of rock music. Later in the 1960s, British singer Jo Ann Kelly started her recording career. In the US, from the 1970s, female singers Bonnie Raitt and Phoebe Snow performed blues.[120]
+In the early 1970s, the Texas rock-blues style emerged, which used guitars in both solo and rhythm roles. In contrast with the West Side blues, the Texas style is strongly influenced by the British rock-blues movement. Major artists of the Texas style are Johnny Winter, Stevie Ray Vaughan, the Fabulous Thunderbirds (led by harmonica player and singer-songwriter Kim Wilson), and ZZ Top. These artists all began their musical careers in the 1970s but they did not achieve international success until the next decade.[121]
+1980s to the present[edit]
+Italian singer Zucchero is credited as the "Father of Italian Blues", and is among the few European blues artists who still enjoy international success.[122]
+Since the 1980s there has been a resurgence of interest in the blues among a certain part of the African-American population, particularly around Jackson, Mississippi and other deep South regions. Often termed "soul blues" or "Southern soul", the music at the heart of this movement was given new life by the unexpected success of two particular recordings on the Jackson-based Malaco label:[123] Z. Z. Hill's Down Home Blues (1982) and Little Milton's The Blues is Alright (1984). Contemporary African-American performers who work in this style of the blues include Bobby Rush, Denise LaSalle, Sir Charles Jones, Bettye LaVette, Marvin Sease, Peggy Scott-Adams, Mel Waiters, Clarence Carter, Dr. "Feelgood" Potts, O.B. Buchana, Ms. Jody, Shirley Brown, and dozens of others.
+Eric Clapton performing at Hyde Park, London, in June 2008
+During the 1980s blues also continued in both traditional and new forms. In 1986 the album Strong Persuader announced Robert Cray as a major blues artist. The first Stevie Ray Vaughan recording Texas Flood was released in 1983, and the Texas-based guitarist exploded onto the international stage. John Lee Hooker's popularity was revived with the album The Healer in 1989. Eric Clapton, known for his performances with the Blues Breakers and Cream, made a comeback in the 1990s with his album Unplugged, in which he played some standard blues numbers on acoustic guitar.
+However, beginning in the 1990s, digital multitrack recording and other technological advances and new marketing strategies including video clip production increased costs, challenging the spontaneity and improvisation that are an important component of blues music.[124] In the 1980s and 1990s, blues publications such as Living Blues and Blues Revue were launched, major cities began forming blues societies, outdoor blues festivals became more common, and[125] more nightclubs and venues for blues emerged.[126] Tedeschi Trucks Band and Gov't Mule released blues rock albums. Female blues singers such as Bonnie Raitt, Susan Tedeschi, Sue Foley and Shannon Curfman also recorded albums.
+In the 1990s, the largely ignored hill country blues gained minor recognition in both blues and alternative rock music circles with northern Mississippi artists R. L. Burnside and Junior Kimbrough.[111] Blues performers explored a range of musical genres, as can be seen, for example, from the broad array of nominees of the yearly Blues Music Awards, previously named W.C. Handy Awards[127] or of the Grammy Awards for Best Contemporary and Traditional Blues Album. The Billboard Blues Album chart provides an overview of current blues hits. Contemporary blues music is nurtured by several blues labels such as: Alligator Records, Ruf Records, Severn Records, Chess Records (MCA), Delmark Records, NorthernBlues Music, Fat Possum Records and Vanguard Records (Artemis Records). Some labels are famous for rediscovering and remastering blues rarities, including Arhoolie Records, Smithsonian Folkways Recordings (heir of Folkways Records), and Yazoo Records (Shanachie Records).[128]
+Musical impact[edit]
+Blues musical styles, forms (12-bar blues), melodies, and the blues scale have influenced many other genres of music, such as rock and roll, jazz, and popular music.[129] Prominent jazz, folk or rock performers, such as Louis Armstrong, Duke Ellington, Miles Davis, and Bob Dylan have performed significant blues recordings. The blues scale is often used in popular songs like Harold Arlen's "Blues in the Night", blues ballads like "Since I Fell for You" and "Please Send Me Someone to Love", and even in orchestral works such as George Gershwin's "Rhapsody in Blue" and "Concerto in F". Gershwin's second "Prelude" for solo piano is an interesting example of a classical blues, maintaining the form with academic strictness. The blues scale is ubiquitous in modern popular music and informs many modal frames, especially the ladder of thirds used in rock music (for example, in "A Hard Day's Night"). Blues forms are used in the theme to the televised Batman, teen idol Fabian Forte's hit, "Turn Me Loose", country music star Jimmie Rodgers' music, and guitarist/vocalist Tracy Chapman's hit "Give Me One Reason".
+"Blues singing is about emotion. Its influence on popular singing has been so widespread that, at least among males, singing and emoting have become almost identical—it is a matter of projection rather than hitting the notes."[130]
+—Robert Christgau, 1972
+Early country bluesmen such as Skip James, Charley Patton, Georgia Tom Dorsey played country and urban blues and had influences from spiritual singing. Dorsey helped to popularize Gospel music.[131] Gospel music developed in the 1930s, with the Golden Gate Quartet. In the 1950s, soul music by Sam Cooke, Ray Charles and James Brown used gospel and blues music elements. In the 1960s and 1970s, gospel and blues were merged in soul blues music. Funk music of the 1970s was influenced by soul; funk can be seen as an antecedent of hip-hop and contemporary R&B.
+R&B music can be traced back to spirituals and blues. Musically, spirituals were a descendant of New England choral traditions, and in particular of Isaac Watts's hymns, mixed with African rhythms and call-and-response forms. Spirituals or religious chants in the African-American community are much better documented than the "low-down" blues. Spiritual singing developed because African-American communities could gather for mass or worship gatherings, which were called camp meetings.
+Edward P. Comentale has noted how the blues was often used as a medium for art or self-expression, stating: "As heard from Delta shacks to Chicago tenements to Harlem cabarets, the blues proved—despite its pained origins—a remarkably flexible medium and a new arena for the shaping of identity and community."[132]
+Duke Ellington straddled the big band and bebop genres. Ellington extensively used the blues form.[133]
+Before World War II, the boundaries between blues and jazz were less clear. Usually, jazz had harmonic structures stemming from brass bands, whereas blues had blues forms such as the 12-bar blues. However, the jump blues of the 1940s mixed both styles. After WWII, blues had a substantial influence on jazz. Bebop classics, such as Charlie Parker's "Now's the Time", used the blues form with the pentatonic scale and blue notes.
+Bebop marked a major shift in the role of jazz, from a popular style of music for dancing to a "high-art", less-accessible, cerebral "musician's music". The audience for both blues and jazz split, and the border between blues and jazz became more defined.[133][134]
+The blues' 12-bar structure and the blues scale was a major influence on rock and roll music. Rock and roll has been called "blues with a backbeat"; Carl Perkins called rockabilly "blues with a country beat". Rockabillies were also said to be 12-bar blues played with a bluegrass beat. "Hound Dog", with its unmodified 12-bar structure (in both harmony and lyrics) and a melody centered on flatted third of the tonic (and flatted seventh of the subdominant), is a blues song transformed into a rock and roll song. Jerry Lee Lewis's style of rock and roll was heavily influenced by the blues and its derivative boogie-woogie. His style of music was not exactly rockabilly but it has been often called real rock and roll (this is a label he shares with several African American rock and roll performers).[135][136]
+Many early rock and roll songs are based on blues: "That's All Right Mama", "Johnny B. Goode", "Blue Suede Shoes", "Whole Lotta Shakin' Goin On", "Shake, Rattle, and Roll", and "Long Tall Sally". The early African American rock musicians retained the sexual themes and innuendos of blues music: "Got a gal named Sue, knows just what to do" ("Tutti Frutti", Little Richard) or "See the girl with the red dress on, She can do the Birdland all night long" ("What'd I Say", Ray Charles). The 12-bar blues structure can be found even in novelty pop songs, such as Bob Dylan's "Obviously Five Believers" and Esther and Abi Ofarim's "Cinderella Rockefella".
+Early country music was infused with the blues.[137] Jimmie Rodgers, Moon Mullican, Bob Wills, Bill Monroe and Hank Williams have all described themselves as blues singers and their music has a blues feel that is different, at first glance at least, from the later country-pop of artists like Eddy Arnold. Yet, if one looks back further, Arnold also started out singing bluesy songs like 'I'll Hold You in My Heart'. A lot of the 1970s-era "outlaw" country music by Willie Nelson and Waylon Jennings also borrowed from the blues. When Jerry Lee Lewis returned to country music after the decline of 1950s style rock and roll, he sang with a blues feel and often included blues standards on his albums.
+In popular culture[edit]
+The music of Taj Mahal for the 1972 movie Sounder marked a revival of interest in acoustic blues.
+Like many other genres, blues has been called the "devil's music" or "music of the devil", even of inciting violence and other poor behavior.[138] In the early 20th century, the blues was considered disreputable, especially as white audiences began listening to the blues during the 1920s.[73] The close association with the devil was actually a well known characteristic of blues lyrics and culture between the 1920s and 1960s. The devil's connection to the blues has faded from popular memory since then for a number of reasons, other than in the narrow sense of Robert Johnson selling his soul to the devil at the crossroads. A study of the devil's role in the blues was published in 2017 called Beyond the Crossroads: The Devil & The Blues Tradition.[139]
+During the blues revival of the 1960s and 1970s, acoustic blues artist Taj Mahal and Texas bluesman Lightnin' Hopkins wrote and performed music that figured prominently in the critically acclaimed film Sounder (1972). The film earned Mahal a Grammy nomination for Best Original Score Written for a Motion Picture and a BAFTA nomination.[citation needed] Almost 30 years later, Mahal wrote blues for, and performed a banjo composition, claw-hammer style, in the 2001 movie release Songcatcher, which focused on the story of the preservation of the roots music of Appalachia.
+Perhaps the most visible example of the blues style of music in the late 20th century came in 1980, when Dan Aykroyd and John Belushi released the film The Blues Brothers. The film drew many of the biggest living influencers of the rhythm and blues genre together, such as Ray Charles, James Brown, Cab Calloway, Aretha Franklin, and John Lee Hooker. The band formed also began a successful tour under the Blues Brothers marquee. 1998 brought a sequel, Blues Brothers 2000 that, while not holding as great a critical and financial success, featured a much larger number of blues artists, such as B.B. King, Bo Diddley, Erykah Badu, Eric Clapton, Steve Winwood, Charlie Musselwhite, Blues Traveler, Jimmie Vaughan, and Jeff Baxter.
+In 2003, Martin Scorsese made significant efforts to promote the blues to a larger audience. He asked several famous directors such as Clint Eastwood and Wim Wenders to participate in a series of documentary films for PBS called The Blues.[citation needed] He also participated in the rendition of compilations of major blues artists in a series of high-quality CDs. Blues guitarist and vocalist Keb' Mo' performed his blues rendition of "America, the Beautiful" in 2006 to close out the final season of the television series The West Wing.
+The blues was highlighted in season 2012, episode 1 of In Performance at the White House, entitled "Red, White and Blues". Hosted by Barack and Michelle Obama, the show featured performances by B.B. King, Buddy Guy, Gary Clark Jr., Jeff Beck, Derek Trucks, Keb Mo, and others.[140]
+
+
+— — — 
+
+
+
+
+2.1 The Basics of music
+
+
+This first part introduces some basic concepts about music theory that I person-
+ally found relevant for a better understanding of the following sections. Given
+
+
+my limited knowledge, I will deliberately not dilate upon music theory in this
+article.
+Nevertheless, if you wish to learn more, the lines in italic could give you
+some relevant materials to grapple with theory in depth.
+2.1.1 Notes and chords
+Music fundamentally relies on a total of 12 notes (or tones).
+Have in mind the black and white keys on the piano whose distance between
+adjacent pitches is a semitone. It covers the twelve available pitches a musician
+can use to create melodies.
+If you start hitting the key at the centre of the piano - let’s say a C - and
+successively hit the eleven consecutive higher keys, you will obtain: C, C#
+(pronounced C sharp), D, D#, E, F, F#, G, G#, A, A#, B, and you will
+eventually come back to a (higher) C. This succession of 12 notes gives you the
+chromatic scale.
+Similarly, the interval of the consecutive frets on the guitar also corresponds
+to a semitone. In music theory, a scale is any set of musical notes ordered by
+fundamental frequency or pitch. If you play an instrument, you may be familiar
+with more relevant music scales than the chromatic scales, which is actually
+never used by any reasonable musician. Indeed, composing a melody using all
+the 12 notes will probably result in a very unpleasant melody for that the tune of
+a music generally lies on the repetition of a few notes (played alone or combined
+together) that sound ”good”.
+Fortunately, interesting scales that help musicians identify these notes will be
+tackled shortly.
+For the moment the curious reader may learn many interesting theories about
+the genesis of chromatic scale and their relation to the harmonic frequency.
+You may have heard about the frequency of 440Hz. It corresponds to an A.
+A turning fork (called “diapason” in french) produces an A (or should we say
+A440 to obtain the correct octave) and allows musicians to tune their guitar for
+instance.
+A chord merely results from two or more notes played simultaneously.
+There is a large variety of chords but two of them must hold your attention:
+
+
+major and minor chords. They are both only composed of 3 notes and are ubiq-
+uitous in any genres. For instance,
+
+
+- Pressing C, E and G will result in a cheerful and powerful sound corresponding
+to a Major C chord.
+
+
+5
+
+
+- Conversely, a C, D# and G will result in a rather melancholic sound corre-
+sponding to a Minor C.
+
+
+Given the simplicity and their popularity, a beginner musician is highly
+encouraged to master these two chords before learning more sophisticated ones.
+Very famous songs such as Knocking on Heaven’s Door by Bob Dylan, the
+famous blues song Hey Joe from Jimi Hendrix or first Michel Polnareff’s single
+La poup ́ee qui fait non are all altogether composed of three or four minor and
+major chords and are thus ideal songs to start playing the guitar.
+Even though many other chords are used to create interesting tunes, the two
+latter will be enough to define the key in a song.
+2.1.2 The key and the scale
+The key is a very widespread concept in music that helps define the group of
+pitches or notes that forms the basis of a piece. In the movie Back To The
+Future, when Marty says ”This is a blues riff in B, watch me for the changes,
+and try and keep up, okay?” to the other musicians before performing a fanciful
+Johnny B Goode and bowling the musicians over, he informs the latter about
+the key of the song he is about to play even though the music is actually played
+in the key of A# instead of B as he declares. This enables the band to play a
+Blues rhythm along with him in the suitable key. Now, let us define what the
+key is.
+When you listen to a song, if you try playing along by randomly pressing keys
+of your piano, one by one, you will certainly play out of tune most of the time
+but some notes will tremendously accompany the song.
+The knowledge of the key helps you figure out which notes to play, i.e. which
+notes sound correct. Indeed, the key may be defined as the pitch that “brings
+out of a tune” and results from the succession of the chords, the rhythm and
+the general mood of the tune.
+In practice, I used to guess the key in a song by testing how a certain chord,
+among the ones present in the song, would be appropriate to end it.
+For instance, the song Knocking on Heaven’s Door only contains 3 chords, which
+gives us 3 candidates for the key: G major – D Major – A minor. Yet, among
+these three candidates, only the G major chord is suitable to finish the song:
+thus, Knocking On Heaven’s Door is definitely in the key of G Major.
+A song usually has a unique key that defines the basis of the tune. However,
+some musicians enjoy adding a little complexity to their songs and may take the
+liberty of modifying the key during the song. In his song Woman, John Lennon
+decided to play a semitone higher starting from 2:23 causing a noticeable and
+simple change of key from D# Major to C Major. Bridges in songs are also
+often at the origin of a change of the key. Eric Clapton performed a brilliant
+harmony shift in his song Tears In Heaven written in tribute to his son Connor
+who tragically died at the age of 4. Indeed, at 2:01, the bridge starts and the key
+changes from A major to G major and eventually comes back to A major at the
+end of the bridge, at 2:26.
+
+
+6
+
+
+Once you have an idea about the meaning of a key, there are five notes ex-
+perienced musicians may be quite familiar with and so do you. They constitute
+
+
+the most famous scale in music: the pentatonic scale.
+Across different cultures, the pentatonic scale has often been used as the most
+fundamental set of notes for music making. During the World Science Festival,
+
+
+the musician Bobby McFerrin demonstrated how people naturally seem to de-
+fault to the pentatonic scale. He pretended standing on a giant piano during the
+
+
+show and side jumped to make the public sing different notes. After a minute,
+McFerrin gets the audience to sing a major pentatonic scale which illustrated
+the power of the pentatonic scale. More than hundreds of popular songs only
+use the pentatonic scale.
+Nevertheless, although many songs have their chords among the pentatonic scale,
+very few songs are melodically and HARMONICALLY composed with pentatonic
+scales because the possible chords would be quite limited. Indeed, this would
+
+
+mean that all the notes composing the chords are notes belonging to the penta-
+tonic scale. Do the test and try to compose a song using only the black keys
+
+
+of the piano since the black notes are actually part of a pentatonic scale. You
+will quickly have the impression to go round in circle. Therefore, when a song
+is said to use pentatonic scales, it implicitly refers to the chords and not the
+individual notes. In the next part, we will see how the pentatonic scale led to
+the Blues scale.
+If we still use our previous example Knocking on Heaven’s Door, the key is G
+Major and the pentatonic scale informs us that the notes G A B D E will sound
+right.
+The knowledge of this pentatonic scale is a great tool to start improvising on
+any instruments. Nevertheless, the knowledge of the pentatonic is not the only
+ingredient to become Eric Clapton or any great blues soloist. The rhythm, the
+shift of the volume, the accuracy of the notes, the use of silence, the “feeling” are
+also elements of paramount importance to produce tremendous improvisations
+but they obviously require a lot of practice.
+If you are interested in improvising at the guitar, I would recommend you to
+
+
+watch videos of Florent Garcia on Youtube. He is a very talented French gui-
+tarist and pedagogue and his videos on Youtube have been a great inspiration for
+
+
+this article. As he explained, knowing the pentatonic scale by heart may result
+
+
+in repetitive successions of notes while you improvise and thus a lack of cre-
+ativity. Practicing in a relevant way entails experimenting new combinations of
+
+
+pentatonic notes rather than rigorously repeating the pentatonic gammes learnt
+by heart.
+And conversely, becoming a great musician does not necessarily require a
+great knowledge of the music theory. “I don’t see music as dots on a page.
+It’s something in my head that goes on” once declared Paul McCartney the
+legendary multi-instrumentalist from the Beatles before admitting that he is
+unable to read or write music. And neither could any of his Beatles bandmates.
+
+
+7
+
+
+If the Beatles had a great intuition about music, they were lacking some aspects
+of music theory and could not use it as a language, which is yet the purpose of
+music theory. John Lennon declared in 1975: “I still have to have someone to
+translate what I’m trying to say all the time”.
+
+
+Fortunately, their producer George Martin, quite rightly called the fifth Bea-
+tles, had a tremendous background in music theory and helped them a lot to
+
+
+translate and rearrange their music.
+If you want to learn more about the Beatles, the complexity of their music and
+other saucy anecdotes, take a look at David Benett Piano’s videos on Youtube.
+Thus, if the Beatles could not read a sheet of music why am I desperately
+trying to teach you some music theory?
+2.1.3 Rhythm in music (tempo and time Signature)
+The final interesting topic of music theory is the rhythm. It is often at the heart
+of the music and it may even define it. If I ask you to imagine a music that goes:
+Stomp, stomp, clap. Stomp, stomp, clap. Stomp, stomp, clap. Stomp, stomp,
+clap, instantly, you would hum and sing We Will Rock You by Queen since in
+this song, the rhythm kind of paves the way to the melody.
+
+
+The importance of rhythm will be analyzed through these four musical no-
+tions:
+
+
+- The Beat
+- The Tempo
+- The Measure
+- The Time Signature
+When you are listening to music, you may be likely to tap your finger or foot
+at regular interval to feel the rhythm and beat the pulse.
+Naturally, this fundamental practice is easier when there is a drum in the song.
+Once you manage to identify the constant pulse, you are actually tapping the
+beats of the song.
+Like the heartbeat, the speed at which a song is played is measured in beats per
+minute. It is called the tempo.
+When you are tapping the beats, regardless of the speed, some beats will seem
+more stressed than others, and you may be likely to identify a repetitive pattern.
+This pattern is called the measure and is often composed of 4 beats but it may
+also be 3, 5, 6, 7 etc.
+Now pick a song and, once you manage to identify the beats, try to count
+One, Two, Three, Four, One, Two, Three, Four, . . . with One for the most
+stressed beat for instance. All the songs evoked before follow this structure
+with four beats per measure as the huge majority of the songs in Rock, Blues,
+Pop or Rap. Check it with Hey Joe for instance. In this well-known case, the
+
+
+8
+
+
+time signature is said to be 4/4 and if you play piano, you may be familiar with
+this 4/4 song structure that appears at the beginning of the score and that is
+referred to as “common time”.
+The time signature can be quite abstract at first glance and tricky to identify
+for some but it provides very relevant information about the rhythm of a piece.
+While the upper number denotes the number of beats per measure, the bottom
+number informs which kind of note (a whole note, a half note, a quarter note
+and so on) serves as a reference to count the beats. This bottom number, which
+can be 2, 4, 8, 16, 32 and so on. . . is a little bit harder to get as it requires more
+knowledge about music theory. If it equals 4, each quarter note (“une noire” in
+french) will carry the beats. It equals 2, each half note (“une blanche” in french)
+will get the beats. . .
+
+
+Let us take a simple example to understand: imagine a partition with a mea-
+sure that only contains 4 successive quarter notes. Then, the time signature is
+
+
+likely to be 4/4 as each of the four quarter notes will mark a single beat.
+Have also in mind that the time signature is intrinsically bound to the tempo of
+the song. (remember, the tempo corresponds to the number of beats per minute).
+Indeed, let us take a song in 4/4 with a tempo of 100.
+Now, let us imagine you identify 4 beats per measure, in compliance with the
+upper number 4, but unfortunately you obtain a tempo of 200 (which is very
+quick for Blues/Rock). Actually, your interpretation may also be correct since
+there is NOT a unique time signature for a song! The time signature is just a
+way to read and listen to music and therefore is fundamentally subjective. In
+our example, your interpretation was that, instead of a quarter note, each eighth
+note has a beat.
+To sum up, the same song can be seen as a song with:
+- A time signature of 4/4 and a tempo of 100
+- A time signature of 4/8 and a tempo of 200
+- A time signature of 4/2 and a tempo of 50 and so on. . .
+The guess of the bottom number is automatic when you read the partition and
+quite subjective if you simply listen to the song.
+However, it is commonly said that if you pronounce One, Two, Three, Four,
+One, Two, Three, Four, . . . at normal pace, that is to say as if you were
+talking, the bottom number would rather be 4 and the time signature 4/4. Now
+if you should speak slowly to count the beats, you would naturally opt for 4/2
+and if it is pronounced quite quickly 4/8. 16, 32 are extremely rare.
+Eventually, although the time signature is subjective, one cannot hesitate
+between 3, 4 or 5 number of beats per measure for a same piece!
+Now, let us get back to We Will Rock You! How many beats per measure
+do you identify? The tricky part is to notice that there is a beat during the
+silence, that is to say when there is no “clap” nor “stomp”. Indeed, it actually
+goes: stomp, stomp, clap, rest; stomp, stomp, clap, rest; stomp, stomp, clap,
+rest; Stomp, stomp, clap, rest and so on . . . As a consequence, it is quite clear
+
+
+9
+
+
+the song has 4 beats per measure and as you may expect, the time signature is
+indisputably 4/4.
+Nevertheless, although the huge majority of the Blues, Rock, Rap songs follow
+a structure of 4 beats per measure, some well known songs may not have 4 beats
+per measure. Waltzes, for instance, have a rhythmic structure with 3 beats per
+measure but this is not the only type of songs to have a ternary rhythm.
+Here are some very famous songs with unusual time signatures:
+- We Are The Champions by Queen,
+- Nothing Else Matters by Metallica,
+- Take Five by The Dave Brubeck Quartet
+- Since I’ve Been Loving You by Led Zeppelin
+- and many others. . .
+Given the unusual rhythm of these songs, you may feel a bit confused while
+you search for a repetitive pattern to identify a measure and the number of
+beats; try to count respectively 3, 3, 5 and 12 beats per measure for these four
+songs. Indeed, in my opinion the time signature would be respectively 3/4, 3/4,
+5/4 and 12/8.
+By the way, it is an excellent practice for your ear to tap the beats while listening
+to a song. The definition of the bottom number goes beyond the goal of this part
+but if you are eager to learn more on that, please read the former italic section
+even though I tried not to go too far given my limited knowledge. Do not worry:
+if you know how the upper number is obtained, you have already achieved a huge
+step in music theory. Moreover, as you will see, the time signature in Blues is
+always 4/, thus simple.
+If you are interested by the time signature topic, I would encourage you to
+watch a couple of videos on Youtube. It is a good knowledge to master if you
+play in a band and some musicians and bands such as Led Zeppelin are used to
+composing with unusual time signatures to offer them new horizons of creativity.
+The time signature is a very fascinating aspect of music theory and sometimes
+quite complex because of its subjectivity and as it can also vary during the song
+as well as the key or the tempo... Incidentally, a very good challenge would be
+to find a suitable decomposition of the number of beats per measure in the verse
+of the Beatles song All You Need is Love. Beware if the chorus is 4/4, the time
+signature varies during the verse.
+
+
+Eventually, recall that it is often impossible to determine the exact time sig-
+nature the composer would have used when writing the score because there are
+
+
+many ways to write the same thing. For example, a piece written in 3/4 time
+can easily be re-written in 3/8 time by halving all the note values and playing it
+half as fast. . .
+However, if one says that the time signature is 3/4 and the other one argues it
+
+
+is 4/4, you can assume someone is wrong since these two rhythms are funda-
+mentally different or the rhythm changes during the song like in All You Need
+
+
+is Love.
+
+
+10
+
+
+Hurrah, you went through this long, complex and maybe boring part. Now,
+let us dive into the heart of the article: the Blues!
+2.2 Blues relies on dissonant sounds
+If you recall, a scale has been defined from the key. It corresponds to a set of
+
+
+notes used in the song to shape the tune. We have seen how versatile the pen-
+tatonic scale was. Genres like rock, funk and soul which are direct descendants
+
+
+of blues music will often feature the – minor - pentatonic scale. Normally, the
+term “pentatonic scale” implicitly refers to the “minor pentatonic scale”. As
+you probably guessed, there is also a major pentatonic scale. They both contain
+five notes and are very similar. The order of the notes in the scale are just
+shifted so that the tonic or primary pitch is not the same. For instance, The C
+
+
+major and A minor pentatonic scales consist of the very same notes and pat-
+terns but the tonic, i.e. the first note of the scale, are respectively C and A. If
+
+
+you play guitar and knows the minor pentatonic scale accurately, the knowledge
+of the major one is quite useless. You should rather focus on how to play and
+use it without being too repetitive. Using a backing track may be helpful.
+
+
+While the pentatonic scale is composed of five notes, the blues scale is a six-
+note progression that sounds right at home in blues, rock, and country music.
+
+
+Here are the two scales, starting from a C note:
+- The pentatonic scale is composed of the notes C, B#, F, G, A#.
+- The blues scale is composed of the notes C, B#, F, F#, G, A#.
+As you can observe, the blue scale corresponds to the pentatonic scale plus
+one additional note, - F# if we use C for the tonic - often called the blue note.
+This extra note gives the blues scale that unmistakably bluesy sound.
+The term “bluesy” refers to a slow and sad sound of blues originally developed
+from the songs of black slaves in the southern US. And indeed, if this blue note
+sounds dissonant when played alone, it nevertheless gives the tune a melancholic
+but interesting colour when the succession of notes is relevant.
+Besides, this dissonant bluesy sound allows more creativity compared to tunes
+that only rely on a pentatonic scale. Similarly, famous musicians such as Miles
+Davies state that wrong notes in jazz are often considered to be opportunities
+for improvisatory exploration: “a note is only wrong if the performer does not
+know what to do with it.”
+A friend once told me how much he enjoyed playing music and composing
+
+
+with his genius sister as she was able to musically rearrange his odd but cre-
+ative notes, and produce a quality music no matter how accurately he played.
+
+
+Her talent for music showed at an early age and a year ago, her family found
+out that she has the absolute pitch - also called perfect pitch in the literature
+and ”oreille absolue” in French -, which is a true gift for any musicians!
+This implies the ability to instantly, and without any note reference, name every
+possible note you hear, guess the key of a piece or even identify the individual
+
+
+11
+
+
+notes that compose a chord.
+Unfortunately, only a proportion of 1 in 10,000 seem to have this gift and adults
+cannot develop the absolute pitch. Very few musicians such as Jimi Hendrix,
+Michael Jackson or Freddie Mercury were endowed with this gift. It the topic
+caught your attention, check out Rick Beato’s videos on Youtube. He is a very
+
+
+skilled musician that proposes interesting contents about music theory. He be-
+came famous by starring his child to show what it is like to have the absolute
+
+
+pitch.
+Let us get back to the blue scale and the horizon the blue note provides
+by listening to some music. In Born Under A Bad Sign, written by Albert
+King in 1967, and covered by Jimi Hendrix, Cream and other great blues artists
+thereafter, the key is in C# minor. In the original version, the main riff features
+all the notes of the pentatonic scale and the blue note (the note G) can be heard
+16-17 seconds after the beginning of the song to introduce the (short) chorus.
+Pay attention to what this note brings.
+Another way to bring a dissonant sound in Blues is by playing notes that do
+not exist on the piano nor on the frets of the guitar. If you remember, all these
+notes constitute the chromatic scale and the interval separating adjacent notes
+is a semitone. The idea here is to reach notes located between two consecutive
+referenced notes and that would be, for this reason, labeled as wrong notes.
+This requires to use instruments that support continuously varying pitch and
+that are not constrained to play notes at discrete intervals. For this reason,
+guitar is a better instrument than the piano. Wow what a compelling argument
+that was. . . ! More seriously, it is true that the guitar enables to obtain these
+dissonant sounds by very hardly bending a string. The slight bending of the
+pitch tends to create a darker, sadder, or more mysterious sound quite suitable
+for psychedelic blues. Incidentally, in his cover of Albert King’s song, Jimi
+Hendrix performs slight bendings of notes and vibratos which contribute to this
+psychedelic melody as you can hear from the beginning.
+Naturally, the notes that come out of his guitar are not wrong ones; they are
+played purposely and this is also what makes blues complex and interesting.
+They contribute to this psychedelic bluesy sound so ubiquitous in his music.
+This way of playing with several vibratos and soft bends is also deeply present
+in B.B. King’s style where his left hand is particularly active.
+2.3 Structured chords progression
+You may be familiar with the 12-bar blues chord progression unwittingly since
+
+
+it corresponds to the most important structural element in the history of Amer-
+ican popular music. Indeed, it has made its way not only into blues and jazz,
+
+
+but in all sorts of music, including rock, pop etc.
+
+
+If the former part portrayed the blues as a genre that exploits complex har-
+monies to produce interesting melodies, Blues remains a very structured genre
+
+
+12
+
+
+often using consistent chord progressions repeated throughout the whole song.
+In this part, we will first focus on the 12-bar blues, one the most used chord
+
+
+progression and analyse some relevant chord progressions it can spawn. After-
+wards, we will evoke the variants of the 12-bar blues like 8-bar and 16-bar. Do
+
+
+not skip this part if you plan to play Blues one day!
+First, we can legitimately assume that the tempo and the key remain the same
+in a Blues song and that the time signature is 4/4. The term “12-bar” refers
+to a pattern consisting of 12 consecutive measures that are repeated during the
+whole song over and over. Example is better than precept; listen carefully to
+the rhythm of these songs:
+- Pride and Joy by Stevie Ray Vaughan
+- Before You Accuse Me by Eric Clapton
+- Johnny B. Goode by Chuck Berry Red House by Jimi Hendrix
+- Thrill Is Gone by BB King
+
+
+They are all built according to the 12-bar blues structure but chord progres-
+sions are not the same.
+
+
+To go deeper (on this), we need to explain what a scale degree is.
+The scale degree refers to the position of a particular note on a scale relative
+to the tonic and is particularly useful to describe accurately a chord progression
+in a compact way. Thus, a chord is commonly represented by Roman numerals
+(I, II, III, IV and so on) where I represents the tonic. For instance, “Pride and
+Joy” is played in the key of A# major (or also Eb major); for this reason, ‘I’
+denotes A#.
+The corresponding scale of this key is: A#, C, D, B#, F, G, A, A#. If we replace
+the chords by their root note, the whole chord progression that is repeated over
+and over and that lasts 12 consecutive measures (and roughly 25s) writes more
+simply:
+A# A# A# A# - B# B# A# A# - F B# A# F
+Hence, if we use the Roman numerals, we would obtain the following chord
+progression:
+I I I I – IV IV I I – V IV I V which corresponds to the standard 12 bar blues.
+There are other variations that use a I-IV-V progression.
+The song Before You Accuse Me features the following chord progressions for
+instance: I IV I I – IV IV I I – V IV I V which corresponds to the quick change
+12 bar blues.
+On the other hand, the song Johnny Be Goode uses the following chord
+progression: I I I I – IV IV I I – V V I I which corresponds to the slow change
+12 bar blues.
+
+
+This notation for chord progression is particularly useful as it does not de-
+pend on the key.
+
+
+As you can see, the four consecutive measures are aggregated into one block –
+
+
+13
+
+
+called phrase - to make it more understandable; we say that the 12-bar blues is
+built in three phrases.
+
+
+Just for information, the other songs quoted have the following rythmic progres-
+sion:
+
+
+- Thrill Is Gone: I I I I – IV IV I I – bVI V I I
+- Red House: I I I I – IV IV I I – V IV I I What is particular and interesting
+with Thrill Is Gone is this flat 6 instead of the 5 chord that gives a Jazzy sound
+very soft and nice. Nevertheless, I deliberately chose not to expand on this but
+you will easily find detailed analysis on the Internet.
+Even though the 12-bar blues is definitely the most commonly occurring chord
+sequence within the blues, 8-bar blues and 16-bar blues are also used.
+A way to create a 8-bar blues is by removing the first 4 bars of the standard
+12-bar blues. The song Mary Had a Little Lamb by Stevie Ray Vaughan is a
+perfect example featuring the following chord progression: IV IV I I – V IV I
+V.
+More complex 8-bar blues can also be written if you decide not to hold a chord
+during the full bar or measure and allow shifts of chords within a measure.
+The song Worried Life Blues – originally composed by Big Maceo Merriweather,
+but covered by a whole range of musicians, including Freddie King, B.B. King
+and Eric Clapton features this trick which gives more energy and dynamism to
+the rhythmic: I I IV IV – I V I/IV I/V
+Eventually, the last variation on the 12-bar blues we will cover here is the
+16-bar blues. Such variation can be first obtained by duplicating the first 4
+measures in the original 12-bar blues. Therefore, an example of a 16-bar blues
+would be: I I I I – I I I I – IV IV I I – V IV I V. It applies for the song Oh,
+Pretty Woman by Albert King for instance.
+Another way to create a 16-bar blues consist on repeating the middle phrase
+on a 12-bar blues. This very common version writes as follows: I I I I – IV IV
+I I – IV IV I I – V IV I V. And Sleepy Time Time by Cream uses this chord
+progression for instance.
+To sum up, there are countless versions of each progression whether it is 8-bar,
+12-bar or 16-bar which give blues tremendous rhythmic opportunities. Indeed,
+the inherent simplicity of these structures offers artists freedom to modify classic
+12-bar blues to compose new sophisticated variations.
+These structures of chord progressions provide the framework for the majority
+of blues pieces and will help you learn a wide variety of blues songs, as well as
+jam confidently with other musicians.
+Incidentally, this last concept will be developed in the next section as we will
+discuss the improvisation in Blues.
+
+
+14
+
+
+2.4 Improvisation
+An important part of developing musical skills lies greatly in the ability to
+improvise. In fact, improvisation allows musicians to engage their feelings with
+rhythms, explore different ideas, and contribute their art to the world. When
+you improvise, you create opportunities to evolve and innovate. This is one
+reason why there are so many different music genres today.
+We will tackle these different genres and to what extent they boil down to blues,
+in one way or another in the last chapter.
+
+
+From its very beginning, the blues has been a largely improvised music, cre-
+ated spontaneously without written music or prior planning. In the early days of
+
+
+the genre, poor African American farmers would often gather to jam for hours.
+Singers or instrumental soloists can both do this act of invention, building from
+
+
+the chord progression, melody, and rhythm already being played. Improvisa-
+tion often happens within a call-and-response framework, as the two in a musical
+
+
+conversation banter back and forth phrase by phrase.
+Improvisation is ubiquitous in blues - and also jazz music - because these types
+of music typically already have a pre-defined chord progression (like the famous
+12-bar blues evoked in the former part) that lends itself to creative melodic
+expression. In other words, it’s easy to play solos over these chord progressions.
+
+
+What’s more, blues music corresponds to a spontaneous, heartfelt personal ex-
+pression of pain and longing for a better life. As seen earlier, the blues scale
+
+
+perfectly contributes to create this sad and uncomfortable harmonies which
+
+
+tends to expose the hidden complexity of the blues. I personally enjoy impro-
+vising with the blue scale on a blues backing track such as Thrill is Gone. It is
+
+
+both entertaining and instructive.
+Speaking of B.B. King and improvisations, I would recommend you to watch
+
+
+a couple of his jam sessions. This legendary blues guitarist used to perform con-
+certs where he asked other great musicians such as Eric Clapton, Slash, John
+
+
+Mayer and many others to solo with him improvisations on blues ballad.
+If blues songs generally last 4 minutes in average, BB King’s jam sessions often
+
+
+exceeded 10 minutes enabling every musician invited to play the lead guitar dur-
+ing a 12-bar measure at least. These jam sessions perfectly depict how tremen-
+dous, complex and soft blues melodies can be as it is played by professionals
+
+
+bringing a variety of styles. Listening to music makes you a better musician and
+watching lives from BB King will also give you the will to improvise.
+
+
+Blues melodies also reveals strong similarities with jazz as some blues impro-
+visations tend to recall jazz harmonies sometimes.
+
+
+By the way, some music and improvisations are often at the crossroads of Blues
+and Jazz, and for this reason labeled as Blues Jazz. For example, would you
+classify the instrumentalist song Paradise Riviera as blues or jazz?
+
+
+15
+
+
+Even though Stevie Ray Vaughan is defined as a blues guitarist, some chords
+progressions as well as the piano harmonies are rather characteristics of jazz
+music.
+Incidentally, it is quite surprising to see him play softly in this song as he is
+famed to be a fast, and very energetic guitar player who even used to break
+strings during concerts. Videos of him changing his broken guitar in the middle
+of a song also reveal how virtuoso he was.
+We will go further in the comparison between Blues and Jazz in the final chapter.
+It is now time to analyse the origin and the essence of the blues as we stated
+several times that blues represents a musical expression of feelings.
+
+
+16
+
+
+3 Chapter 2 - Blues is an expression of feelings
+
+
+3.1 A form of resistance and catharsis against daily strug-
+gles and societal issues
+
+
+The story of the Blues dates back to the late 19th century in the Mississippi
+Delta. At that time, two-thirds of the independent farmers in the Delta were
+black and lived in very deprived conditions as the Jim Crow laws enforced racial
+segregation in the Southern United States. These laws appeared in the late
+1900s and were implemented until 1965, dictating racial segregation between
+white and black people in public places, schools, transportation, restaurants,
+restrooms etc.
+In early 1900s amendments disenfranchised most black people but also tens of
+thousands of poor white people were forced to swallow their anger.
+
+
+Music arguably became one of the most privileged ways to voice societal in-
+justices for African American people living in dire straits. Blues originally came
+
+
+from work songs, field hollers and church music and had been carried by itiner-
+ant songsters throughout the South across barrooms and former slave quarters.
+
+
+The famous 12-bar blues progressively appeared as well as the AAB lyrics struc-
+ture that will be developed in the next part.
+
+
+These early blues melodies also frequently took the form of a loose narrative,
+often relating the racial discrimination and other challenges experienced by
+African-Americans.
+Incidentally, John Lee Hooker stated that “The blues tells a story” and that
+“every line of the blues has a meaning”. Indeed, it is a highly emotive genre
+brought by African American people which covers a wide range of topics such
+as alcohol, drugs, sex and obviously segregation. Poor people in the Mississippi
+originally used it as a form of protest and resistance as blues music symbolised
+the opposing voice that refused to be silenced by oppression and segregation.
+Ma Rainey even goes further affirming: “Life’s a way of talking, you don’t sing
+
+
+to feel better. You sing ’cause that’s a way of understanding life”. The blues fea-
+tures poignant and sincere lyrics and allows to reconnect and reassemble black
+
+
+people struggling and longing for a change.
+The first music I propose you to listen to is a very committed one written by
+an amazing blues artist, a virtuose of the 12-string guitar: Lead Belly.
+He wrote Jim Craws Blues in 1933 to denounce the huge impact these laws had
+
+
+had on black people’s soul and life and manfully advocated a collective move-
+ment to put an end to segregation:
+
+
+“I been traveling, I been traveling from toe to toe
+Everywhere I have been I find some old Jim Crow
+One thing, people, I want everybody to know
+You’re gonna find some Jim Crow, every place you go”
+“Down in Louisiana, Tennessee, Georgia’s a mighty good place to go
+
+
+17
+
+
+And get together, break up this old Jim Crow
+I told everybody over the radio
+Make up their mind and get together, break up this old Jim Crow”
+Lead Belly is an outspoken artist also known for his repeated incarceration
+between 1915 and 1939. He wrote many songs about the prisons but his blues
+inspirations mainly came from segregation and women. During his lifetime he
+never experienced the success and recognition he deserved, but his influence was
+tremendous as he inspired many songwriters, including Bob Dylan.
+One of his song Where Did You Sleep Last Night was incidentally brilliantly
+covered by Kurt Cobain more than 50 years later. When the band covered the
+
+
+tune on their 1993 Unplugged In New York album, the singer of Nirvana intro-
+duced the song by saying that Belly was his “favorite performer” even though
+
+
+Nirvana’s musical genre is quite far from country blues. Notwithstanding, the
+performance by Kurt Cobain was simply staggering and gave me goosebumps.
+Neil Young will later declare that the tortured closing vocals sounded ”unearthly,
+like a werewolf, unbelievable.”
+Around 1910, the first music sheets were written whereas blues recordings
+were released in the 1920s by Black women such as Mamie Smith, Ma Rainey,
+Ida Cox, and Bessie Smith. These performers were primarily stage singers
+backed by jazz bands and represented the classic blues. Ma Rainey, “the mother
+of Blues” was known for her powerful vocal abilities, energetic disposition and
+a “moaning” style of singing perfectly pictured in the 2020 drama movie “Ma
+Rainey’s Black Bottom”.
+The latter focuses on this influential blues singer and dramatizes a recording
+session in 1927 in Chicago, Illinois. The film hugely develops the theme of
+injustice and proposes a thinking about the sense blues can bring to life. The
+director of the film Goerge C. Wolfe describes the blues a “very visceral form of
+defiance” that makes you not passive. He chose actress Viola Davies to play a
+provocative, imposing but accurate Ma Rainey not afraid by men nor forces of
+law. From gold teeth and sponged-on sweat to a custom-made horsehair wig,
+Viola Davies wonderfully portrays all what matters in Blues: resistance and
+pride of the African American culture.
+In a way, blues tells African American’s history, pain, and desire for a better
+life. It is also a way of expressing love and a tribute to those who came before
+as blues makes sure the legacy would not be forgotten.
+The blues was also the music of the great Migration, the one that people took
+
+
+from agriculture plantations from being sharecroppers to going to urban cen-
+ters. Indeed, during 1930s, the rise of the blues recording industry in Chicago
+
+
+attracted many musicians and particularly blues artists who claimed Mississippi
+roots such as Willie Dixon, Memphis Minnie, or Lil Green.
+Moreover, during World War II the need for factory labor helped fuel a larger
+wave of migration, and between 1940 and 1950 some 150,000 Mississippians
+
+
+18
+
+
+moved here. Muddy Waters, Howlin’ Wolf, Bo Diddley, Jimmy Reed, Sunny-
+land Slim, Emore James, Sonny Boy Williamson, Otis Rush, or Magic Sam
+
+
+were among the many who arrived in the 1940s-1950s and who found record-
+ing opportunities with Chess, Vee-Jay (co-founded by Mississippi native Vivian
+
+
+Carter), Cobra, and other labels.
+In general, blues musicians who migrated from Mississippi blamed the lack of
+connection and sought for better opportunities in Chicago to make records. In
+an interview, B.B. King explained how rare electric guitars were in the farm
+communities of the rural south, due to their expense and the fact that many
+people did not have electricity.
+From Mississippi delta blues to Chicago blues, a shift in focus occurred from
+the acoustic to the electric guitar in the Blues as blues artists experienced the
+use of brand-new models and amplifiers to plug their guitar in.
+Nevertheless, some blues artists decided to remain in the Mississippi such as the
+famous guitarist Robert Johnson who is rather known to be an acoustic guitar
+player that exploited “slides” techniques.
+The appearance of the electric guitars and amplifiers obviously gave more
+liberty to the guitarist to innovate. As a comparison, B.B. King is rather famous
+to bend strings – which is easier on an electric guitar - in order to enhance the
+music’s emotion.
+The next part will closely tackle all the techniques used by blues artists to
+provide emotional affects.
+
+
+3.2 Techniques used by blues artists to help kindle emo-
+tions
+
+
+The Mississippi gave birth to an incredible laundry list of people who are con-
+sidered as the pioneers of the blues and whose impact on subsequent genres were
+
+
+absolutely tremendous.
+Robert Johnson is indisputably referred to as the most influential blues artist
+from the Mississippi. Despite his very short career that went on for 2 years and
+that only involved two recording sessions, he managed to influence generations
+of musicians and all his 29 songs were covered at least once by famous artists.
+Eric Clapton even described him as ”the most important blues musician who
+ever lived” and many contemporary groups such as Red Hot Chili Peppers also
+credited him as an important influence.
+Unquestionably, the acoustic blues guitar of the Mississippi Delta played a
+huge role in the development of modern popular music.
+Son House (1902-1988) was one of the first and most important musicians of
+the Delta Blues genre. Although not as famous as Robert Johnson, Son House
+deeply impacted his game as he taught him how to play guitar during Robert’s
+childhood. Howlin’ Wolf also considered Son House as a great blues player and
+was especially fond of his bottleneck slide style of playing.
+
+
+19
+
+
+The bottleneck is a style of guitar popularized by the blues musicians in the
+Mississippi Delta. It originally appeared on acoustic guitars and progressively
+spread to electric ones.
+The guitarist places a tube which looks like the neck of a glass bottle on one
+fretting hand finger usually the ring finger or the pinky. Then, it requires to
+slide along the string without lifting, which alters the pitch, the sustain, and
+the loudness of the note. This technique is mainly used to create a particular
+mysterious and disturbing sound characteristic to the blues.
+Keith Richards, the guitarist of The Rolling Stones sometimes used bottlenecks
+to explore country blues melodies. The song You got the silver is obviously a
+perfect example.
+Besides, in the memorable introduction of Lynyrd Skynyrd’s song Free Bird, the
+slide guitar part performed by Gary Rossington features the use of a bottleneck
+to bring a trippy and bewitching sound.
+Eventually, the bottlenecks have developped through the years and guitarists
+sometimes used very original accessories to suit their style. During the solo
+of All Along The Watchtower, Jimi Hendrix, who is famous for his quest for
+perfection during recording sessions, happened to use a cigarette lighter to play
+the slide section (from 2:00 to 2:15) during the main solo of the song.
+Like Son House, Robert Johnson’s skills as a guitarist were also unquestioned.
+His teacher always admired how determined he was, and recognized him as a
+slide guitar master. Robert Johnson stood out for his complex personality and
+his technique. When you listen to his songs, “[it] sounds like there’s two or three
+guitars talking to each other” once said Jon Pareles, chief pop music critic at
+The New York Times.
+Incidentally, the most widely known legend surrounding Robert Johnson says
+that he reportedly sold his soul to the Devil near the crossroads of U.S. Highway
+61 and 49 in Clarksdale, Mississippi. In exchange, he would have become gifted
+with an uncanny talent as a guitarist. One of his 29 songs, Cross Road Blues,
+encapsulates this myth and describes Johnson’s encounter with Satan.
+According to the legend, the crossroads symbolise a place where one goes to sell
+his soul to the devil. In fact, it opens with the singer pleading with God for
+mercy:
+I went to the crossroads, fell down on my knees
+I went to the crossroads, fell down on my knees
+Asked the Lord above, have mercy now, save poor Bob if you please
+...
+I went to the crossroads, fell down on my knees
+I went to the crossroads, fell down on my knees
+Asked the Lord above, have mercy now, save poor
+The lyrical process used in the song above corresponds to an AAB structure
+and is a very common pattern in blues songs.
+
+
+It relies on a question-question-answer structure: the first line states the prob-
+20
+
+
+lem, the second line repeats it to enhance and the third line describes an out-
+come.
+
+
+The AAB pattern naturally appears in 12 bar blues melodies: the first four
+bars and the next four bars are associated to the “A” section, whereas the last
+four bars are linked to the “B” section.
+The famous song Sweet Home Chicago by Robert Johnson also features this
+AAB structure:
+Come on
+Baby, don’t you wanna go home
+Come on
+Baby, don’t you wanna go home
+Back from the land of California
+To my sweet home Chicago
+Besides being an incredibly skilled guitarist, this song particularly showcases
+his mellifluous and powerful voice, a voice that could be easily heard amidst the
+din of dancing and drinking, his traveling companion Johnny Shines recalled.
+Another blues song with AAB pattern, for instance, is Shake Rattle and Roll
+by Bill Haley and The Comets.
+Despite the refined instrumental accompaniment, the blues essentially remains
+a vocal form. Blues songs enable singers to express their feelings rather than
+telling stories. The emotions expressed are related to sadness often due to
+problems in love but also desire for a better life.
+The AAB structure is obviously an efficient way to convey a feeling for the blues
+artist. Other vocal techniques such as melisma (sustaining a single syllable
+across several pitches) are used.
+The Call and Response is another very widespread techniques used in blues.
+It works similarly to a conversation: a “phrase” of music serves as the “call,”
+and is “answered” by a different phrase of music. These phrases can be either
+vocal, instrumental, or both.
+If Mozart already used this technique in the 18th century, as you can hear groups
+of instruments responding to each other in Symphony No. 40 for instance, the
+Call-and-Response was considered brought to America by African slaves who
+used to sing work songs in the field to make their tasks more bearable.
+As a consequence, contrary to classical music, the Call and Response mainly
+
+
+involved vocal exchanges or exchanges between a singer and a group of instru-
+ments. The blues standard Mannish Boy by Muddy Waters, which is built on
+
+
+a single chord, features an exchange between the lead singer and the blues riff
+made of guitar, bass and harmonica.
+The Call and Response was also deeply present at church involving the
+preacher and the musicians composed of Gospel music singers.
+Eventually, in live performances, some performers use Call-and-response as
+a way to connect with their audience and this does not just apply to blues!
+
+
+21
+
+
+As we have seen, blues may also feature instrumental techniques such as the
+use of the bottleneck to create a whining voicelike sound.
+However, blues artists like Albert King and B.B. King were rather used to
+bending guitar strings in order to kindle emotions.
+B.B. King is arguably one of the most influential and recognizable guitarists in
+the world whereas his licks and style have trickled down through generations of
+guitar players. His bending progressively defined his solo style and in his later
+years, he would often spend entire concerts out of only a handful of notes and
+performing vibratos to sustain the notes to reach people’s emotions. His famous
+quote ”I wanted to connect my guitar to human emotions” sums up what blues
+is all about.
+On the other hand, Albert King was known for his deep, dramatic sound that
+was widely imitated by both blues and rock guitarists.
+
+
+The left-handed guitarist’s impact on the blues and rock guitar legacy is indis-
+putable. Eric Clapton, Mike Bloomfield, Jimi Hendrix, and Stevie Ray Vaughan
+
+
+have been among his greatest admirers. Clapton famously nicked the solo from
+King’s Oh, Pretty Woman and inserted it in Strange Brew from Cream’s wildly
+
+
+influential 1967 album, Disraeli Gears wheras Jimi Hendrix cited King’s Cross-
+cut Saw as one of his favorite tunes.
+
+
+Incidentally, his energic guitar style is quite close to Hendrix’s live performances.
+This wide variety of blues style paved the way for many subgenres and the
+legacy of the blues is still obvious in the tunes we listen in the 21st century as
+we will see in the upcoming and final section.
+
+
+Chapter 3 - An undeniable influence over other
+famous genres
+Since the blues is a structured genre featuring relevant musical tools to help
+the listener reach emotions, there is room for innovation and creativity. As a
+consequence, it is not surprising that various blues artists developed genres such
+as Jazz, Rock, Soul and so on. . .
+This final chapter highlights the central role played by the blues as the root for
+subsequent genres of the 20th century.
+According to Luther Allison (1939-1997), an American blues guitarist “the blues
+is the foundation, and it’s got to carry the top. The other part of the scene, the
+rock ’n’ roll and the jazz, are the walls of the blues.”
+Wynton Marsalis even went further: “[when] you hear a rock n’ roll song, that’s
+the blues. Somebody playing a guitar solo? They’re playing the blues.”
+If these famous quotes have not convinced you yet, this last chapter will help
+you change your mind.
+4.1 Jazz & Gospel Music
+“Blues is to jazz what yeast is to bread–without it, it’s flat.” Carmen McRae.
+As Carmen McRae implies, blues and jazz are two entwined genres that
+appeared in the late 1800s and that were never fully detached from each other.
+Incidentally, it is not surprising that many blues artists wrote outstanding pieces
+with jazz instrumentation.
+We previously evoked Riviera Paradise by blues guitarist Stevie Ray Vaughan.
+B.B. King was also very inspired by Jazz and even participated in many Jazz
+festivals. His brilliant cover of Thrill Is Gone in 1970, which was a major hit,
+may be considered on the edge of Blues and Jazz even though it remains a
+12-bar blues song.
+Actually, the difference between these two genres is not always easy to grasp
+and may require some careful listening. Below are some basic elements to help
+you solve the problem.
+Blues music was mostly made of spiritual and work songs by slaves that were
+largely influenced by their cultural traditions in Africa. Early Blues music was
+mostly slow and sad and was sung during work. It features a strong steady
+rhythm and a 4/4 time signature (i.e. the most common time signature), quite
+easy to spot when tapping the beats. Most songs even use the famous 12-bar
+blues progression which makes the song even more “structured”. In early blues
+music, the improvisation was essentially done by the singers and not really
+the instruments as blues musicians rather aimed to emphasize the emotional
+effect and expressiveness of the lyrics. Nevertheless, the improvisation gradually
+became a substantial aspect in blues music.
+
+
+23
+
+
+Jazz also originated from the African influence but also combined it with
+European influences to make it a unique sound and style. In Jazz, there are an
+“unlimited” number of chords or chord progressions whereas blues music mostly
+relies on some repeated chords during the whole song. The difference between
+the two genres can be summarized in the following inside joke, very popular in
+the jazz and blues community: ”A blues guitarist plays three chords in front of
+thousands of people, and a jazz guitarist plays thousands of chords in front of
+three people.”
+Besides, a lot of jazz songs may be instrumental whereas most blues songs
+include, by definition, lyrics that are used to stir emotions. Jazz melodies often
+feature 7-th chords, which are typical jazz chords but not very common in blues
+and other types of music. As opposed to early blues, jazz music focuses on the
+technical playing rather than the emotional expression. That is the reason why,
+musically speaking, this genre has a higher degree of complexity than blues
+music and as a matter of fact, a few jazz songs may have an unusual time
+signature contrary to blues songs.
+Incidentally, B.B. King once said that “Jazz is the big brother of the blues.
+If a guy’s playing blues like we play, he’s in high school. When he starts playing
+jazz it’s like going on to college, to a school of higher learning.”
+To illustrate this, here are two fundamental pieces of blues and jazz played by
+two outstanding pianists: Cripple Clarence Lofton and Fats Waller respectively
+a blues and a jazz pianist of the first part of the 20th century. In both genres,
+the piano is so versatile that it plays the supporting role and the lead.
+On the one hand, the song Early blues (written between 1939 and 1943) by
+
+
+Cripple Clarence Lofton, as the title may suggest, is a blues ballad. The rhyth-
+mic is supported by the left hand that keeps repeating the same pattern all over
+
+
+the song while the right-hand plays triplets to create boogie-woogie patterns.
+
+
+Surprisingly, this blues song is instrumental but the simple arrangement cen-
+tered on the piano as well as the use of the blues scale confirm we are listening
+
+
+to a blues song rather than a jazz one.
+On the other hand, the song Ain’t Misbehavin (1943) by Fats Waller is a jazz
+song even though it contains lyrics (features a singing). The chord progressions
+are way more complex with an emphasis on substitution and variation, and the
+left hand does not follow a constant rhythmic pattern. What’s more, in addition
+to the piano, the clarinet and the drums also take part in the improvisation and
+contribute to this spectacular musical technique.
+The Call and response figures we recognize in jazz today originated in African
+traditions and found their fullest expression in blues music and spirituals.
+Examples of Call and response include direct imitation between instruments,
+a questioning phrase and subsequent answer, a statement of affirmation from
+one instrument to another, or mere variations on a direct call by a series of
+instruments.
+An example of a jazz song with nice Call and responses can be So What by
+
+
+24
+
+
+Miles Davies: at 00:34, the bass plays a repetitive riff in a steady tempo. It is
+answered by a two-note chord from the piano, supported by the drums. This
+9-minute song contains other complex and elegant Call and response in the eight
+other chorus, involving piano, bass and wind instruments that enter during the
+song. Enjoy!
+Often, this Call and response can be improvisational. As described previously,
+the Call and response dates back to the time of slavery.
+If you now think of gospel music, you will immediately recognize the technique
+even if it rather concerns vocal representations: it’s when the pastor or song
+leader calls out or sings a line, and the congregation or choir responds.
+Edwin Hawkins Singers’s gospel standard Oh, Happy Day (1968) is a great and
+typical example of Call and response being used to reach the listeners directly
+and lift their spirit.
+Jazz and Gospel have a lot in common and blues served as a bridge between
+them. Dating back to the 1800s, when “Call and response” was established
+as a form of expression, African Americans celebrated Christianity through the
+expression of music in a new and soulful style. This style touched hearts with
+its powerful lyrics and melodic repetition. Musician Thomas Dorsey, 1930s, is
+considered as the father of this “Gospel” style. Many contemporary artists,
+such as Mary Mary, Mahalia Jackson, and Kirk Franklin, served as crossover
+artists within these genres. They paired their strong faith with expressive jazz
+techniques, harmonies, and instrumentation. More and more, we are seeing
+many talented artists, with both a strong calling to serve their church and a
+deep faith, who also want to pursue a full-time musical career. They have
+found a way to use their creative passion by blending the Gospel and Jazz
+genres together. One such artist is jazz saxophonist Kirk Whalum. Another
+example is Niki Haris. She combines jazz and gospel music together brilliantly
+in live performances, showcasing her vocal execution, lyrical commitment, and
+thorough instrumentation.
+Many blues artists sang at church during their childhood. Albert King, who
+was born on a cotton plantation in Indianola, Mississippi used to sing at a
+church with a family gospel group, in which his father played the guitar. In
+the late 1950s and early ’60s, the fervent and impassioned flair of gospel blues
+would lay the foundation for soul music.
+The famous American singer and songwriter Marvin Gaye started singing in
+church when he was only 4 years old. And 30 years later, his major hits What’s
+Going On, Let’s Get It On, Sexual Healing, Stubborn Kind of Fellow, Ain’t No
+Mountain High Enough . . . all featured many singers and choruses as well as
+the use of Call and responses. His recordings influenced several contemporary
+R&B subgenres, such as quiet storm and neo soul and earned him the nickname
+”Prince of Soul”.
+For that reason, it is safe to state that gospel music laid the foundation to Soul,
+and so did blues with its lyrical statements and musical ingredients.
+
+
+25
+
+
+4.2 Rock ‘n Roll
+“If you don’t know the blues... there’s no point in picking up the guitar and
+playing rock and roll or any other form of popular music.” once said Keith
+Richards, the guitarist and original member of the Rolling Stones.
+Before going further, it is important to clarify what Rock ‘n’ roll is about in
+order not to infuriate pure rockers!
+Rock ‘n’ roll is a genre of popular music that developed in the United States
+during the late 1940s and early 1950s. It originated from musical styles such
+as gospel, blues, jazz, boogie woogie, rhythm and blues. The lead instruments
+were originally the piano and the saxophone but were progressively replaced by
+the guitar by mid 1950s.
+Rock and Roll is also defined as a genre that lends itself to dance. As in
+blues music, the beats follows the natural and common time signature but in
+Rock ‘n Roll the “weak” beats (the second and fourth ones) are particularly
+stressed: this is what we call the backbeat and what people appreciate in Rock
+and Roll music while they dance. Elvis Presley’s classic Jaihouse Rock, which
+ranks as the 67th best song on Rolling Stone magazine features the use of the
+backbeat.
+
+
+Little Richard was another very influential musician even nicknamed the “Ar-
+chitect of Rock and Roll” for his major contributions. He was a singer and
+
+
+songwriter who played the piano and who departed from boogie-woogie’s shuffle
+rhythm to introduce a new distinctive rock beat, where the beat division is even
+at all tempos. His songs combined elements of boogie, gospel, and blues and
+were characterized by a loud volume and vocal style emphasizing power, and its
+distinctive beat and rhythm.
+The boogie denotes here a repetitive, swung pattern that appeared in blues
+(with 12-bar blues) and that is usually played on the piano. It is characterized
+by a fast tempo rhythm, a repeated melodic pattern in the bass, and a series of
+improvised variations in the treble.
+Little Richard was the first to bring this flamboyance and energy to Rock and
+Roll and embodied the Rock and Roll showmanship with his simple, pumping
+
+
+piano, gospel-influenced vocal exclamations and sexually charged (often gib-
+berish) lyrics. His first success Tutti Frutti in 1955 became the basis for the
+
+
+standard rock beat and the transition between classic Blues and Rock and Roll.
+Rock & roll, with its mixture of white country music and black R&B (Rhythm
+
+
+and Blues), arrived just as segregationists were tightening Jim Crow laws in re-
+sponse to the civil rights movement. Remember that the Jim Crow laws were
+
+
+enforced until 1965 in the Southern United States.
+Entertainers throughout the South were forced to participate in a crowd-separation
+ritual. Venues could be unofficially classified black or white – New Orleans’
+famous Dew Drop Inn catered to an exclusively African-American crowd, for
+
+
+26
+
+
+example. But in other cases, police and promoters physically separated the au-
+diences. Sometimes, as in the Flamingos’ show, blacks were in the balcony and
+
+
+whites on the floor; at other times, a painted line ran down the center of the
+theater or a rope bifurcated the audience.
+Nevertheless, as in Blues, Rock and Roll struggled to defeat segregation and
+Jim Crow laws. Indeed, many observers saw Rock & Roll as heralding the way
+
+
+for desegregation, in creating a new form of music that encouraged racial coop-
+eration. Many authors have argued that early rock and roll was instrumental
+
+
+in the way that both white and black teenagers identified themselves.
+As a consequence, a tremendous phenomenon started to occur: Rock & roll
+
+
+shows became so boisterously biracial that it was sometimes impossible for offi-
+cials to fully segregate them. In a way, Rock and Roll put an end to segregation.
+
+
+The legacy of the blues also expressed through the lyrics. Take the song
+Hound Dog which is a twelve-bar blues originally written by Jerry Leiber and
+Mike Stoller in 1952.
+The first recording of this song was by Big Mama Thorton and Elvis Presley
+would record a more Rock and Roll version of this song a year later. The lyrics
+in the first verse writes:
+You ain’t nothing but a hound dog (nothin’ but a hound dog)
+Crying all the time (nothin’ but a hound dog)
+You ain’t nothing but a hound dog (nothin’ but a hound dog)
+Yeah, crying all the time (nothin’ but a hound dog)
+Well, you ain’t never caught a rabbit
+And you ain’t no friend of mine (nothin’ but a hound dog)
+And instantly, you should remember the famous AAB pattern that derived
+from the Blues.
+Eventually, it would be absurd not to evoke the probably greatest guitarist of
+the Rock and Roll, the one and unique Chuck Berry, who was called the “Father
+of Rock and Roll”. After the mid-1950s, Chuck Berry popularized the use of
+electric guitars and bass and started recording cult songs such as Maybellene
+
+
+in 1955, Rock and Roll Music in 1956 or Johnny B. Goode in 1958. He is ad-
+mired for his clever lyrics that essentially tackled teens and consumerism. Berry
+
+
+consistently avoided clich ́es and stock images or situations. He was investing
+layers of emotion and meaning into songs long before Bob Dylan came along
+and started making people talk about rock ’n’ roll as an art form.
+The song You Never Can Tell written in the early 1960s while he was in
+prison describes the life of a young and happy married couple. Surprisingly, the
+song rose to popularity 30 years later when Uma Thurman and John Travolta
+were dancing to win the Jack Rabbit Slim’s contest in Tarantino’s masterpiece
+Pulp Fiction (1994). This iconic scene first marks John Travolta’s comeback at
+dancing fame almost fifteen years after Saturday Night Fever (1977) and Grease
+(1978). Moreover, Tarantino wanted this song to refer to the 50’s French New
+
+
+27
+
+
+Wave which he particularly appreciates.
+What’s way more subtle is the ambiguity that results from the multiple possible
+interpretations of that song. Because of the use of past tense in the song, some
+argue that it actually represents a very ironic and sad song about a happy young
+couple that started off a great life and died on their anniversary on the way to
+the place where they first met.
+In any case, the song obviously had personal meaning for Chuck Berry as he
+wrote it in prison.
+As his fellow Little Richard, Chuck Berry was also a true pioneer of musical
+style and showmanship. His live performances included humoristic teen dances
+while he was performing guitar solos, as he aimed to appeal to the early teenage
+market.
+4.3 Rock
+For many musician experts, the early 1960s marked the end of Rock & Roll.
+The American folk blues guitarist and music historian Elijah Wald’s book How
+the Beatles Destroyed Rock ’n’ Roll, published in 2009, explained that Rock ‘n’
+Roll was over by the early 1970s.
+Behind this deliberately outrageous title, Wald analyses the whole history of
+popular music in the United States. According to the author, in the mid 1960s,
+the Beatles transformed Rock and Roll from a business of hit singles with songs
+meant to be danced upon to a new form of business that rather relied on artistic
+albums that were meant for listening rather than dancing. Indeed, in February
+
+
+2021, according to the Rolling Stone Magazine, no less than 5 masterpiece al-
+bums by the Beatles ranked among the 35 greatest albums of all time, which is
+
+
+more than any other bands.
+In the process, they increased the gap between white music and black music
+and the decrease of interaction between the two forms of music that inevitably
+deprived both Rock and Roll and R&B of the racial cross-pollination that had
+been the hallmark of American popular music for the fifty past years preceding
+Sergeant Pepper’s Lonely Hearts Club Band (1967).
+This inspiring movement launched by the four Beatles, who had already
+issued four legendary albums by 1969, paved the way to a new wave of artistic
+albums and Rock progressively replaced Rock and Roll.
+Bands such as the Rolling Stones, Led Zeppelin responded to the Beatles with
+tremendous albums: Exile on Main Street (1969), Led Zeppelin I (1969), Led
+Zeppelin II (1969) or Sticky Fingers (1971) and many others. . .
+Incidentally, this new form of art was indicated by the success of vinyles still
+topical in the 21st century.
+However, Little Richard helped launch the Beatles. Indeed, Paul McCartney
+
+
+even asked the Artchitect of Rock and Roll to teach him his distinctive vocal-
+ization that completely blew his mind when he was a teenager and first heard
+
+
+28
+
+
+Rock and Roll classics such as Tutti Frutti or Long Tall Sally.
+A famous photo from 1962 where we can see the Beatles standing around Little
+Richard announced that from this date, the Beatles were playing with the big
+boys.
+In the 1960s, rock music took the world by storm, with new bands originating
+from all over the world. Rock music was one of the first genres to have social and
+political significance among a popular crowd. Though love songs were present
+due to relatability and relevance, emerging bands began implementing social and
+political conflicts within their lyrics. It wasn’t just about the music anymore,
+but rather the power of a voice, the power of protest. Rock legends such as Jimi
+Hendrix, Cream, The Beatles, Bob Dylan, The Rolling Stones, Led Zeppelin,
+The Doors, and countless others began speaking out about the hardships and
+disputes of the time.
+And most of these bands and artists were hugely influenced by the Blues.
+Let us a start with an iconic band which was formerly a blues band.
+The first years of the Rolling Stones gave birth to many covers including blues
+
+
+ones but also folk blues, as well as Rock and Roll ones. . . as the band’s song-
+writing primarily developed slowly.
+
+
+Their first No. 1 hit was (I can’t Get No) Satisfaction, recorded in May 1965.
+
+
+The guitarist’s greatest inspiration indisputably remains Chuck Berry which ex-
+plains the number of covers from him. Their live album Get Yer Ya Ya’s Out
+
+
+(1970) featured two excellent Chuck Berry’s Rock and Roll covers Carol and
+Little Quenie that are worth listening.
+Their music was also deeply influenced by blues guitarist Robert Johnson,
+and his tremendous slide guitar playing. Love In Vain is probably one of the
+best blues cover ever made. The two founding members singer Mick Jagger and
+guitarist Keith Richards were both in love with the song and the lyrics and were
+willing to cover the song without copying Robert Johnson’s style. They agreed
+to take it a bit more country and formalized, changed a bit the arrangement and
+added some extra chords to obtain a very poignant song in which Mick Jagger
+painfully cries his desperate love.
+The cover became a success: Love In Vain appeared on their first main
+studio album Let It Bleed (1969) and features a sobbing pedal steel and a raw
+mandolin solo to definitely give a country blues tone. However, one can wonder
+if the studio version is better than the live one on Get Yer Ya Ya’s Out that
+features Mick Jagger’s loose vocals, an outstanding duo of guitarists and a
+brilliant slide guitar solo by Mick Taylor?
+Jimi Hendrix’s psychedelic blues was also inspired by electric blues music. His
+covers of Albert King’s Born Under A Bad Sign and Muddy Waters’ Mannish
+Boy capture all his talent to define the power of psychedelic music.
+If you are interested by Hendrix’s blues discography, I would recommend the
+compilation album Blues issued in 1994 and which contains blues-style songs
+
+
+29
+
+
+recorded by the left-handed guitarist. Most are demos, jams, and live recordings,
+which Hendrix may or may not have completed for release.
+What’s more, blues also inspired Hard Rock bands such as AC/DC. Legendary
+lead guitarist and founding member Angus Young revealed in an interview to
+Total Guitar that he fell in love with the Blues when he was a teenager. He
+
+
+however acknowledged that he prefers the happy sides of the blues to the de-
+pressed blues music. For that reason, he tends to appreciate Muddy Waters’s
+
+
+blues songs that are full of energy and whose lyrics may contain a certain sense
+of humor or irony he particularly appreciates.
+Therefore, for the Australian band, playing blues does not entail playing
+sad tunes and AC/DC’s twelve bar blues The Jack contains all the necessary
+ingredients to produce an electric riff made characteristic to the band. AC/DC
+also highly investigated the Rock and Roll music as their most famous songs
+include: It’s a Long Way to the Top (If You Wanna Rock ’n’ Roll) (1975),
+Whole Lotta Rosie (1977) or Rock N Roll Train (2008).
+Let us also quote Led Zeppelin and their stunning Robert Johnson’s cover
+of Traveling Riverside Blues (1969) in which guitarist Jimmy Page played an
+acoustic slide guitar riff considered as a signature one and in which singer Robert
+Plant’s incredible voice absolutely fueled the song. The song Rock and Roll that
+appeared on their fourth album Led Zeppelin IV (1971) is at the crossroads
+between Rock and Roll and Hard Rock and was described as ‘the most dynamic
+hard-rock song in the music” by American essayist and music journalist Robert
+Christgau.
+The Doors whose existence only lasted six years also greatly inspired from
+blues to produce their unique psychedelic rock tunes. Their last and sixth album
+L.A. Woman, released on April 19, 1971, two months before Jim Morrison
+died, arguably remains their most blues-rock album featuring songs such as
+Cars Hissy My Window, Crawling King Snake or Love Her Madly. The blues
+chords progression seem to provide an ideal musical background for the striking
+baritone voice of Jim Morrison, as well as for his disturbing poetic lyrics. The
+band is also endowed with a truly genius keyboardist who often overcame the
+lack of a bass player and an awesome creative guitarist who is at the origin of
+the majority of the Doors’ blues songs. The song Love Me Two Times, written
+by Krieger, remains one of the most characteristic blues song of the band as it
+includes a punchy fingerstyle guitar, a remarkable keyboard riff that enriches
+the guitar riff and a pure and powerful voice.
+Eric Clapton, considered as the second greatest guitarist of all times according
+to the Rolling Stone magazine, also covered many of Robert Johnson’s songs
+that all appeared in his fifteenth studio album Me and Mr. Johnson. His deep
+respect for the mythical bluesman can be inferred in an answer given during an
+interview: “It is a remarkable thing to have been driven and influenced all of my
+
+
+30
+
+
+life by the work of one man”. Eric Clapton is also famous for collaborating with
+other influent and renowned musicians. The first collaborative album by Eric
+Clapton and B.B. King Riding With The King released in 2000, and which won
+the 2000 Grammy Award for Best Traditional Blues Album contains 5 vintage
+King songs from the 1950s and 1960s and some famous blues covers. The album’s
+title track, Riding With The King, originally written by John Hiatt, referred to
+Elvis Presley as his producer, Scott Mathews, once told him he dreamt sharing
+an airplane flight with the King.
+Eventually, blues still continues to thrive nowadays. Some contemporary
+artists such as singer-songwriter and guitarist John Mayer or British blues rock
+singer and guitarist Joanne Shaw Taylor are prodigy guitarists both endowed
+with an incredible voice that helped rekindle the blues.
+In 2005, John Mayer started performing the blues and the rock that had
+originally influenced him as a musician. He later collaborated with many blues
+artists including B.B. King and Eric Clapton. The latter described Mayer as an
+“extremely gifted guitarist, a master” and was particularly blown away by his
+JJ Cale’s cover Magnolia. His aggressive guitar playing often featuring double
+stop is very similar to Hendrix’s. One of his best collaboration with B.B King
+would be the blues song Hummingbird in 2005 which was originally written by
+Russel in 1955.
+Although not as famous as John Mayer, the female guitarist Joanne Shaw
+Taylor is one of the main blues rock protagonists of the 21st century. Her very
+energetic guitar playing and soulful voice have made her the UK’s number one
+star of the blues-rock world. Her blues rock song Blackest Day which terminates
+her album White Sugar (2009) is a very intense blues ballad with gloomy lyrics
+typical to blues that showcases her outstanding talent as guitarist.
+Rock is probably the largest and most popular genre; thus, enumerating all
+the bands that used Blues to shape their music would be extremely boring.
+
+
+In any case, I hope I managed to shed lights on this genre which was orig-
+inally so unpopular back in early 1900s. I will end this research paper with a
+
+
+final section that will allow me to express my personal interest for blues, as an
+amateur musician.
+4.4 Personal interest
+I grew up listening to the Rolling Stones, the Who, the Beatles, David Bowie,
+Pink Floyd, and many other Rock bands. Despite my taste for music, I quickly
+dropped piano when I was 13, and I honestly wish I had not waited till the age
+of 20 to resume it.
+By the time I started playing the guitar, at the age of 18, I was keen on Rock
+music and eager to learn all the complexity other subgenres of Rock such as
+Progressive Rock, Psychedelic Rock, Blues Rock had in store.
+
+
+31
+
+
+My deep appreciation for Jimi Hendrix and the Rolling Stones encouraged
+me to thoroughly investigate the origin and the characteristics of the blues.
+As we have seen, blues musics encapsulate powerful lyrical ideas that referred
+to love, segregation, freedom, . . . and that are very inspiring especially if you
+wish to write lyrics and compose.
+
+
+Besides, since blues musics feature repetitive, structured and inspiring pat-
+terns, I personally find relevant to improvise on a blues backing track that you
+
+
+can search on Internet or make up yourself. As BB King said, blues is simpler
+than Jazz and for that reason guitar beginners are often encouraged to start
+playing blues.
+As Led Zeppelin, the Rolling Stones, Cream, . . . if you start a rock band, you
+may be likely to experience blues and cover great songs. In my opinion, it easily
+gives room for diversification and free interpretation, for any lead instruments
+as well as for the singer.
+
+
+As a consequence, if I ever make an album, I would be tempted to find inspira-
+tions in the Blues genre.

@@ -1,0 +1,782 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:FrenchDynasty a owl:Class ;
+    rdfs:label "French Dynasty" ;
+    rdfs:comment "A line of hereditary French rulers" ;
+    rdfs:subClassOf ont:Dynasty .
+
+ont:achievedDiplomatically a owl:ObjectProperty ;
+    rdfs:label "achieved diplomatically" ;
+    rdfs:comment "Relates a French King to their diplomatic achievements" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:DiplomaticAchievement .
+
+ont:achievedMilitaryOutcome a owl:ObjectProperty ;
+    rdfs:label "achieved military outcome" ;
+    rdfs:comment "Relates a French King to the outcome of a military conflict" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:MilitaryOutcome .
+
+ont:area a owl:DatatypeProperty ;
+    rdfs:label "area" ;
+    rdfs:comment "The area of a place in square kilometers" ;
+    rdfs:domain ont:Place ;
+    rdfs:range xsd:decimal .
+
+ont:birthDate a owl:DatatypeProperty ;
+    rdfs:label "birth date" ;
+    rdfs:comment "The date of birth of a person" ;
+    rdfs:domain ont:Person ;
+    rdfs:range xsd:date .
+
+ont:containsFeature a owl:ObjectProperty ;
+    rdfs:label "contains feature" ;
+    rdfs:comment "Indicates that a place contains a geographical feature" ;
+    rdfs:domain ont:Place ;
+    rdfs:range ont:GeographicalFeature ;
+    owl:inverseOf ont:locatedIn .
+
+ont:dateOfDiscovery a owl:DatatypeProperty ;
+    rdfs:label "date of discovery" ;
+    rdfs:comment "The date when an artifact was discovered" ;
+    rdfs:domain ont:Artifact ;
+    rdfs:range xsd:date .
+
+ont:dateOfSignature a owl:DatatypeProperty ;
+    rdfs:label "date of signature" ;
+    rdfs:comment "The date a treaty was signed" ;
+    rdfs:domain ont:Treaty ;
+    rdfs:range xsd:date .
+
+ont:deathDate a owl:DatatypeProperty ;
+    rdfs:label "death date" ;
+    rdfs:comment "The date of death of a person" ;
+    rdfs:domain ont:Person ;
+    rdfs:range xsd:date .
+
+ont:duration a owl:DatatypeProperty ;
+    rdfs:label "duration" ;
+    rdfs:comment "The duration of a time period in years" ;
+    rdfs:domain ont:TimePeriod ;
+    rdfs:range xsd:integer .
+
+ont:effectivenessScore a owl:DatatypeProperty ;
+    rdfs:label "effectiveness score" ;
+    rdfs:comment "A numerical score representing the overall effectiveness of a French King" ;
+    rdfs:domain ont:Effectiveness ;
+    rdfs:range xsd:decimal .
+
+ont:endDate a owl:DatatypeProperty ;
+    rdfs:label "end date" ;
+    rdfs:comment "The end date of a dynasty's rule or an event" ;
+    rdfs:domain ont:Dynasty,
+        ont:Event ;
+    rdfs:range xsd:date .
+
+ont:establishedAdministrativeBody a owl:ObjectProperty ;
+    rdfs:label "established administrative body" ;
+    rdfs:comment "Indicates that a French King established a specific administrative body" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:FrenchAdministrativeBody .
+
+ont:facedOppositionFrom a owl:ObjectProperty ;
+    rdfs:label "faced opposition from" ;
+    rdfs:comment "Indicates that a person faced opposition from an organization" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Organization ;
+    owl:inverseOf ont:opposedReforms .
+
+ont:hadAssociatedConcept a owl:ObjectProperty ;
+    rdfs:label "had associated concept" ;
+    rdfs:comment "Indicates that a dynasty had an associated religious concept" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:ReligiousConcept ;
+    owl:inverseOf ont:associatedWith .
+
+ont:hadChurchRelation a owl:ObjectProperty ;
+    rdfs:label "had church relation" ;
+    rdfs:comment "Describes the relationship between a French King and the Catholic Church" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:ChurchStateRelation .
+
+ont:hadContributor a owl:ObjectProperty ;
+    rdfs:label "had contributor" ;
+    rdfs:comment "Indicates that an administrative division had a person as a contributor" ;
+    rdfs:domain ont:AdministrativeDivision ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:contributedTo .
+
+ont:hadEconomicImpact a owl:ObjectProperty ;
+    rdfs:label "had economic impact" ;
+    rdfs:comment "Relates a French King to their economic impact" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:EconomicImpact .
+
+ont:hadEventDuring a owl:ObjectProperty ;
+    rdfs:label "had event during" ;
+    rdfs:comment "Indicates that a person's reign had a specific event occur" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Event ;
+    owl:inverseOf ont:occurredDuring .
+
+ont:hadInfluenceOn a owl:ObjectProperty ;
+    rdfs:label "had influence on" ;
+    rdfs:comment "Indicates that a religious concept had influence on a political concept" ;
+    rdfs:domain ont:ReligiousConcept ;
+    rdfs:range ont:PoliticalConcept ;
+    owl:inverseOf ont:influencedBy .
+
+ont:hadLanguageUsed a owl:ObjectProperty ;
+    rdfs:label "had language used" ;
+    rdfs:comment "Indicates that a time period had a specific language used" ;
+    rdfs:domain ont:TimePeriod ;
+    rdfs:range ont:Language ;
+    owl:inverseOf ont:wasUsedDuring .
+
+ont:hadMember a owl:ObjectProperty ;
+    rdfs:label "had member" ;
+    rdfs:comment "Indicates that a dynasty had a specific person as a member" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:belongedToDynasty .
+
+ont:hadPublicOpinion a owl:ObjectProperty ;
+    rdfs:label "had public opinion" ;
+    rdfs:comment "Relates a French King to the public opinion during their reign" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:PublicOpinion .
+
+ont:hadRelationsManagedBy a owl:ObjectProperty ;
+    rdfs:label "had relations managed by" ;
+    rdfs:comment "Indicates that an ethnicity had relations managed by a dynasty" ;
+    rdfs:domain ont:Ethnicity ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:managedRelationsWith .
+
+ont:hadSuccessionStability a owl:ObjectProperty ;
+    rdfs:label "had succession stability" ;
+    rdfs:comment "Indicates the stability of succession for a French King" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:SuccessionStability .
+
+ont:hasEffectiveness a owl:ObjectProperty ;
+    rdfs:label "has effectiveness" ;
+    rdfs:comment "Relates a French King to their measure of effectiveness" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:Effectiveness .
+
+ont:hasHistoricalSignificance a owl:DatatypeProperty ;
+    rdfs:label "has historical significance" ;
+    rdfs:comment "A measure of the historical significance of an entity" ;
+    rdfs:domain owl:Thing ;
+    rdfs:range xsd:integer .
+
+ont:hasPart a owl:ObjectProperty ;
+    rdfs:label "has part" ;
+    rdfs:comment "Indicates that a place has an administrative division as part of it" ;
+    rdfs:domain ont:Place ;
+    rdfs:range ont:AdministrativeDivision ;
+    owl:inverseOf ont:isPartOf .
+
+ont:implementedPoliticalReform a owl:ObjectProperty ;
+    rdfs:label "implemented political reform" ;
+    rdfs:comment "Indicates that a French King implemented a specific political reform" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:PoliticalReform .
+
+ont:influencedLaw a owl:ObjectProperty ;
+    rdfs:label "influenced law" ;
+    rdfs:comment "Indicates that an event influenced a specific law" ;
+    rdfs:domain ont:Event ;
+    rdfs:range ont:Law ;
+    owl:inverseOf ont:wasInfluencedByEvent .
+
+ont:involvedDynasty a owl:ObjectProperty ;
+    rdfs:label "involved dynasty" ;
+    rdfs:comment "Indicates that a military conflict involved a dynasty" ;
+    rdfs:domain ont:MilitaryConflict ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:participatedIn .
+
+ont:isOriginOf a owl:ObjectProperty ;
+    rdfs:label "is origin of" ;
+    rdfs:comment "Indicates that a place is the origin of a dynasty or ethnicity" ;
+    rdfs:domain ont:Place ;
+    rdfs:range ont:Dynasty,
+        ont:Ethnicity ;
+    owl:inverseOf ont:hasOrigin .
+
+ont:isPredecessorOf a owl:ObjectProperty ;
+    rdfs:label "is predecessor of" ;
+    rdfs:comment "Indicates that a person is the predecessor of another person in their title or position" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:hasSuccessor .
+
+ont:isSpokenBy a owl:ObjectProperty ;
+    rdfs:label "is spoken by" ;
+    rdfs:comment "Indicates that a language is spoken by a particular ethnicity" ;
+    rdfs:domain ont:Language ;
+    rdfs:range ont:Ethnicity ;
+    owl:inverseOf ont:speaksLanguage .
+
+ont:madeCulturalAchievement a owl:ObjectProperty ;
+    rdfs:label "made cultural achievement" ;
+    rdfs:comment "Relates a French King to their cultural achievements" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:CulturalAchievement .
+
+ont:mentions a owl:ObjectProperty ;
+    rdfs:label "mentions" ;
+    rdfs:comment "Indicates that a document mentions a person, place, or event" ;
+    rdfs:domain ont:Document ;
+    rdfs:range ont:Event,
+        ont:Person,
+        ont:Place ;
+    owl:inverseOf ont:mentionedIn .
+
+ont:population a owl:DatatypeProperty ;
+    rdfs:label "population" ;
+    rdfs:comment "The population of an ethnicity or place" ;
+    rdfs:domain ont:Ethnicity,
+        ont:Place ;
+    rdfs:range xsd:integer .
+
+ont:populationSize a owl:DatatypeProperty ;
+    rdfs:label "population size" ;
+    rdfs:comment "The population size of a place during a specific time" ;
+    rdfs:domain ont:Place ;
+    rdfs:range xsd:integer .
+
+ont:represents a owl:ObjectProperty ;
+    rdfs:label "represents" ;
+    rdfs:comment "Indicates that an artifact represents a person or dynasty" ;
+    rdfs:domain ont:Artifact ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:representedIn .
+
+ont:ruledDuring a owl:ObjectProperty ;
+    rdfs:label "ruled during" ;
+    rdfs:comment "Indicates the French Historical Era during which a king ruled" ;
+    rdfs:domain ont:FrenchKing ;
+    rdfs:range ont:FrenchHistoricalEra .
+
+ont:startDate a owl:DatatypeProperty ;
+    rdfs:label "start date" ;
+    rdfs:comment "The start date of a dynasty's rule or an event" ;
+    rdfs:domain ont:Dynasty,
+        ont:Event ;
+    rdfs:range xsd:date .
+
+ont:succeededDynasty a owl:ObjectProperty ;
+    rdfs:label "succeeded dynasty" ;
+    rdfs:comment "Indicates that one dynasty succeeded another in ruling a place" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:precededDynasty .
+
+ont:wasAffectedByConflict a owl:ObjectProperty ;
+    rdfs:label "was affected by conflict" ;
+    rdfs:comment "Indicates that an economic concept was affected by a military conflict" ;
+    rdfs:domain ont:EconomicConcept ;
+    rdfs:range ont:MilitaryConflict ;
+    owl:inverseOf ont:affectedEconomicConcept .
+
+ont:wasAssociatedWithPerson a owl:ObjectProperty ;
+    rdfs:label "was associated with person" ;
+    rdfs:comment "Indicates that a political concept was associated with a person" ;
+    rdfs:domain ont:PoliticalConcept ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:associatedWithPoliticalConcept .
+
+ont:wasCausedBy a owl:ObjectProperty ;
+    rdfs:label "was caused by" ;
+    rdfs:comment "Indicates that an event was caused by a military conflict" ;
+    rdfs:domain ont:Event ;
+    rdfs:range ont:MilitaryConflict ;
+    owl:inverseOf ont:causedEvent .
+
+ont:wasCommissionedBy a owl:ObjectProperty ;
+    rdfs:label "was commissioned by" ;
+    rdfs:comment "Indicates that an artifact was commissioned by a person or dynasty" ;
+    rdfs:domain ont:Artifact ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:commissionedArtifact .
+
+ont:wasConstructedBy a owl:ObjectProperty ;
+    rdfs:label "was constructed by" ;
+    rdfs:comment "Indicates that a building was constructed by a person or dynasty" ;
+    rdfs:domain ont:Building ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:constructedBuilding .
+
+ont:wasCreatedBy a owl:ObjectProperty ;
+    rdfs:label "was created by" ;
+    rdfs:comment "Indicates that an organization was created by a person or dynasty" ;
+    rdfs:domain ont:Organization ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:createdOrganization .
+
+ont:wasEnactedBy a owl:ObjectProperty ;
+    rdfs:label "was enacted by" ;
+    rdfs:comment "Indicates that a law was enacted by a person or dynasty" ;
+    rdfs:domain ont:Law ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:enactedLaw .
+
+ont:wasEstablishedBy a owl:ObjectProperty ;
+    rdfs:label "was established by" ;
+    rdfs:comment "Indicates that a law was established by a treaty" ;
+    rdfs:domain ont:Law ;
+    rdfs:range ont:Treaty ;
+    owl:inverseOf ont:establishedLaw .
+
+ont:wasHeldBy a owl:ObjectProperty ;
+    rdfs:label "was held by" ;
+    rdfs:comment "Indicates that a title was held by a specific person" ;
+    rdfs:domain ont:Title ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:heldTitle .
+
+ont:wasInfluencedByDynasty a owl:ObjectProperty ;
+    rdfs:label "was influenced by dynasty" ;
+    rdfs:comment "Indicates that a language was influenced by a dynasty" ;
+    rdfs:domain ont:Language ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:influencedLanguage .
+
+ont:wasInfluencedByFeature a owl:ObjectProperty ;
+    rdfs:label "was influenced by feature" ;
+    rdfs:comment "Indicates that a dynasty's expansion was influenced by a geographical feature" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:GeographicalFeature ;
+    owl:inverseOf ont:influencedExpansion .
+
+ont:wasIntroducedBy a owl:ObjectProperty ;
+    rdfs:label "was introduced by" ;
+    rdfs:comment "Indicates that an economic concept was introduced by a dynasty" ;
+    rdfs:domain ont:EconomicConcept ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:introducedEconomicConcept .
+
+ont:wasIssuedBy a owl:ObjectProperty ;
+    rdfs:label "was issued by" ;
+    rdfs:comment "Indicates that a document was issued by a person or dynasty" ;
+    rdfs:domain ont:Document ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:issuedDocument .
+
+ont:wasPolicyOf a owl:ObjectProperty ;
+    rdfs:label "was policy of" ;
+    rdfs:comment "Indicates that a political concept was implemented as policy by a person or dynasty" ;
+    rdfs:domain ont:PoliticalConcept ;
+    rdfs:range ont:Dynasty,
+        ont:Person ;
+    owl:inverseOf ont:implementedPolicy .
+
+ont:wasReformedBy a owl:ObjectProperty ;
+    rdfs:label "was reformed by" ;
+    rdfs:comment "Indicates that an administrative division was reformed by a person" ;
+    rdfs:domain ont:AdministrativeDivision ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:implementedReform .
+
+ont:wasReignPeriodOf a owl:ObjectProperty ;
+    rdfs:label "was reign period of" ;
+    rdfs:comment "Indicates that a time period was the reign of a specific person" ;
+    rdfs:domain ont:TimePeriod ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:reignedDuring .
+
+ont:wasRuledBy a owl:ObjectProperty ;
+    rdfs:label "was ruled by" ;
+    rdfs:comment "Indicates that a place was ruled by a dynasty" ;
+    rdfs:domain ont:Place ;
+    rdfs:range ont:Dynasty ;
+    owl:inverseOf ont:ruledOver .
+
+ont:wasSignedBy a owl:ObjectProperty ;
+    rdfs:label "was signed by" ;
+    rdfs:comment "Indicates that a treaty was signed by a person" ;
+    rdfs:domain ont:Treaty ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:signedTreaty .
+
+ont:yearOfConstruction a owl:DatatypeProperty ;
+    rdfs:label "year of construction" ;
+    rdfs:comment "The year a building was constructed" ;
+    rdfs:domain ont:Building ;
+    rdfs:range xsd:gYear .
+
+ont:yearOfEnactment a owl:DatatypeProperty ;
+    rdfs:label "year of enactment" ;
+    rdfs:comment "The year a law was enacted" ;
+    rdfs:domain ont:Law ;
+    rdfs:range xsd:gYear .
+
+ont:ChurchStateRelation a owl:Class ;
+    rdfs:label "Church-State Relation" ;
+    rdfs:comment "The relationship between the French monarchy and the Catholic Church" .
+
+ont:CulturalAchievement a owl:Class ;
+    rdfs:label "Cultural Achievement" ;
+    rdfs:comment "A significant contribution to art, literature, or other cultural domains" .
+
+ont:DiplomaticAchievement a owl:Class ;
+    rdfs:label "Diplomatic Achievement" ;
+    rdfs:comment "A significant accomplishment in foreign relations" .
+
+ont:EconomicImpact a owl:Class ;
+    rdfs:label "Economic Impact" ;
+    rdfs:comment "The effect of policies or events on the economy" .
+
+ont:FrenchAdministrativeBody a owl:Class ;
+    rdfs:label "French Administrative Body" ;
+    rdfs:comment "An administrative entity in the French government" ;
+    rdfs:subClassOf ont:AdministrativeDivision .
+
+ont:FrenchHistoricalEra a owl:Class ;
+    rdfs:label "French Historical Era" ;
+    rdfs:comment "A specific period in French history" ;
+    rdfs:subClassOf ont:TimePeriod .
+
+ont:MilitaryOutcome a owl:Class ;
+    rdfs:label "Military Outcome" ;
+    rdfs:comment "The result of a military conflict" .
+
+ont:PoliticalReform a owl:Class ;
+    rdfs:label "Political Reform" ;
+    rdfs:comment "A significant change in political structure or policy" ;
+    rdfs:subClassOf ont:PoliticalConcept .
+
+ont:PublicOpinion a owl:Class ;
+    rdfs:label "Public Opinion" ;
+    rdfs:comment "The general sentiment of the public towards a ruler" .
+
+ont:SuccessionStability a owl:Class ;
+    rdfs:label "Succession Stability" ;
+    rdfs:comment "The degree of stability in royal succession" .
+
+ont:affectedEconomicConcept a owl:ObjectProperty ;
+    rdfs:label "affected economic concept" ;
+    rdfs:comment "Indicates that a military conflict affected an economic concept" ;
+    rdfs:domain ont:MilitaryConflict ;
+    rdfs:range ont:EconomicConcept .
+
+ont:associatedWith a owl:ObjectProperty ;
+    rdfs:label "associated with" ;
+    rdfs:comment "Indicates that a religious concept is associated with a dynasty" ;
+    rdfs:domain ont:ReligiousConcept ;
+    rdfs:range ont:Dynasty .
+
+ont:associatedWithPoliticalConcept a owl:ObjectProperty ;
+    rdfs:label "associated with political concept" ;
+    rdfs:comment "Indicates that a person is associated with a political concept" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:PoliticalConcept .
+
+ont:belongedToDynasty a owl:ObjectProperty ;
+    rdfs:label "belonged to dynasty" ;
+    rdfs:comment "Indicates that a person belonged to a specific dynasty" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Dynasty .
+
+ont:causedEvent a owl:ObjectProperty ;
+    rdfs:label "caused event" ;
+    rdfs:comment "Indicates that a military conflict caused an event" ;
+    rdfs:domain ont:MilitaryConflict ;
+    rdfs:range ont:Event .
+
+ont:commissionedArtifact a owl:ObjectProperty ;
+    rdfs:label "commissioned artifact" ;
+    rdfs:comment "Indicates that a person or dynasty commissioned an artifact" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Artifact .
+
+ont:constructedBuilding a owl:ObjectProperty ;
+    rdfs:label "constructed building" ;
+    rdfs:comment "Indicates that a person or dynasty constructed a building" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Building .
+
+ont:contributedTo a owl:ObjectProperty ;
+    rdfs:label "contributed to" ;
+    rdfs:comment "Indicates that a person contributed to an administrative division" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:AdministrativeDivision .
+
+ont:createdOrganization a owl:ObjectProperty ;
+    rdfs:label "created organization" ;
+    rdfs:comment "Indicates that a person or dynasty created an organization" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Organization .
+
+ont:enactedLaw a owl:ObjectProperty ;
+    rdfs:label "enacted law" ;
+    rdfs:comment "Indicates that a person or dynasty enacted a law" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Law .
+
+ont:establishedLaw a owl:ObjectProperty ;
+    rdfs:label "established law" ;
+    rdfs:comment "Indicates that a treaty established a law" ;
+    rdfs:domain ont:Treaty ;
+    rdfs:range ont:Law .
+
+ont:hasOrigin a owl:ObjectProperty ;
+    rdfs:label "has origin" ;
+    rdfs:comment "Indicates the origin of a dynasty or ethnicity" ;
+    rdfs:domain ont:Dynasty,
+        ont:Ethnicity ;
+    rdfs:range ont:Place .
+
+ont:hasSuccessor a owl:ObjectProperty ;
+    rdfs:label "has successor" ;
+    rdfs:comment "Indicates that a person has a successor in their title or position" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Person .
+
+ont:heldTitle a owl:ObjectProperty ;
+    rdfs:label "held title" ;
+    rdfs:comment "Indicates that a person held a specific title" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Title .
+
+ont:implementedPolicy a owl:ObjectProperty ;
+    rdfs:label "implemented policy" ;
+    rdfs:comment "Indicates that a person or dynasty implemented a political concept as policy" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:PoliticalConcept .
+
+ont:implementedReform a owl:ObjectProperty ;
+    rdfs:label "implemented reform" ;
+    rdfs:comment "Indicates that a person implemented an administrative reform" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:AdministrativeDivision .
+
+ont:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influenced by" ;
+    rdfs:comment "Indicates that a political concept was influenced by a religious concept" ;
+    rdfs:domain ont:PoliticalConcept ;
+    rdfs:range ont:ReligiousConcept .
+
+ont:influencedExpansion a owl:ObjectProperty ;
+    rdfs:label "influenced expansion" ;
+    rdfs:comment "Indicates that a geographical feature influenced the expansion of a dynasty" ;
+    rdfs:domain ont:GeographicalFeature ;
+    rdfs:range ont:Dynasty .
+
+ont:influencedLanguage a owl:ObjectProperty ;
+    rdfs:label "influenced language" ;
+    rdfs:comment "Indicates that a dynasty influenced a language" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Language .
+
+ont:introducedEconomicConcept a owl:ObjectProperty ;
+    rdfs:label "introduced economic concept" ;
+    rdfs:comment "Indicates that a dynasty introduced an economic concept" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:EconomicConcept .
+
+ont:isPartOf a owl:ObjectProperty ;
+    rdfs:label "is part of" ;
+    rdfs:comment "Indicates that an administrative division is part of a larger place" ;
+    rdfs:domain ont:AdministrativeDivision ;
+    rdfs:range ont:Place .
+
+ont:issuedDocument a owl:ObjectProperty ;
+    rdfs:label "issued document" ;
+    rdfs:comment "Indicates that a person or dynasty issued a document" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Document .
+
+ont:locatedIn a owl:ObjectProperty ;
+    rdfs:label "located in" ;
+    rdfs:comment "Indicates that a geographical feature is located in a place" ;
+    rdfs:domain ont:GeographicalFeature ;
+    rdfs:range ont:Place .
+
+ont:managedRelationsWith a owl:ObjectProperty ;
+    rdfs:label "managed relations with" ;
+    rdfs:comment "Indicates that a dynasty managed relations with an ethnicity" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Ethnicity .
+
+ont:mentionedIn a owl:ObjectProperty ;
+    rdfs:label "mentioned in" ;
+    rdfs:comment "Indicates that a person, place, or event is mentioned in a document" ;
+    rdfs:domain ont:Event,
+        ont:Person,
+        ont:Place ;
+    rdfs:range ont:Document .
+
+ont:occurredDuring a owl:ObjectProperty ;
+    rdfs:label "occurred during" ;
+    rdfs:comment "Indicates that an event occurred during a specific reign" ;
+    rdfs:domain ont:Event ;
+    rdfs:range ont:Person .
+
+ont:opposedReforms a owl:ObjectProperty ;
+    rdfs:label "opposed reforms" ;
+    rdfs:comment "Indicates that an organization opposed reforms during a person's reign" ;
+    rdfs:domain ont:Organization ;
+    rdfs:range ont:Person .
+
+ont:participatedIn a owl:ObjectProperty ;
+    rdfs:label "participated in" ;
+    rdfs:comment "Indicates that a dynasty participated in a military conflict" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:MilitaryConflict .
+
+ont:precededDynasty a owl:ObjectProperty ;
+    rdfs:label "preceded dynasty" ;
+    rdfs:comment "Indicates that one dynasty preceded another in ruling a place" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Dynasty .
+
+ont:reignedDuring a owl:ObjectProperty ;
+    rdfs:label "reigned during" ;
+    rdfs:comment "Indicates that a person reigned during a specific time period" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:TimePeriod .
+
+ont:representedIn a owl:ObjectProperty ;
+    rdfs:label "represented in" ;
+    rdfs:comment "Indicates that a person or dynasty is represented in an artifact" ;
+    rdfs:domain ont:Dynasty,
+        ont:Person ;
+    rdfs:range ont:Artifact .
+
+ont:ruledOver a owl:ObjectProperty ;
+    rdfs:label "ruled over" ;
+    rdfs:comment "Indicates that a dynasty ruled over a place" ;
+    rdfs:domain ont:Dynasty ;
+    rdfs:range ont:Place .
+
+ont:signedTreaty a owl:ObjectProperty ;
+    rdfs:label "signed treaty" ;
+    rdfs:comment "Indicates that a person signed a treaty" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:Treaty .
+
+ont:speaksLanguage a owl:ObjectProperty ;
+    rdfs:label "speaks language" ;
+    rdfs:comment "Indicates that an ethnicity speaks a particular language" ;
+    rdfs:domain ont:Ethnicity ;
+    rdfs:range ont:Language .
+
+ont:wasInfluencedByEvent a owl:ObjectProperty ;
+    rdfs:label "was influenced by event" ;
+    rdfs:comment "Indicates that a law was influenced by a specific event" ;
+    rdfs:domain ont:Law ;
+    rdfs:range ont:Event .
+
+ont:wasUsedDuring a owl:ObjectProperty ;
+    rdfs:label "was used during" ;
+    rdfs:comment "Indicates that a language was used during a specific time period" ;
+    rdfs:domain ont:Language ;
+    rdfs:range ont:TimePeriod .
+
+ont:Effectiveness a owl:Class ;
+    rdfs:label "Effectiveness" ;
+    rdfs:comment "A measure of a ruler's success and impact" .
+
+ont:Title a owl:Class ;
+    rdfs:label "Title" ;
+    rdfs:comment "An official position or status" .
+
+ont:Building a owl:Class ;
+    rdfs:label "Building" ;
+    rdfs:comment "A structure with a roof and walls, such as a house or factory" .
+
+ont:Document a owl:Class ;
+    rdfs:label "Document" ;
+    rdfs:comment "A piece of written, printed, or electronic matter that provides information or evidence" .
+
+ont:EconomicConcept a owl:Class ;
+    rdfs:label "Economic Concept" ;
+    rdfs:comment "An idea or principle related to economics" .
+
+ont:GeographicalFeature a owl:Class ;
+    rdfs:label "Geographical Feature" ;
+    rdfs:comment "A natural or man-made feature of the Earth's surface" .
+
+ont:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A group of people with a particular purpose" .
+
+ont:ReligiousConcept a owl:Class ;
+    rdfs:label "Religious Concept" ;
+    rdfs:comment "An idea or belief related to religion" .
+
+ont:Artifact a owl:Class ;
+    rdfs:label "Artifact" ;
+    rdfs:comment "An object made by a human being, typically one of cultural or historical interest" .
+
+ont:Treaty a owl:Class ;
+    rdfs:label "Treaty" ;
+    rdfs:comment "A formal agreement between states" .
+
+ont:Language a owl:Class ;
+    rdfs:label "Language" ;
+    rdfs:comment "A system of communication used by a particular country or community" .
+
+ont:MilitaryConflict a owl:Class ;
+    rdfs:label "Military Conflict" ;
+    rdfs:comment "A war or battle between opposing forces" .
+
+ont:TimePeriod a owl:Class ;
+    rdfs:label "Time Period" ;
+    rdfs:comment "A length or portion of time" .
+
+ont:AdministrativeDivision a owl:Class ;
+    rdfs:label "Administrative Division" ;
+    rdfs:comment "A territorial unit for administration purposes" .
+
+ont:Ethnicity a owl:Class ;
+    rdfs:label "Ethnicity" ;
+    rdfs:comment "A social group that shares a common culture, language, or ancestry" .
+
+ont:Law a owl:Class ;
+    rdfs:label "Law" ;
+    rdfs:comment "A system of rules that a particular country or community recognizes as regulating the actions of its members" .
+
+ont:PoliticalConcept a owl:Class ;
+    rdfs:label "Political Concept" ;
+    rdfs:comment "An idea or principle related to politics or governance" .
+
+ont:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A significant occurrence in history" .
+
+ont:FrenchKing a owl:Class ;
+    rdfs:label "French King" ;
+    rdfs:comment "A monarch who ruled over France" ;
+    rdfs:subClassOf ont:Person .
+
+ont:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A geographical or political entity" .
+
+ont:Dynasty a owl:Class ;
+    rdfs:label "Dynasty" ;
+    rdfs:comment "A line of hereditary rulers of a country" .
+
+ont:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "An individual human being" .

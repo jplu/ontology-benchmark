@@ -1,0 +1,941 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ont:ApplicationDoS a owl:Class ;
+    rdfs:label "Application DoS" ;
+    rdfs:comment "A DoS attack that targets specific applications or services" ;
+    rdfs:subClassOf ont:DoS .
+
+ont:DMZ a owl:Class ;
+    rdfs:label "DMZ" ;
+    rdfs:comment "Demilitarized Zone, a network area that contains and exposes external-facing services" ;
+    rdfs:subClassOf ont:Zone .
+
+ont:DoSPolicy a owl:Class ;
+    rdfs:label "DoS Policy" ;
+    rdfs:comment "Policy defining rules and actions for DoS protection" ;
+    rdfs:subClassOf ont:Policy .
+
+ont:DoSProtectionProfile a owl:Class ;
+    rdfs:label "DoS Protection Profile" ;
+    rdfs:comment "A set of settings and rules for detecting and mitigating DoS attacks" ;
+    rdfs:subClassOf ont:Profile .
+
+ont:DoSRisk a owl:Class ;
+    rdfs:label "DoS Risk" ;
+    rdfs:comment "Potential risks related to Denial of Service attacks" ;
+    rdfs:subClassOf ont:Risk .
+
+ont:ExternalZone a owl:Class ;
+    rdfs:label "External Zone" ;
+    rdfs:comment "A network zone interfacing with external, untrusted networks" ;
+    rdfs:subClassOf ont:Zone .
+
+ont:InterZoneTraffic a owl:Class ;
+    rdfs:label "Inter-Zone Traffic" ;
+    rdfs:comment "Network traffic flowing between different zones" ;
+    rdfs:subClassOf ont:Traffic .
+
+ont:InternalZone a owl:Class ;
+    rdfs:label "Internal Zone" ;
+    rdfs:comment "A network zone containing internal, trusted resources" ;
+    rdfs:subClassOf ont:Zone .
+
+ont:IntraZoneTraffic a owl:Class ;
+    rdfs:label "Intra-Zone Traffic" ;
+    rdfs:comment "Network traffic flowing within the same zone" ;
+    rdfs:subClassOf ont:Traffic .
+
+ont:ProtocolDoS a owl:Class ;
+    rdfs:label "Protocol DoS" ;
+    rdfs:comment "A DoS attack that exploits vulnerabilities in network protocols" ;
+    rdfs:subClassOf ont:DoS .
+
+ont:VolumetricDoS a owl:Class ;
+    rdfs:label "Volumetric DoS" ;
+    rdfs:comment "A DoS attack that attempts to consume all available bandwidth" ;
+    rdfs:subClassOf ont:DoS .
+
+ont:ZoneRisk a owl:Class ;
+    rdfs:label "Zone Risk" ;
+    rdfs:comment "Potential security risks associated with a specific network zone" ;
+    rdfs:subClassOf ont:Risk .
+
+ont:appliesProtectionProfile a owl:ObjectProperty ;
+    rdfs:label "applies protection profile" ;
+    rdfs:comment "Relates a zone to the protection profile applied to it" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:ZoneProtectionProfile .
+
+ont:appliesZoneProtection a owl:ObjectProperty ;
+    rdfs:label "applies zone protection" ;
+    rdfs:comment "Relates a firewall to the zone protection it implements" ;
+    rdfs:domain ont:Firewall ;
+    rdfs:range ont:ZoneProtection .
+
+ont:assessesRisk a owl:ObjectProperty ;
+    rdfs:label "assesses risk" ;
+    rdfs:comment "Relates a zone or system to the risks associated with it" ;
+    rdfs:domain owl:Class ;
+    rdfs:range ont:Risk .
+
+ont:hasApplicationAccess a owl:ObjectProperty ;
+    rdfs:label "has application access" ;
+    rdfs:comment "Relates a zone to the applications allowed to access it" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:ApplicationZoneAccess .
+
+ont:hasEndpoint a owl:ObjectProperty ;
+    rdfs:label "has endpoint" ;
+    rdfs:comment "Relates a network to the devices that serve as its endpoints" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:Endpoint ;
+    owl:inverseOf ont:isEndpoint .
+
+ont:hasUserAccess a owl:ObjectProperty ;
+    rdfs:label "has user access" ;
+    rdfs:comment "Relates a zone to the users who have access to it" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:UserZoneAccess .
+
+ont:hasZonePolicy a owl:ObjectProperty ;
+    rdfs:label "has zone policy" ;
+    rdfs:comment "Relates a zone to its security policy" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:ZonePolicy .
+
+ont:implementsDoSProtection a owl:ObjectProperty ;
+    rdfs:label "implements DoS protection" ;
+    rdfs:comment "Relates a system to the DoS protection measures it employs" ;
+    rdfs:domain ont:System ;
+    rdfs:range ont:DoSProtection .
+
+ont:includesDevice a owl:ObjectProperty ;
+    rdfs:label "includes device" ;
+    rdfs:comment "Relates a domain to the devices or systems it includes" ;
+    rdfs:domain ont:Domain ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:belongsToDomain .
+
+ont:includesPacket a owl:ObjectProperty ;
+    rdfs:label "includes packet" ;
+    rdfs:comment "Relates a session to the packets it comprises" ;
+    rdfs:domain ont:Session ;
+    rdfs:range ont:Packet ;
+    owl:inverseOf ont:belongsToSession .
+
+ont:infects a owl:ObjectProperty ;
+    rdfs:label "infects" ;
+    rdfs:comment "Relates malware to the device it has infected" ;
+    rdfs:domain ont:Malware ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:infectedBy .
+
+ont:interfaceZone a owl:ObjectProperty ;
+    rdfs:label "interface zone" ;
+    rdfs:comment "Relates a firewall interface to the zone it belongs to" ;
+    rdfs:domain ont:Interface ;
+    rdfs:range ont:Zone .
+
+ont:isAccessedBy a owl:ObjectProperty ;
+    rdfs:label "is accessed by" ;
+    rdfs:comment "Relates a URL to the user or application that accesses it" ;
+    rdfs:domain ont:URL ;
+    rdfs:range owl:Class ;
+    owl:inverseOf ont:accessesURL .
+
+ont:isAccessibleTo a owl:ObjectProperty ;
+    rdfs:label "is accessible to" ;
+    rdfs:comment "Relates a resource to the users or systems that can access it" ;
+    rdfs:domain ont:Access ;
+    rdfs:range ont:User ;
+    owl:inverseOf ont:hasAccess .
+
+ont:isAppliedTo a owl:ObjectProperty ;
+    rdfs:label "is applied to" ;
+    rdfs:comment "Relates a protection profile to the zone it is applied to" ;
+    rdfs:domain ont:Profile ;
+    rdfs:range ont:Zone ;
+    owl:inverseOf ont:appliesProfile .
+
+ont:isBandwidthOf a owl:ObjectProperty ;
+    rdfs:label "is bandwidth of" ;
+    rdfs:comment "Relates bandwidth to the network or connection it describes" ;
+    rdfs:domain ont:Bandwidth ;
+    rdfs:range ont:Network ;
+    owl:inverseOf ont:hasBandwidth .
+
+ont:isConductedBy a owl:ObjectProperty ;
+    rdfs:label "is conducted by" ;
+    rdfs:comment "Relates an audit to the auditor or system that performs it" ;
+    rdfs:domain ont:Audit ;
+    rdfs:range ont:User ;
+    owl:inverseOf ont:conductsAudit .
+
+ont:isConfigurationOf a owl:ObjectProperty ;
+    rdfs:label "is configuration of" ;
+    rdfs:comment "Relates a configuration to the device or system it belongs to" ;
+    rdfs:domain ont:Configuration ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:hasConfiguration .
+
+ont:isConnectedBy a owl:ObjectProperty ;
+    rdfs:label "is connected by" ;
+    rdfs:comment "Relates devices to the switch that connects them" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Switch ;
+    owl:inverseOf ont:connectsDevices .
+
+ont:isContainedIn a owl:ObjectProperty ;
+    rdfs:label "is contained in" ;
+    rdfs:comment "Relates data to the system or device that stores or processes it" ;
+    rdfs:domain ont:Data ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:containsData .
+
+ont:isControlledBy a owl:ObjectProperty ;
+    rdfs:label "is controlled by" ;
+    rdfs:comment "Relates traffic to the firewall that manages it" ;
+    rdfs:domain ont:Traffic ;
+    rdfs:range ont:Firewall ;
+    owl:inverseOf ont:controlsTraffic .
+
+ont:isCreatedBy a owl:ObjectProperty ;
+    rdfs:label "is created by" ;
+    rdfs:comment "Relates a tunnel to the network device that creates it" ;
+    rdfs:domain ont:Tunnel ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:createsTunnel .
+
+ont:isDetectedBy a owl:ObjectProperty ;
+    rdfs:label "is detected by" ;
+    rdfs:comment "Relates an incident to the monitoring system that detected it" ;
+    rdfs:domain ont:Incident ;
+    rdfs:range ont:Monitoring ;
+    owl:inverseOf ont:detectsIncident .
+
+ont:isEnsuredBy a owl:ObjectProperty ;
+    rdfs:label "is ensured by" ;
+    rdfs:comment "Relates compliance standards to the security policy that meets them" ;
+    rdfs:domain ont:Compliance ;
+    rdfs:range ont:Policy ;
+    owl:inverseOf ont:ensuresCompliance .
+
+ont:isEstablishedBy a owl:ObjectProperty ;
+    rdfs:label "is established by" ;
+    rdfs:comment "Relates a network connection to the device that created it" ;
+    rdfs:domain ont:Connection ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:establishesConnection .
+
+ont:isFollowedBy a owl:ObjectProperty ;
+    rdfs:label "is followed by" ;
+    rdfs:comment "Relates a protocol to the network communication that adheres to it" ;
+    rdfs:domain ont:Protocol ;
+    rdfs:range ont:Packet ;
+    owl:inverseOf ont:followsProtocol .
+
+ont:isGeneratedBy a owl:ObjectProperty ;
+    rdfs:label "is generated by" ;
+    rdfs:comment "Relates an alert to the security system that produced it" ;
+    rdfs:domain ont:Alert ;
+    rdfs:range ont:Monitoring ;
+    owl:inverseOf ont:generatesAlert .
+
+ont:isGrantedBy a owl:ObjectProperty ;
+    rdfs:label "is granted by" ;
+    rdfs:comment "Relates an authorization to the authentication process that grants it" ;
+    rdfs:domain ont:Authorization ;
+    rdfs:range ont:Authentication ;
+    owl:inverseOf ont:grantsAuthorization .
+
+ont:isHashOf a owl:ObjectProperty ;
+    rdfs:label "is hash of" ;
+    rdfs:comment "Relates a hash value to the data or file it represents" ;
+    rdfs:domain ont:Hash ;
+    rdfs:range ont:Malware ;
+    owl:inverseOf ont:hasHash .
+
+ont:isIPAddressOf a owl:ObjectProperty ;
+    rdfs:label "is IP address of" ;
+    rdfs:comment "Relates an IP address to the device it is assigned to" ;
+    rdfs:domain ont:IPAddress ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:hasIPAddress .
+
+ont:isImplementedBy a owl:ObjectProperty ;
+    rdfs:label "is implemented by" ;
+    rdfs:comment "Relates a policy to the firewall that enforces it" ;
+    rdfs:domain ont:Policy ;
+    rdfs:range ont:Firewall ;
+    owl:inverseOf ont:implementsPolicy .
+
+ont:isInterfaceOf a owl:ObjectProperty ;
+    rdfs:label "is interface of" ;
+    rdfs:comment "Relates an interface to its firewall" ;
+    rdfs:domain ont:Interface ;
+    rdfs:range ont:Firewall ;
+    owl:inverseOf ont:hasInterface .
+
+ont:isLoggedBy a owl:ObjectProperty ;
+    rdfs:label "is logged by" ;
+    rdfs:comment "Relates logging activities to the device or system performing them" ;
+    rdfs:domain ont:Logging ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:performsLogging .
+
+ont:isMonitoredBy a owl:ObjectProperty ;
+    rdfs:label "is monitored by" ;
+    rdfs:comment "Relates a network to the system monitoring it" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:Monitoring ;
+    owl:inverseOf ont:monitorsNetwork .
+
+ont:isPerformedBy a owl:ObjectProperty ;
+    rdfs:label "is performed by" ;
+    rdfs:comment "Relates an attack to the attacker who carried it out" ;
+    rdfs:domain ont:Attack ;
+    rdfs:range ont:Attacker ;
+    owl:inverseOf ont:performsAttack .
+
+ont:isProtectionFor a owl:ObjectProperty ;
+    rdfs:label "is protection for" ;
+    rdfs:comment "Relates protection measures to the zone they protect" ;
+    rdfs:domain ont:Protection ;
+    rdfs:range ont:Zone ;
+    owl:inverseOf ont:providesProtection .
+
+ont:isProvidedBy a owl:ObjectProperty ;
+    rdfs:label "is provided by" ;
+    rdfs:comment "Relates a service to the server that provides it" ;
+    rdfs:domain ont:Application ;
+    rdfs:range ont:Server ;
+    owl:inverseOf ont:providesService .
+
+ont:isReferencedBy a owl:ObjectProperty ;
+    rdfs:label "is referenced by" ;
+    rdfs:comment "Relates a CVE entry to the vulnerability it describes" ;
+    rdfs:domain ont:CVE ;
+    rdfs:range ont:Vulnerability ;
+    owl:inverseOf ont:referencesCVE .
+
+ont:isRequestedBy a owl:ObjectProperty ;
+    rdfs:label "is requested by" ;
+    rdfs:comment "Relates a service to the client that requests it" ;
+    rdfs:domain ont:Application ;
+    rdfs:range ont:Client ;
+    owl:inverseOf ont:requestsService .
+
+ont:isRequiredBy a owl:ObjectProperty ;
+    rdfs:label "is required by" ;
+    rdfs:comment "Relates an authentication process to the system or resource that requires it" ;
+    rdfs:domain ont:Authentication ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:requiresAuthentication .
+
+ont:isRiskPosedBy a owl:ObjectProperty ;
+    rdfs:label "is risk posed by" ;
+    rdfs:comment "Relates a risk to the vulnerability that introduces it" ;
+    rdfs:domain ont:Risk ;
+    rdfs:range ont:Vulnerability ;
+    owl:inverseOf ont:posesRisk .
+
+ont:isRoutedBy a owl:ObjectProperty ;
+    rdfs:label "is routed by" ;
+    rdfs:comment "Relates traffic to the router that forwards it" ;
+    rdfs:domain ont:Traffic ;
+    rdfs:range ont:Router ;
+    owl:inverseOf ont:routesTraffic .
+
+ont:isRuleOf a owl:ObjectProperty ;
+    rdfs:label "is rule of" ;
+    rdfs:comment "Relates a security rule to its profile" ;
+    rdfs:domain ont:Rule ;
+    rdfs:range ont:Profile ;
+    owl:inverseOf ont:hasRule .
+
+ont:isRunOn a owl:ObjectProperty ;
+    rdfs:label "is run on" ;
+    rdfs:comment "Relates an application to the device it runs on" ;
+    rdfs:domain ont:Application ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:runsApplication .
+
+ont:isSegmentationOf a owl:ObjectProperty ;
+    rdfs:label "is segmentation of" ;
+    rdfs:comment "Relates a segmentation strategy to its network" ;
+    rdfs:domain ont:Segmentation ;
+    rdfs:range ont:Network ;
+    owl:inverseOf ont:implementsSegmentation .
+
+ont:isThresholdOf a owl:ObjectProperty ;
+    rdfs:label "is threshold of" ;
+    rdfs:comment "Relates a threshold to the protection profile it belongs to" ;
+    rdfs:domain ont:Threshold ;
+    rdfs:range ont:Profile ;
+    owl:inverseOf ont:hasThreshold .
+
+ont:isUsedBy a owl:ObjectProperty ;
+    rdfs:label "is used by" ;
+    rdfs:comment "Relates an encryption method to the communication or data storage process that uses it" ;
+    rdfs:domain ont:Encryption ;
+    rdfs:range ont:Protocol ;
+    owl:inverseOf ont:usesEncryption .
+
+ont:isUsedByApplication a owl:ObjectProperty ;
+    rdfs:label "is used by application" ;
+    rdfs:comment "Relates a port to the network service or application that uses it" ;
+    rdfs:domain ont:Port ;
+    rdfs:range ont:Application ;
+    owl:inverseOf ont:usesPort .
+
+ont:isUsedBySystem a owl:ObjectProperty ;
+    rdfs:label "is used by system" ;
+    rdfs:comment "Relates a signature to the security system that uses it" ;
+    rdfs:domain ont:Signature ;
+    rdfs:range ont:Firewall ;
+    owl:inverseOf ont:usesSignature .
+
+ont:isUserOf a owl:ObjectProperty ;
+    rdfs:label "is user of" ;
+    rdfs:comment "Relates a user to the network they use" ;
+    rdfs:domain ont:User ;
+    rdfs:range ont:Network ;
+    owl:inverseOf ont:hasUser .
+
+ont:isVulnerabilityOf a owl:ObjectProperty ;
+    rdfs:label "is vulnerability of" ;
+    rdfs:comment "Relates a vulnerability to the system or device it affects" ;
+    rdfs:domain ont:Vulnerability ;
+    rdfs:range ont:Device ;
+    owl:inverseOf ont:hasVulnerability .
+
+ont:isZoneOf a owl:ObjectProperty ;
+    rdfs:label "is zone of" ;
+    rdfs:comment "Relates a zone to its network" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:Network ;
+    owl:inverseOf ont:hasZone .
+
+ont:targets a owl:ObjectProperty ;
+    rdfs:label "targets" ;
+    rdfs:comment "Relates an attack to the zone it targets" ;
+    rdfs:domain ont:Attack ;
+    rdfs:range ont:Zone ;
+    owl:inverseOf ont:targetedBy .
+
+ont:triggersAlert a owl:ObjectProperty ;
+    rdfs:label "triggers alert" ;
+    rdfs:comment "Relates a threshold breach to the alert it generates" ;
+    rdfs:domain ont:DoSThreshold ;
+    rdfs:range ont:ZoneAlert .
+
+ont:ApplicationZoneAccess a owl:Class ;
+    rdfs:label "Application Zone Access" ;
+    rdfs:comment "Defines an application's access rights to specific network zones" .
+
+ont:DoSProtection a owl:Class ;
+    rdfs:label "DoS Protection" ;
+    rdfs:comment "Measures to detect and mitigate Denial of Service attacks" ;
+    rdfs:subClassOf ont:Protection .
+
+ont:DoSThreshold a owl:Class ;
+    rdfs:label "DoS Threshold" ;
+    rdfs:comment "A defined limit that triggers DoS protection measures when exceeded" ;
+    rdfs:subClassOf ont:Threshold .
+
+ont:UserZoneAccess a owl:Class ;
+    rdfs:label "User Zone Access" ;
+    rdfs:comment "Defines a user's access rights to specific network zones" .
+
+ont:ZoneAlert a owl:Class ;
+    rdfs:label "Zone Alert" ;
+    rdfs:comment "An alert specifically related to zone protection events" ;
+    rdfs:subClassOf ont:Alert .
+
+ont:ZonePolicy a owl:Class ;
+    rdfs:label "Zone Policy" ;
+    rdfs:comment "Security policy specifically applied to a network zone" ;
+    rdfs:subClassOf ont:Policy .
+
+ont:ZoneProtection a owl:Class ;
+    rdfs:label "Zone Protection" ;
+    rdfs:comment "Security measures applied to protect specific network zones" ;
+    rdfs:subClassOf ont:Protection .
+
+ont:ZoneProtectionProfile a owl:Class ;
+    rdfs:label "Zone Protection Profile" ;
+    rdfs:comment "A set of security settings applied to protect a specific zone" ;
+    rdfs:subClassOf ont:Profile .
+
+ont:accessesURL a owl:ObjectProperty ;
+    rdfs:label "accesses URL" ;
+    rdfs:comment "Relates a user or application to the URL it accesses" ;
+    rdfs:domain owl:Class ;
+    rdfs:range ont:URL .
+
+ont:appliesProfile a owl:ObjectProperty ;
+    rdfs:label "applies profile" ;
+    rdfs:comment "Relates a zone to the protection profile it applies" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:Profile .
+
+ont:belongsToDomain a owl:ObjectProperty ;
+    rdfs:label "belongs to domain" ;
+    rdfs:comment "Relates a device or system to the domain it is part of" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Domain .
+
+ont:belongsToSession a owl:ObjectProperty ;
+    rdfs:label "belongs to session" ;
+    rdfs:comment "Relates a packet to the session it is part of" ;
+    rdfs:domain ont:Packet ;
+    rdfs:range ont:Session .
+
+ont:conductsAudit a owl:ObjectProperty ;
+    rdfs:label "conducts audit" ;
+    rdfs:comment "Relates an auditor or system to the audit it performs" ;
+    rdfs:domain ont:User ;
+    rdfs:range ont:Audit .
+
+ont:connectsDevices a owl:ObjectProperty ;
+    rdfs:label "connects devices" ;
+    rdfs:comment "Relates a switch to the devices it connects" ;
+    rdfs:domain ont:Switch ;
+    rdfs:range ont:Device .
+
+ont:containsData a owl:ObjectProperty ;
+    rdfs:label "contains data" ;
+    rdfs:comment "Relates a system or device to the data it stores or processes" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Data .
+
+ont:controlsTraffic a owl:ObjectProperty ;
+    rdfs:label "controls traffic" ;
+    rdfs:comment "Relates a firewall to the traffic it manages" ;
+    rdfs:domain ont:Firewall ;
+    rdfs:range ont:Traffic .
+
+ont:createsTunnel a owl:ObjectProperty ;
+    rdfs:label "creates tunnel" ;
+    rdfs:comment "Relates a network device to the tunnel it creates" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Tunnel .
+
+ont:detectsIncident a owl:ObjectProperty ;
+    rdfs:label "detects incident" ;
+    rdfs:comment "Relates a monitoring system to the incidents it detects" ;
+    rdfs:domain ont:Monitoring ;
+    rdfs:range ont:Incident .
+
+ont:ensuresCompliance a owl:ObjectProperty ;
+    rdfs:label "ensures compliance" ;
+    rdfs:comment "Relates a security policy to the compliance standards it meets" ;
+    rdfs:domain ont:Policy ;
+    rdfs:range ont:Compliance .
+
+ont:establishesConnection a owl:ObjectProperty ;
+    rdfs:label "establishes connection" ;
+    rdfs:comment "Relates a device to the network connection it creates" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Connection .
+
+ont:followsProtocol a owl:ObjectProperty ;
+    rdfs:label "follows protocol" ;
+    rdfs:comment "Relates network communication to the protocol it adheres to" ;
+    rdfs:domain ont:Packet ;
+    rdfs:range ont:Protocol .
+
+ont:generatesAlert a owl:ObjectProperty ;
+    rdfs:label "generates alert" ;
+    rdfs:comment "Relates a security system to the alerts it produces" ;
+    rdfs:domain ont:Monitoring ;
+    rdfs:range ont:Alert .
+
+ont:grantsAuthorization a owl:ObjectProperty ;
+    rdfs:label "grants authorization" ;
+    rdfs:comment "Relates an authentication process to the authorization it provides" ;
+    rdfs:domain ont:Authentication ;
+    rdfs:range ont:Authorization .
+
+ont:hasAccess a owl:ObjectProperty ;
+    rdfs:label "has access" ;
+    rdfs:comment "Relates a user or system to the resources it can access" ;
+    rdfs:domain ont:User ;
+    rdfs:range ont:Access .
+
+ont:hasBandwidth a owl:ObjectProperty ;
+    rdfs:label "has bandwidth" ;
+    rdfs:comment "Relates a network or connection to its bandwidth" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:Bandwidth .
+
+ont:hasConfiguration a owl:ObjectProperty ;
+    rdfs:label "has configuration" ;
+    rdfs:comment "Relates a device or system to its configuration" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Configuration .
+
+ont:hasHash a owl:ObjectProperty ;
+    rdfs:label "has hash" ;
+    rdfs:comment "Relates a piece of data or file to its hash value" ;
+    rdfs:domain ont:Malware ;
+    rdfs:range ont:Hash .
+
+ont:hasIPAddress a owl:ObjectProperty ;
+    rdfs:label "has IP address" ;
+    rdfs:comment "Relates a device to its assigned IP address" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:IPAddress .
+
+ont:hasInterface a owl:ObjectProperty ;
+    rdfs:label "has interface" ;
+    rdfs:comment "Relates a firewall to its interfaces" ;
+    rdfs:domain ont:Firewall ;
+    rdfs:range ont:Interface .
+
+ont:hasRule a owl:ObjectProperty ;
+    rdfs:label "has rule" ;
+    rdfs:comment "Relates a profile to its security rules" ;
+    rdfs:domain ont:Profile ;
+    rdfs:range ont:Rule .
+
+ont:hasThreshold a owl:ObjectProperty ;
+    rdfs:label "has threshold" ;
+    rdfs:comment "Relates a protection profile to its defined thresholds" ;
+    rdfs:domain ont:Profile ;
+    rdfs:range ont:Threshold .
+
+ont:hasUser a owl:ObjectProperty ;
+    rdfs:label "has user" ;
+    rdfs:comment "Relates a network to its users" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:User .
+
+ont:hasVulnerability a owl:ObjectProperty ;
+    rdfs:label "has vulnerability" ;
+    rdfs:comment "Relates a system or device to its vulnerabilities" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Vulnerability .
+
+ont:hasZone a owl:ObjectProperty ;
+    rdfs:label "has zone" ;
+    rdfs:comment "Relates a network to its zones" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:Zone .
+
+ont:implementsPolicy a owl:ObjectProperty ;
+    rdfs:label "implements policy" ;
+    rdfs:comment "Relates a firewall to the policies it enforces" ;
+    rdfs:domain ont:Firewall ;
+    rdfs:range ont:Policy .
+
+ont:implementsSegmentation a owl:ObjectProperty ;
+    rdfs:label "implements segmentation" ;
+    rdfs:comment "Relates a network to its segmentation strategy" ;
+    rdfs:domain ont:Network ;
+    rdfs:range ont:Segmentation .
+
+ont:infectedBy a owl:ObjectProperty ;
+    rdfs:label "infected by" ;
+    rdfs:comment "Relates a device to malware that has infected it" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Malware .
+
+ont:isEndpoint a owl:ObjectProperty ;
+    rdfs:label "is endpoint" ;
+    rdfs:comment "Relates a device to its role as an endpoint in a network" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Endpoint .
+
+ont:monitorsNetwork a owl:ObjectProperty ;
+    rdfs:label "monitors network" ;
+    rdfs:comment "Relates a monitoring system to the network it observes" ;
+    rdfs:domain ont:Monitoring ;
+    rdfs:range ont:Network .
+
+ont:performsAttack a owl:ObjectProperty ;
+    rdfs:label "performs attack" ;
+    rdfs:comment "Relates an attacker to the attack they carry out" ;
+    rdfs:domain ont:Attacker ;
+    rdfs:range ont:Attack .
+
+ont:performsLogging a owl:ObjectProperty ;
+    rdfs:label "performs logging" ;
+    rdfs:comment "Relates a device or system to its logging activities" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Logging .
+
+ont:posesRisk a owl:ObjectProperty ;
+    rdfs:label "poses risk" ;
+    rdfs:comment "Relates a vulnerability to the risk it introduces" ;
+    rdfs:domain ont:Vulnerability ;
+    rdfs:range ont:Risk .
+
+ont:providesProtection a owl:ObjectProperty ;
+    rdfs:label "provides protection" ;
+    rdfs:comment "Relates a zone to the protection measures it implements" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:Protection .
+
+ont:providesService a owl:ObjectProperty ;
+    rdfs:label "provides service" ;
+    rdfs:comment "Relates a server to the service it provides" ;
+    rdfs:domain ont:Server ;
+    rdfs:range ont:Application .
+
+ont:referencesCVE a owl:ObjectProperty ;
+    rdfs:label "references CVE" ;
+    rdfs:comment "Relates a vulnerability to its corresponding CVE entry" ;
+    rdfs:domain ont:Vulnerability ;
+    rdfs:range ont:CVE .
+
+ont:requestsService a owl:ObjectProperty ;
+    rdfs:label "requests service" ;
+    rdfs:comment "Relates a client to the service it requests" ;
+    rdfs:domain ont:Client ;
+    rdfs:range ont:Application .
+
+ont:requiresAuthentication a owl:ObjectProperty ;
+    rdfs:label "requires authentication" ;
+    rdfs:comment "Relates a system or resource to the authentication process it requires" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Authentication .
+
+ont:routesTraffic a owl:ObjectProperty ;
+    rdfs:label "routes traffic" ;
+    rdfs:comment "Relates a router to the traffic it forwards" ;
+    rdfs:domain ont:Router ;
+    rdfs:range ont:Traffic .
+
+ont:runsApplication a owl:ObjectProperty ;
+    rdfs:label "runs application" ;
+    rdfs:comment "Relates a device to the applications it runs" ;
+    rdfs:domain ont:Device ;
+    rdfs:range ont:Application .
+
+ont:targetedBy a owl:ObjectProperty ;
+    rdfs:label "targeted by" ;
+    rdfs:comment "Relates a zone to attacks targeting it" ;
+    rdfs:domain ont:Zone ;
+    rdfs:range ont:Attack .
+
+ont:usesEncryption a owl:ObjectProperty ;
+    rdfs:label "uses encryption" ;
+    rdfs:comment "Relates a communication or data storage process to the encryption it employs" ;
+    rdfs:domain ont:Protocol ;
+    rdfs:range ont:Encryption .
+
+ont:usesPort a owl:ObjectProperty ;
+    rdfs:label "uses port" ;
+    rdfs:comment "Relates a network service or application to the port it uses" ;
+    rdfs:domain ont:Application ;
+    rdfs:range ont:Port .
+
+ont:usesSignature a owl:ObjectProperty ;
+    rdfs:label "uses signature" ;
+    rdfs:comment "Relates a security system to the signatures it uses for detection" ;
+    rdfs:domain ont:Firewall ;
+    rdfs:range ont:Signature .
+
+ont:Access a owl:Class ;
+    rdfs:label "Access" ;
+    rdfs:comment "The ability to interact with a system or resource" .
+
+ont:Attacker a owl:Class ;
+    rdfs:label "Attacker" ;
+    rdfs:comment "An individual or entity attempting to breach security" .
+
+ont:Audit a owl:Class ;
+    rdfs:label "Audit" ;
+    rdfs:comment "A systematic review of system activities and records" .
+
+ont:Authorization a owl:Class ;
+    rdfs:label "Authorization" ;
+    rdfs:comment "The process of granting or denying access rights to resources" .
+
+ont:Bandwidth a owl:Class ;
+    rdfs:label "Bandwidth" ;
+    rdfs:comment "The maximum rate of data transfer across a network" .
+
+ont:CVE a owl:Class ;
+    rdfs:label "CVE" ;
+    rdfs:comment "Common Vulnerabilities and Exposures, a list of publicly disclosed cybersecurity vulnerabilities" .
+
+ont:Client a owl:Class ;
+    rdfs:label "Client" ;
+    rdfs:comment "A computer program or device that requests services from a server" .
+
+ont:Compliance a owl:Class ;
+    rdfs:label "Compliance" ;
+    rdfs:comment "Adherence to security standards and regulations" .
+
+ont:Configuration a owl:Class ;
+    rdfs:label "Configuration" ;
+    rdfs:comment "The way a system or device is set up" .
+
+ont:Connection a owl:Class ;
+    rdfs:label "Connection" ;
+    rdfs:comment "A link between two points in a network" .
+
+ont:Data a owl:Class ;
+    rdfs:label "Data" ;
+    rdfs:comment "Information processed or stored by a computer" .
+
+ont:Domain a owl:Class ;
+    rdfs:label "Domain" ;
+    rdfs:comment "A group of computers and devices on a network" .
+
+ont:Encryption a owl:Class ;
+    rdfs:label "Encryption" ;
+    rdfs:comment "The process of encoding data to prevent unauthorized access" .
+
+ont:Endpoint a owl:Class ;
+    rdfs:label "Endpoint" ;
+    rdfs:comment "A device that connects to a network" .
+
+ont:Hash a owl:Class ;
+    rdfs:label "Hash" ;
+    rdfs:comment "A fixed-size string of characters generated from a piece of data" .
+
+ont:IPAddress a owl:Class ;
+    rdfs:label "IP Address" ;
+    rdfs:comment "A numerical label assigned to each device in a computer network" .
+
+ont:Incident a owl:Class ;
+    rdfs:label "Incident" ;
+    rdfs:comment "A security event that requires attention or response" .
+
+ont:Logging a owl:Class ;
+    rdfs:label "Logging" ;
+    rdfs:comment "The process of recording network events and traffic" .
+
+ont:Port a owl:Class ;
+    rdfs:label "Port" ;
+    rdfs:comment "A communication endpoint in an operating system" .
+
+ont:Router a owl:Class ;
+    rdfs:label "Router" ;
+    rdfs:comment "A networking device that forwards data packets between computer networks" .
+
+ont:Rule a owl:Class ;
+    rdfs:label "Rule" ;
+    rdfs:comment "A defined condition for handling network traffic" .
+
+ont:Segmentation a owl:Class ;
+    rdfs:label "Segmentation" ;
+    rdfs:comment "The practice of dividing a network into smaller, isolated segments" .
+
+ont:Server a owl:Class ;
+    rdfs:label "Server" ;
+    rdfs:comment "A computer program or device that provides a service to other programs or devices" .
+
+ont:Session a owl:Class ;
+    rdfs:label "Session" ;
+    rdfs:comment "A temporary connection between two network entities" .
+
+ont:Signature a owl:Class ;
+    rdfs:label "Signature" ;
+    rdfs:comment "A pattern used to identify specific types of network traffic or malware" .
+
+ont:Switch a owl:Class ;
+    rdfs:label "Switch" ;
+    rdfs:comment "A networking device that connects devices within a computer network" .
+
+ont:Tunnel a owl:Class ;
+    rdfs:label "Tunnel" ;
+    rdfs:comment "A secure channel for transmitting data between two networks" .
+
+ont:URL a owl:Class ;
+    rdfs:label "URL" ;
+    rdfs:comment "Uniform Resource Locator, a reference to a web resource" .
+
+ont:Alert a owl:Class ;
+    rdfs:label "Alert" ;
+    rdfs:comment "A notification of a potential security issue or event" .
+
+ont:DoS a owl:Class ;
+    rdfs:label "DoS" ;
+    rdfs:comment "Denial of Service, a type of attack aimed at disrupting normal functioning" .
+
+ont:Interface a owl:Class ;
+    rdfs:label "Interface" ;
+    rdfs:comment "A point of interaction between network components" .
+
+ont:Threshold a owl:Class ;
+    rdfs:label "Threshold" ;
+    rdfs:comment "A defined limit for triggering security actions" .
+
+ont:Attack a owl:Class ;
+    rdfs:label "Attack" ;
+    rdfs:comment "A malicious attempt to compromise security" .
+
+ont:Authentication a owl:Class ;
+    rdfs:label "Authentication" ;
+    rdfs:comment "The process of verifying the identity of a user or system" .
+
+ont:Malware a owl:Class ;
+    rdfs:label "Malware" ;
+    rdfs:comment "Malicious software designed to cause harm or unauthorized access" .
+
+ont:Packet a owl:Class ;
+    rdfs:label "Packet" ;
+    rdfs:comment "A unit of data transmitted over a network" .
+
+ont:Protection a owl:Class ;
+    rdfs:label "Protection" ;
+    rdfs:comment "Measures taken to defend against security threats" .
+
+ont:Protocol a owl:Class ;
+    rdfs:label "Protocol" ;
+    rdfs:comment "A set of rules governing communication between network entities" .
+
+ont:Risk a owl:Class ;
+    rdfs:label "Risk" ;
+    rdfs:comment "The potential for loss or damage due to a threat" .
+
+ont:Monitoring a owl:Class ;
+    rdfs:label "Monitoring" ;
+    rdfs:comment "The continuous observation of network activity" .
+
+ont:Policy a owl:Class ;
+    rdfs:label "Policy" ;
+    rdfs:comment "A set of rules governing network behavior and security" .
+
+ont:Traffic a owl:Class ;
+    rdfs:label "Traffic" ;
+    rdfs:comment "Data flowing through a network" .
+
+ont:User a owl:Class ;
+    rdfs:label "User" ;
+    rdfs:comment "An individual who interacts with the network" .
+
+ont:Vulnerability a owl:Class ;
+    rdfs:label "Vulnerability" ;
+    rdfs:comment "A weakness in a system that can be exploited" .
+
+ont:Application a owl:Class ;
+    rdfs:label "Application" ;
+    rdfs:comment "A software program running on the network" .
+
+ont:Profile a owl:Class ;
+    rdfs:label "Profile" ;
+    rdfs:comment "A set of configurations for security settings" .
+
+ont:Firewall a owl:Class ;
+    rdfs:label "Firewall" ;
+    rdfs:comment "A security device that monitors and controls network traffic" .
+
+ont:Network a owl:Class ;
+    rdfs:label "Network" ;
+    rdfs:comment "A collection of interconnected devices and systems" .
+
+ont:Zone a owl:Class ;
+    rdfs:label "Zone" ;
+    rdfs:comment "A logical or physical segment of a network with defined security policies" .
+
+ont:Device a owl:Class ;
+    rdfs:label "Device" ;
+    rdfs:comment "A hardware component connected to the network" .
+

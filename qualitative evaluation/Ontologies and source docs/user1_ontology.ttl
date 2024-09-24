@@ -1,0 +1,819 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Abandon a owl:Class ;
+    rdfs:label "Abandon" ;
+    rdfs:comment "Un résultat de match où un joueur abandonne" ;
+    rdfs:subClassOf ont:ResultatMatch .
+
+ont:Age a owl:Class ;
+    rdfs:label "Âge" ;
+    rdfs:comment "L'âge d'un joueur" .
+
+ont:Amende a owl:Class ;
+    rdfs:label "Amende" ;
+    rdfs:comment "Sanction financière imposée à un joueur" ;
+    rdfs:subClassOf ont:Sanction .
+
+ont:ClassementMondial a owl:Class ;
+    rdfs:label "Classement mondial" ;
+    rdfs:comment "Le classement d'un joueur au niveau international" ;
+    rdfs:subClassOf ont:Classement .
+
+ont:ContenuReseauxSociaux a owl:Class ;
+    rdfs:label "Contenu Réseaux Sociaux" ;
+    rdfs:comment "Contenu lié au tennis partagé sur les réseaux sociaux" ;
+    rdfs:subClassOf ont:Medias .
+
+ont:Disqualification a owl:Class ;
+    rdfs:label "Disqualification" ;
+    rdfs:comment "Un résultat de match où un joueur est disqualifié" ;
+    rdfs:subClassOf ont:ResultatMatch .
+
+ont:GrandChelem a owl:Class ;
+    rdfs:label "Grand Chelem" ;
+    rdfs:comment "L'un des quatre tournois majeurs du tennis professionnel" ;
+    rdfs:subClassOf ont:Competition .
+
+ont:InterviewPostMatch a owl:Class ;
+    rdfs:label "Interview Post-Match" ;
+    rdfs:comment "Une interview réalisée après un match" ;
+    rdfs:subClassOf ont:Medias .
+
+ont:Jeu a owl:Class ;
+    rdfs:label "Jeu" ;
+    rdfs:comment "Une partie d'un set de tennis" .
+
+ont:Point a owl:Class ;
+    rdfs:label "Point" ;
+    rdfs:comment "Un point dans un jeu de tennis" .
+
+ont:Reportage a owl:Class ;
+    rdfs:label "Reportage" ;
+    rdfs:comment "Un reportage journalistique sur un événement de tennis" .
+
+ont:Suspension a owl:Class ;
+    rdfs:label "Suspension" ;
+    rdfs:comment "Interdiction temporaire de participer à des compétitions" ;
+    rdfs:subClassOf ont:Sanction .
+
+ont:Trophee a owl:Class ;
+    rdfs:label "Trophée" ;
+    rdfs:comment "Objet symbolique remis au vainqueur d'une compétition" ;
+    rdfs:subClassOf ont:Titre .
+
+ont:aAge a owl:DatatypeProperty ;
+    rdfs:label "a âge" ;
+    rdfs:comment "Indique l'âge d'un joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range xsd:integer .
+
+ont:aAngleJournalistique a owl:ObjectProperty ;
+    rdfs:label "a angle journalistique" ;
+    rdfs:comment "Indique l'angle journalistique utilisé dans un article" ;
+    rdfs:domain ont:Article ;
+    rdfs:range ont:AngleJournalistique .
+
+ont:aCategorie a owl:ObjectProperty ;
+    rdfs:label "a catégorie" ;
+    rdfs:comment "Indique la catégorie d'une compétition" ;
+    rdfs:domain ont:Competition ;
+    rdfs:range ont:CategorieCompetition .
+
+ont:aConditionsJeu a owl:ObjectProperty ;
+    rdfs:label "a conditions jeu" ;
+    rdfs:comment "Relie un match à ses conditions de jeu" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:ConditionsJeu .
+
+ont:aDate a owl:ObjectProperty ;
+    rdfs:label "a date" ;
+    rdfs:comment "Relie un match à sa date" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:DateEvenement .
+
+ont:aPointsClassement a owl:ObjectProperty ;
+    rdfs:label "a points classement" ;
+    rdfs:comment "Relie un joueur à ses points de classement" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:PointsClassement .
+
+ont:aRivalite a owl:ObjectProperty ;
+    rdfs:label "a rivalité" ;
+    rdfs:comment "Indique qu'un joueur a une rivalité avec un autre joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Rivalite .
+
+ont:accueilleJoueur a owl:ObjectProperty ;
+    rdfs:label "accueille joueur" ;
+    rdfs:comment "Indique qu'une compétition accueille un joueur",
+        "Relie une conférence de presse au joueur qui y participe" ;
+    rdfs:domain ont:Competition,
+        ont:ConferenceDePresse ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:participeA,
+        ont:participerA .
+
+ont:accueilleMatch a owl:ObjectProperty ;
+    rdfs:label "accueille match" ;
+    rdfs:comment "Indique qu'un tournoi accueille un match",
+        "Relie un stade aux matchs qui s'y déroulent",
+        "Relie une surface de jeu au match qui s'y déroule" ;
+    rdfs:domain ont:Stade,
+        ont:SurfaceDeJeu,
+        ont:Tournoi ;
+    rdfs:range ont:Match ;
+    owl:inverseOf ont:seJoueDans,
+        ont:seJoueSur .
+
+ont:affecteJoueur a owl:ObjectProperty ;
+    rdfs:label "affecte joueur" ;
+    rdfs:comment "Relie une blessure au joueur qu'elle affecte" ;
+    rdfs:domain ont:Blessure ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aBlessure .
+
+ont:classeJoueur a owl:ObjectProperty ;
+    rdfs:label "classe joueur" ;
+    rdfs:comment "Relie un classement au joueur correspondant" ;
+    rdfs:domain ont:Classement ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aClassement .
+
+ont:comprendTournoi a owl:ObjectProperty ;
+    rdfs:label "comprend tournoi" ;
+    rdfs:comment "Relie une saison aux tournois qui la composent" ;
+    rdfs:domain ont:Saison ;
+    rdfs:range ont:Tournoi ;
+    owl:inverseOf ont:appartientA .
+
+ont:contientSet a owl:ObjectProperty ;
+    rdfs:label "contient set" ;
+    rdfs:comment "Indique qu'un match contient un set spécifique" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:Set .
+
+ont:couvre a owl:ObjectProperty ;
+    rdfs:label "couvre" ;
+    rdfs:comment "Indique qu'un article couvre un match spécifique" ;
+    rdfs:domain ont:Article ;
+    rdfs:range ont:Match .
+
+ont:debutCarriere a owl:DatatypeProperty ;
+    rdfs:label "début carrière" ;
+    rdfs:comment "Indique l'année de début de la carrière professionnelle d'un joueur" ;
+    rdfs:domain ont:Carriere ;
+    rdfs:range xsd:gYear .
+
+ont:diffuseInformationsSur a owl:ObjectProperty ;
+    rdfs:label "diffuse informations sur" ;
+    rdfs:comment "Relie un média au joueur sur lequel il diffuse des informations" ;
+    rdfs:domain ont:Medias ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:communiquerVia .
+
+ont:entrainerJoueur a owl:ObjectProperty ;
+    rdfs:label "entraîner joueur" ;
+    rdfs:comment "Relie un entraîneur au joueur qu'il entraîne" ;
+    rdfs:domain ont:Entraineur ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aEntraineur .
+
+ont:estAdopteePar a owl:ObjectProperty ;
+    rdfs:label "est adoptée par" ;
+    rdfs:comment "Relie une tactique au joueur qui l'utilise" ;
+    rdfs:domain ont:Tactique ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:adopteTactique .
+
+ont:estAdversaireDe a owl:ObjectProperty ;
+    rdfs:label "est adversaire de" ;
+    rdfs:comment "Relie un adversaire au joueur qu'il affronte" ;
+    rdfs:domain ont:Adversaire ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aAdversaire .
+
+ont:estCarriereDe a owl:ObjectProperty ;
+    rdfs:label "est carrière de" ;
+    rdfs:comment "Relie une carrière au joueur correspondant" ;
+    rdfs:domain ont:Carriere ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aCarriere .
+
+ont:estComportementDe a owl:ObjectProperty ;
+    rdfs:label "est comportement de" ;
+    rdfs:comment "Relie un comportement au joueur correspondant" ;
+    rdfs:domain ont:Comportement ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aComportement .
+
+ont:estDetenuPar a owl:ObjectProperty ;
+    rdfs:label "est détenu par" ;
+    rdfs:comment "Relie un record au joueur qui le détient" ;
+    rdfs:domain ont:Record ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:detientRecord .
+
+ont:estExprimePar a owl:ObjectProperty ;
+    rdfs:label "est exprimé par" ;
+    rdfs:comment "Relie une émotion au joueur qui l'exprime" ;
+    rdfs:domain ont:Emotion ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:exprimeEmotion .
+
+ont:estImposePar a owl:ObjectProperty ;
+    rdfs:label "est imposée par" ;
+    rdfs:comment "Relie une sanction à l'instance dirigeante qui l'impose" ;
+    rdfs:domain ont:Sanction ;
+    rdfs:range ont:InstanceDirigeante ;
+    owl:inverseOf ont:imposeSanction .
+
+ont:estImposeeA a owl:ObjectProperty ;
+    rdfs:label "est imposée à" ;
+    rdfs:comment "Relie une sanction au joueur qui la reçoit" ;
+    rdfs:domain ont:Sanction ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:recoitSanction .
+
+ont:estMaitrisePar a owl:ObjectProperty ;
+    rdfs:label "est maîtrisé par" ;
+    rdfs:comment "Relie un coup aux joueurs qui le maîtrisent" ;
+    rdfs:domain ont:Coup ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:maitriseCoup .
+
+ont:estMaitriseePar a owl:ObjectProperty ;
+    rdfs:label "est maîtrisée par" ;
+    rdfs:comment "Relie une technique au joueur qui la maîtrise" ;
+    rdfs:domain ont:Technique ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:maitriseTechnique .
+
+ont:estMentalDe a owl:ObjectProperty ;
+    rdfs:label "est mental de" ;
+    rdfs:comment "Relie un état mental au joueur correspondant" ;
+    rdfs:domain ont:Mental ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aMental .
+
+ont:estNationaliteDe a owl:ObjectProperty ;
+    rdfs:label "est nationalité de" ;
+    rdfs:comment "Relie une nationalité aux joueurs qui la représentent" ;
+    rdfs:domain ont:Nationalite ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aNationalite .
+
+ont:estObjectifDe a owl:ObjectProperty ;
+    rdfs:label "est objectif de" ;
+    rdfs:comment "Relie un objectif au joueur qui l'a fixé" ;
+    rdfs:domain ont:Objectif ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aObjectif .
+
+ont:estPhysiqueDe a owl:ObjectProperty ;
+    rdfs:label "est physique de" ;
+    rdfs:comment "Relie une condition physique au joueur correspondant" ;
+    rdfs:domain ont:Physique ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aPhysique .
+
+ont:estRealisePar a owl:ObjectProperty ;
+    rdfs:label "est réalisé par" ;
+    rdfs:comment "Relie une performance au joueur qui l'a réalisée" ;
+    rdfs:domain ont:Performance ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:realisePerformance .
+
+ont:estRemportePar a owl:ObjectProperty ;
+    rdfs:label "est remporté par" ;
+    rdfs:comment "Relie un titre au joueur qui l'a remporté" ;
+    rdfs:domain ont:Titre ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:remporterTitre .
+
+ont:estRemporteePar a owl:ObjectProperty ;
+    rdfs:label "est remportée par" ;
+    rdfs:comment "Relie une victoire au joueur qui l'a remportée" ;
+    rdfs:domain ont:Victoire ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:remporteVictoire .
+
+ont:estRespectePar a owl:ObjectProperty ;
+    rdfs:label "est respecté par" ;
+    rdfs:comment "Relie un règlement aux joueurs qui le respectent" ;
+    rdfs:domain ont:Reglement ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:respecteReglement .
+
+ont:estScoreDe a owl:ObjectProperty ;
+    rdfs:label "est score de" ;
+    rdfs:comment "Relie un score au match correspondant" ;
+    rdfs:domain ont:Score ;
+    rdfs:range ont:Match ;
+    owl:inverseOf ont:aScore .
+
+ont:estSerieDeVictoiresDe a owl:ObjectProperty ;
+    rdfs:label "est série de victoires de" ;
+    rdfs:comment "Relie une série de victoires au joueur correspondant" ;
+    rdfs:domain ont:SerieDeVictoires ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aSerieDeVictoires .
+
+ont:estStatistiqueDe a owl:ObjectProperty ;
+    rdfs:label "est statistique de" ;
+    rdfs:comment "Relie des statistiques au joueur correspondant" ;
+    rdfs:domain ont:Statistique ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aStatistique .
+
+ont:estSubiePar a owl:ObjectProperty ;
+    rdfs:label "est subie par" ;
+    rdfs:comment "Relie une défaite au joueur qui l'a subie" ;
+    rdfs:domain ont:Defaite ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:subitDefaite .
+
+ont:estSuiviPar a owl:ObjectProperty ;
+    rdfs:label "est suivi par" ;
+    rdfs:comment "Relie une préparation au joueur qui la suit" ;
+    rdfs:domain ont:Preparation ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:suivrePreparation .
+
+ont:estUtilisePar a owl:ObjectProperty ;
+    rdfs:label "est utilisé par" ;
+    rdfs:comment "Relie un équipement au joueur qui l'utilise" ;
+    rdfs:domain ont:Equipement ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:utiliseEquipement .
+
+ont:impliqueJoueur a owl:ObjectProperty ;
+    rdfs:label "implique joueur" ;
+    rdfs:comment "Relie une controverse au joueur impliqué" ;
+    rdfs:domain ont:Controverse ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:estImpliqueDans .
+
+ont:inclutTournoi a owl:ObjectProperty ;
+    rdfs:label "inclut tournoi" ;
+    rdfs:comment "Relie un calendrier aux tournois qu'il comprend" ;
+    rdfs:domain ont:Calendrier ;
+    rdfs:range ont:Tournoi ;
+    owl:inverseOf ont:estInclusDans .
+
+ont:joueContre a owl:ObjectProperty ;
+    rdfs:label "joue contre" ;
+    rdfs:comment "Indique qu'un joueur affronte un autre joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Joueur .
+
+ont:nombreAces a owl:DatatypeProperty ;
+    rdfs:label "nombre aces" ;
+    rdfs:comment "Le nombre d'aces servis dans un match" ;
+    rdfs:domain ont:StatistiqueMatch ;
+    rdfs:range xsd:integer .
+
+ont:pourcentagePremierService a owl:DatatypeProperty ;
+    rdfs:label "pourcentage premier service" ;
+    rdfs:comment "Le pourcentage de premiers services réussis" ;
+    rdfs:domain ont:StatistiqueMatch ;
+    rdfs:range xsd:decimal .
+
+ont:regroupeJoueur a owl:ObjectProperty ;
+    rdfs:label "regroupe joueur" ;
+    rdfs:comment "Relie une catégorie d'âge aux joueurs qu'elle regroupe" ;
+    rdfs:domain ont:CategorieAge ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:aCategorieAge .
+
+ont:sponsoriseJoueur a owl:ObjectProperty ;
+    rdfs:label "sponsorise joueur" ;
+    rdfs:comment "Relie un sponsor au joueur qu'il soutient" ;
+    rdfs:domain ont:Sponsor ;
+    rdfs:range ont:Joueur ;
+    owl:inverseOf ont:estSponsorisePar .
+
+ont:AngleJournalistique a owl:Class ;
+    rdfs:label "Angle Journalistique" ;
+    rdfs:comment "Un angle ou une perspective journalistique sur un événement de tennis" .
+
+ont:CategorieCompetition a owl:Class ;
+    rdfs:label "Catégorie Compétition" ;
+    rdfs:comment "La catégorie d'une compétition de tennis (ex: Grand Chelem, ATP 1000)" .
+
+ont:ConditionsJeu a owl:Class ;
+    rdfs:label "Conditions Jeu" ;
+    rdfs:comment "Les conditions dans lesquelles se déroule un match (ex: météo, ambiance)" .
+
+ont:DateEvenement a owl:Class ;
+    rdfs:label "Date Événement" ;
+    rdfs:comment "La date d'un événement de tennis" .
+
+ont:PointsClassement a owl:Class ;
+    rdfs:label "Points Classement" ;
+    rdfs:comment "Les points attribués à un joueur pour le classement" .
+
+ont:Rivalite a owl:Class ;
+    rdfs:label "Rivalité" ;
+    rdfs:comment "Une relation de rivalité entre deux joueurs" .
+
+ont:Set a owl:Class ;
+    rdfs:label "Set" ;
+    rdfs:comment "Une partie d'un match de tennis" .
+
+ont:aAdversaire a owl:ObjectProperty ;
+    rdfs:label "a adversaire" ;
+    rdfs:comment "Relie un joueur à son adversaire dans un match" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Adversaire .
+
+ont:aBlessure a owl:ObjectProperty ;
+    rdfs:label "a blessure" ;
+    rdfs:comment "Relie un joueur à une blessure qu'il a subie" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Blessure .
+
+ont:aCarriere a owl:ObjectProperty ;
+    rdfs:label "a carrière" ;
+    rdfs:comment "Relie un joueur à sa carrière professionnelle" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Carriere .
+
+ont:aCategorieAge a owl:ObjectProperty ;
+    rdfs:label "a catégorie d'âge" ;
+    rdfs:comment "Indique la catégorie d'âge d'un joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:CategorieAge .
+
+ont:aClassement a owl:ObjectProperty ;
+    rdfs:label "a classement" ;
+    rdfs:comment "Relie un joueur à son classement" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Classement .
+
+ont:aComportement a owl:ObjectProperty ;
+    rdfs:label "a comportement" ;
+    rdfs:comment "Relie un joueur à son comportement" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Comportement .
+
+ont:aEntraineur a owl:ObjectProperty ;
+    rdfs:label "a entraîneur" ;
+    rdfs:comment "Relie un joueur à son entraîneur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Entraineur .
+
+ont:aMental a owl:ObjectProperty ;
+    rdfs:label "a mental" ;
+    rdfs:comment "Relie un joueur à son état mental" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Mental .
+
+ont:aNationalite a owl:ObjectProperty ;
+    rdfs:label "a nationalité" ;
+    rdfs:comment "Indique la nationalité d'un joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Nationalite .
+
+ont:aObjectif a owl:ObjectProperty ;
+    rdfs:label "a objectif" ;
+    rdfs:comment "Indique l'objectif d'un joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Objectif .
+
+ont:aPhysique a owl:ObjectProperty ;
+    rdfs:label "a physique" ;
+    rdfs:comment "Relie un joueur à sa condition physique" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Physique .
+
+ont:aScore a owl:ObjectProperty ;
+    rdfs:label "a score" ;
+    rdfs:comment "Relie un match à son score final" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:Score .
+
+ont:aSerieDeVictoires a owl:ObjectProperty ;
+    rdfs:label "a série de victoires" ;
+    rdfs:comment "Relie un joueur à sa série de victoires" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:SerieDeVictoires .
+
+ont:aStatistique a owl:ObjectProperty ;
+    rdfs:label "a statistique" ;
+    rdfs:comment "Relie un joueur à ses statistiques" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Statistique .
+
+ont:adopteTactique a owl:ObjectProperty ;
+    rdfs:label "adopte tactique" ;
+    rdfs:comment "Relie un joueur à une tactique qu'il utilise" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Tactique .
+
+ont:appartientA a owl:ObjectProperty ;
+    rdfs:label "appartient à" ;
+    rdfs:comment "Indique la saison à laquelle appartient un tournoi" ;
+    rdfs:domain ont:Tournoi ;
+    rdfs:range ont:Saison .
+
+ont:communiquerVia a owl:ObjectProperty ;
+    rdfs:label "communiquer via" ;
+    rdfs:comment "Indique qu'un joueur communique à travers un média spécifique" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Medias .
+
+ont:detientRecord a owl:ObjectProperty ;
+    rdfs:label "détient record" ;
+    rdfs:comment "Indique qu'un joueur détient un record particulier" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Record .
+
+ont:estImpliqueDans a owl:ObjectProperty ;
+    rdfs:label "est impliqué dans" ;
+    rdfs:comment "Indique qu'un joueur est impliqué dans une controverse" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Controverse .
+
+ont:estInclusDans a owl:ObjectProperty ;
+    rdfs:label "est inclus dans" ;
+    rdfs:comment "Indique qu'un tournoi fait partie d'un calendrier" ;
+    rdfs:domain ont:Tournoi ;
+    rdfs:range ont:Calendrier .
+
+ont:estSponsorisePar a owl:ObjectProperty ;
+    rdfs:label "est sponsorisé par" ;
+    rdfs:comment "Indique qu'un joueur est sponsorisé par une entreprise ou organisation" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Sponsor .
+
+ont:exprimeEmotion a owl:ObjectProperty ;
+    rdfs:label "exprime émotion" ;
+    rdfs:comment "Relie un joueur à une émotion qu'il exprime" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Emotion .
+
+ont:imposeSanction a owl:ObjectProperty ;
+    rdfs:label "impose sanction" ;
+    rdfs:comment "Indique qu'une instance dirigeante impose une sanction" ;
+    rdfs:domain ont:InstanceDirigeante ;
+    rdfs:range ont:Sanction .
+
+ont:maitriseCoup a owl:ObjectProperty ;
+    rdfs:label "maîtrise coup" ;
+    rdfs:comment "Indique qu'un joueur maîtrise un certain type de coup" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Coup .
+
+ont:maitriseTechnique a owl:ObjectProperty ;
+    rdfs:label "maîtrise technique" ;
+    rdfs:comment "Indique qu'un joueur maîtrise une technique spécifique" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Technique .
+
+ont:participeA a owl:ObjectProperty ;
+    rdfs:label "participe à" ;
+    rdfs:comment "Indique qu'un joueur participe à une compétition" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Competition .
+
+ont:participerA a owl:ObjectProperty ;
+    rdfs:label "participer à" ;
+    rdfs:comment "Indique qu'un joueur participe à une conférence de presse" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:ConferenceDePresse .
+
+ont:realisePerformance a owl:ObjectProperty ;
+    rdfs:label "réalise performance" ;
+    rdfs:comment "Relie un joueur à une performance qu'il a réalisée" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Performance .
+
+ont:recoitSanction a owl:ObjectProperty ;
+    rdfs:label "reçoit sanction" ;
+    rdfs:comment "Indique qu'un joueur reçoit une sanction" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Sanction .
+
+ont:remporteVictoire a owl:ObjectProperty ;
+    rdfs:label "remporte victoire" ;
+    rdfs:comment "Indique qu'un joueur a remporté une victoire" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Victoire .
+
+ont:remporterTitre a owl:ObjectProperty ;
+    rdfs:label "remporter titre" ;
+    rdfs:comment "Indique qu'un joueur a remporté un titre" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Titre .
+
+ont:respecteReglement a owl:ObjectProperty ;
+    rdfs:label "respecte règlement" ;
+    rdfs:comment "Indique qu'un joueur respecte un règlement spécifique" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Reglement .
+
+ont:seJoueDans a owl:ObjectProperty ;
+    rdfs:label "se joue dans" ;
+    rdfs:comment "Indique le stade dans lequel se déroule un match",
+        "Indique le tournoi dans lequel un match se déroule" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:Stade,
+        ont:Tournoi .
+
+ont:seJoueSur a owl:ObjectProperty ;
+    rdfs:label "se joue sur" ;
+    rdfs:comment "Indique la surface de jeu sur laquelle se déroule un match" ;
+    rdfs:domain ont:Match ;
+    rdfs:range ont:SurfaceDeJeu .
+
+ont:subitDefaite a owl:ObjectProperty ;
+    rdfs:label "subit défaite" ;
+    rdfs:comment "Indique qu'un joueur a subi une défaite" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Defaite .
+
+ont:suivrePreparation a owl:ObjectProperty ;
+    rdfs:label "suivre préparation" ;
+    rdfs:comment "Indique qu'un joueur suit une préparation spécifique" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Preparation .
+
+ont:utiliseEquipement a owl:ObjectProperty ;
+    rdfs:label "utilise équipement" ;
+    rdfs:comment "Indique l'équipement utilisé par un joueur" ;
+    rdfs:domain ont:Joueur ;
+    rdfs:range ont:Equipement .
+
+ont:Adversaire a owl:Class ;
+    rdfs:label "Adversaire" ;
+    rdfs:comment "Un joueur qui s'oppose à un autre dans un match" .
+
+ont:Article a owl:Class ;
+    rdfs:label "Article" ;
+    rdfs:comment "Un article journalistique sur le tennis" .
+
+ont:Blessure a owl:Class ;
+    rdfs:label "Blessure" ;
+    rdfs:comment "Problème physique affectant la santé et les performances d'un joueur" .
+
+ont:Calendrier a owl:Class ;
+    rdfs:label "Calendrier" ;
+    rdfs:comment "Planning des tournois et compétitions de tennis" .
+
+ont:CategorieAge a owl:Class ;
+    rdfs:label "Catégorie d'âge" ;
+    rdfs:comment "Classification des joueurs selon leur tranche d'âge" .
+
+ont:Comportement a owl:Class ;
+    rdfs:label "Comportement" ;
+    rdfs:comment "Manière d'agir d'un joueur sur et en dehors du court" .
+
+ont:ConferenceDePresse a owl:Class ;
+    rdfs:label "Conférence de presse" ;
+    rdfs:comment "Événement médiatique où les joueurs répondent aux questions des journalistes" .
+
+ont:Controverse a owl:Class ;
+    rdfs:label "Controverse" ;
+    rdfs:comment "Situation polémique impliquant un joueur ou un aspect du tennis" .
+
+ont:Coup a owl:Class ;
+    rdfs:label "Coup" ;
+    rdfs:comment "Type de frappe de balle en tennis" .
+
+ont:Defaite a owl:Class ;
+    rdfs:label "Défaite" ;
+    rdfs:comment "Résultat négatif d'un match pour un joueur" .
+
+ont:Emotion a owl:Class ;
+    rdfs:label "Émotion" ;
+    rdfs:comment "Un état affectif ressenti par un joueur" .
+
+ont:Entraineur a owl:Class ;
+    rdfs:label "Entraîneur" ;
+    rdfs:comment "Personne qui guide et forme un joueur de tennis" .
+
+ont:Equipement a owl:Class ;
+    rdfs:label "Équipement" ;
+    rdfs:comment "Matériel utilisé par les joueurs de tennis" .
+
+ont:InstanceDirigeante a owl:Class ;
+    rdfs:label "Instance dirigeante" ;
+    rdfs:comment "Organisation qui régit et administre le tennis professionnel" .
+
+ont:Mental a owl:Class ;
+    rdfs:label "Mental" ;
+    rdfs:comment "État psychologique et force mentale d'un joueur" .
+
+ont:Nationalite a owl:Class ;
+    rdfs:label "Nationalité" ;
+    rdfs:comment "Pays que représente un joueur dans les compétitions internationales" .
+
+ont:Objectif a owl:Class ;
+    rdfs:label "Objectif" ;
+    rdfs:comment "But ou ambition d'un joueur pour sa carrière ou une compétition spécifique" .
+
+ont:Performance a owl:Class ;
+    rdfs:label "Performance" ;
+    rdfs:comment "Résultat ou accomplissement d'un joueur lors d'un match ou d'une compétition" .
+
+ont:Physique a owl:Class ;
+    rdfs:label "Physique" ;
+    rdfs:comment "Condition et capacités physiques d'un joueur" .
+
+ont:Preparation a owl:Class ;
+    rdfs:label "Préparation" ;
+    rdfs:comment "Ensemble des activités visant à préparer un joueur pour une compétition" .
+
+ont:Record a owl:Class ;
+    rdfs:label "Record" ;
+    rdfs:comment "Performance exceptionnelle ou marque historique dans le tennis" .
+
+ont:Reglement a owl:Class ;
+    rdfs:label "Règlement" ;
+    rdfs:comment "Ensemble des règles régissant le jeu de tennis et les compétitions" .
+
+ont:Saison a owl:Class ;
+    rdfs:label "Saison" ;
+    rdfs:comment "Période annuelle regroupant l'ensemble des compétitions de tennis" .
+
+ont:Score a owl:Class ;
+    rdfs:label "Score" ;
+    rdfs:comment "Résultat chiffré d'un match de tennis" .
+
+ont:SerieDeVictoires a owl:Class ;
+    rdfs:label "Série de victoires" ;
+    rdfs:comment "Succession de victoires consécutives pour un joueur" .
+
+ont:Sponsor a owl:Class ;
+    rdfs:label "Sponsor" ;
+    rdfs:comment "Entreprise ou organisation qui soutient financièrement un joueur ou un tournoi" .
+
+ont:Stade a owl:Class ;
+    rdfs:label "Stade" ;
+    rdfs:comment "Infrastructure sportive où se déroulent les matchs de tennis" .
+
+ont:StatistiqueMatch a owl:Class ;
+    rdfs:label "Statistique Match" ;
+    rdfs:comment "Statistiques spécifiques à un match de tennis" ;
+    rdfs:subClassOf ont:Statistique .
+
+ont:SurfaceDeJeu a owl:Class ;
+    rdfs:label "Surface de jeu" ;
+    rdfs:comment "Type de terrain sur lequel se déroule un match de tennis" .
+
+ont:Tactique a owl:Class ;
+    rdfs:label "Tactique" ;
+    rdfs:comment "Stratégie employée par un joueur pendant un match" .
+
+ont:Technique a owl:Class ;
+    rdfs:label "Technique" ;
+    rdfs:comment "Ensemble de gestes et mouvements spécifiques au tennis" .
+
+ont:Victoire a owl:Class ;
+    rdfs:label "Victoire" ;
+    rdfs:comment "Résultat positif d'un match pour un joueur" .
+
+ont:Carriere a owl:Class ;
+    rdfs:label "Carrière" ;
+    rdfs:comment "Parcours professionnel d'un joueur de tennis" .
+
+ont:Classement a owl:Class ;
+    rdfs:label "Classement" ;
+    rdfs:comment "La position d'un joueur dans un système de classement" .
+
+ont:Statistique a owl:Class ;
+    rdfs:label "Statistique" ;
+    rdfs:comment "Données chiffrées sur les performances d'un joueur" .
+
+ont:Titre a owl:Class ;
+    rdfs:label "Titre" ;
+    rdfs:comment "Récompense obtenue par un joueur pour avoir remporté une compétition" .
+
+ont:Medias a owl:Class ;
+    rdfs:label "Médias" ;
+    rdfs:comment "Moyens de communication utilisés pour diffuser des informations sur le tennis" .
+
+ont:Competition a owl:Class ;
+    rdfs:label "Compétition" ;
+    rdfs:comment "Un événement sportif où les joueurs s'affrontent" .
+
+ont:Sanction a owl:Class ;
+    rdfs:label "Sanction" ;
+    rdfs:comment "Pénalité imposée à un joueur pour violation des règles" .
+
+ont:Tournoi a owl:Class ;
+    rdfs:label "Tournoi" ;
+    rdfs:comment "Une compétition de tennis organisée sur plusieurs jours" ;
+    rdfs:subClassOf ont:Competition .
+
+ont:Match a owl:Class ;
+    rdfs:label "Match" ;
+    rdfs:comment "Une rencontre entre deux joueurs ou équipes dans une compétition" .
+
+ont:Joueur a owl:Class ;
+    rdfs:label "Joueur" ;
+    rdfs:comment "Un athlète professionnel qui participe à des compétitions de tennis" .
+

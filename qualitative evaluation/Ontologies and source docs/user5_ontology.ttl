@@ -1,0 +1,162 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:City a owl:Class ;
+    rdfs:label "City" ;
+    rdfs:comment "A large human settlement with defined boundaries and a local government." .
+
+ont:Culture a owl:Class ;
+    rdfs:label "Culture" ;
+    rdfs:comment "The customs, arts, social institutions, and achievements of a particular nation or people." .
+
+ont:Economy a owl:Class ;
+    rdfs:label "Economy" ;
+    rdfs:comment "The system of production, distribution, and consumption of goods and services in a country." .
+
+ont:Language a owl:Class ;
+    rdfs:label "Language" ;
+    rdfs:comment "A structured system of communication used by humans." .
+
+ont:Ocean a owl:Class ;
+    rdfs:label "Ocean" ;
+    rdfs:comment "A large body of saltwater that covers a significant portion of the Earth's surface." .
+
+ont:President a owl:Class ;
+    rdfs:label "President" ;
+    rdfs:comment "The head of state or government in a republic." .
+
+ont:flowsThroughCountry a owl:ObjectProperty ;
+    rdfs:label "flows through country" ;
+    rdfs:comment "Indicates the country or countries through which a river flows." ;
+    rdfs:domain ont:River ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:hasRiver .
+
+ont:hasArea a owl:DatatypeProperty ;
+    rdfs:label "has area" ;
+    rdfs:comment "The total land area of a country in square kilometers." ;
+    rdfs:domain ont:Country ;
+    rdfs:range xsd:decimal .
+
+ont:hasGDP a owl:DatatypeProperty ;
+    rdfs:label "has GDP" ;
+    rdfs:comment "The Gross Domestic Product of a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range xsd:decimal .
+
+ont:hasMember a owl:ObjectProperty ;
+    rdfs:label "has member" ;
+    rdfs:comment "Indicates that an international organization has a country as a member." ;
+    rdfs:domain ont:InternationalOrganization ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:isMemberOf .
+
+ont:hasOfficialName a owl:DatatypeProperty ;
+    rdfs:domain ont:Country .
+
+ont:hasPopulation a owl:DatatypeProperty ;
+    rdfs:label "has population" ;
+    rdfs:comment "The total number of people living in a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range xsd:integer .
+
+ont:isClimateZoneOf a owl:ObjectProperty ;
+    rdfs:label "is climate zone of" ;
+    rdfs:comment "Indicates the country that has a particular climate zone." ;
+    rdfs:domain ont:ClimateZone ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:hasClimateZone .
+
+ont:isGovernmentTypeOf a owl:ObjectProperty ;
+    rdfs:label "is government type of" ;
+    rdfs:comment "Indicates the country that has a particular type of government." ;
+    rdfs:domain ont:GovernmentType ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:hasGovernmentType .
+
+ont:isMainIndustryOf a owl:ObjectProperty ;
+    rdfs:label "is main industry of" ;
+    rdfs:comment "Indicates the country for which an industry is a primary industry." ;
+    rdfs:domain ont:Industry ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:hasMainIndustry .
+
+ont:locatedInCountry a owl:ObjectProperty ;
+    rdfs:label "located in country" ;
+    rdfs:comment "Indicates the country in which a mountain is located." ;
+    rdfs:domain ont:Mountain ;
+    rdfs:range ont:Country ;
+    owl:inverseOf ont:hasMountain .
+
+ont:hasClimateZone a owl:ObjectProperty ;
+    rdfs:label "has climate zone" ;
+    rdfs:comment "Indicates a climate zone present in a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:ClimateZone .
+
+ont:hasGovernmentType a owl:ObjectProperty ;
+    rdfs:label "has government type" ;
+    rdfs:comment "Indicates the type of government a country has." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:GovernmentType .
+
+ont:hasMainIndustry a owl:ObjectProperty ;
+    rdfs:label "has main industry" ;
+    rdfs:comment "Indicates a primary industry of a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:Industry .
+
+ont:hasMountain a owl:ObjectProperty ;
+    rdfs:label "has mountain" ;
+    rdfs:comment "Indicates that a mountain is located within a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:Mountain .
+
+ont:hasRiver a owl:ObjectProperty ;
+    rdfs:label "has river" ;
+    rdfs:comment "Indicates that a river flows through a country." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:River .
+
+ont:isMemberOf a owl:ObjectProperty ;
+    rdfs:label "is member of" ;
+    rdfs:comment "Indicates that a country is a member of an international organization." ;
+    rdfs:domain ont:Country ;
+    rdfs:range ont:InternationalOrganization .
+
+ont:ClimateZone a owl:Class ;
+    rdfs:label "Climate Zone" ;
+    rdfs:comment "A region of the Earth's surface having a particular climate." .
+
+ont:GeographicalFeature a owl:Class ;
+    rdfs:label "Geographical Feature" ;
+    rdfs:comment "A natural feature of the Earth's surface." .
+
+ont:GovernmentType a owl:Class ;
+    rdfs:label "Government Type" ;
+    rdfs:comment "The system by which a state or community is governed." .
+
+ont:Industry a owl:Class ;
+    rdfs:label "Industry" ;
+    rdfs:comment "A particular branch of economic or commercial activity." .
+
+ont:InternationalOrganization a owl:Class ;
+    rdfs:label "International Organization" ;
+    rdfs:comment "An organization with international membership, scope, or presence." .
+
+ont:Mountain a owl:Class ;
+    rdfs:label "Mountain" ;
+    rdfs:comment "A large natural elevation of the Earth's surface." ;
+    rdfs:subClassOf ont:GeographicalFeature .
+
+ont:River a owl:Class ;
+    rdfs:label "River" ;
+    rdfs:comment "A natural flowing watercourse." ;
+    rdfs:subClassOf ont:GeographicalFeature .
+
+ont:Country a owl:Class ;
+    rdfs:label "Country" ;
+    rdfs:comment "A sovereign state with its own government and territory." .
+

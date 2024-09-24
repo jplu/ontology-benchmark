@@ -1,0 +1,698 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ont:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A planned public or social occasion" .
+
+ont:belongsToSchool a owl:ObjectProperty ;
+    rdfs:label "belongs to school" ;
+    rdfs:comment "Relates an artist or artwork to a specific artistic school" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:ArtisticSchool .
+
+ont:documentsArtForm a owl:ObjectProperty ;
+    rdfs:label "documents art form" ;
+    rdfs:comment "Indicates that a piece of documentation provides information about an art form" ;
+    rdfs:domain ont:Documentation ;
+    rdfs:range ont:ArtForm .
+
+ont:eventDate a owl:DatatypeProperty ;
+    rdfs:label "event date" ;
+    rdfs:comment "The date of a timeline event" ;
+    rdfs:domain ont:TimelineEvent ;
+    rdfs:range xsd:date .
+
+ont:existsInContext a owl:ObjectProperty ;
+    rdfs:label "exists in context" ;
+    rdfs:comment "Relates an art form to its cultural context at a specific time" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:CulturalContext .
+
+ont:hasCollaboratingOrganization a owl:ObjectProperty ;
+    rdfs:label "has collaborating organization" ;
+    rdfs:comment "Indicates that artists of an art form work together with an organization" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Organization ;
+    owl:inverseOf ont:collaboratesWithArtists .
+
+ont:hasEvent a owl:ObjectProperty ;
+    rdfs:label "has event" ;
+    rdfs:comment "Relates a timeline to its constituent events" ;
+    rdfs:domain ont:Timeline ;
+    rdfs:range ont:TimelineEvent .
+
+ont:hasEvolutionStage a owl:ObjectProperty ;
+    rdfs:label "has evolution stage" ;
+    rdfs:comment "Relates an art form to a specific stage in its evolution" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Evolution .
+
+ont:hasImpact a owl:ObjectProperty ;
+    rdfs:label "has impact" ;
+    rdfs:comment "Relates an art form to its measured impact" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ImpactMeasure .
+
+ont:hasSpreadEvent a owl:ObjectProperty ;
+    rdfs:label "has spread event" ;
+    rdfs:comment "Relates a geographical spread to specific events of expansion" ;
+    rdfs:domain ont:GeographicalSpread ;
+    rdfs:range ont:TimelineEvent .
+
+ont:hasVibrantSceneIn a owl:ObjectProperty ;
+    rdfs:label "has vibrant scene in" ;
+    rdfs:comment "Indicates that an art form has a lively and active scene in a specific geographic location" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:GeographicLocation ;
+    owl:inverseOf ont:hasVibrantScene .
+
+ont:impactValue a owl:DatatypeProperty ;
+    rdfs:label "impact value" ;
+    rdfs:comment "The numerical or descriptive value of the impact measure" ;
+    rdfs:domain ont:ImpactMeasure ;
+    rdfs:range xsd:string .
+
+ont:influencedByTechnology a owl:ObjectProperty ;
+    rdfs:label "influenced by technology" ;
+    rdfs:comment "Indicates that an art form was affected by a specific technological advancement" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:TechnologicalAdvancement .
+
+ont:integrates a owl:ObjectProperty ;
+    rdfs:label "integrates" ;
+    rdfs:comment "Indicates that a brand or advertising medium incorporates an art form" ;
+    rdfs:domain ont:AdvertisingMedium,
+        ont:Brand ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:isIntegratedInto .
+
+ont:isAddressedBy a owl:ObjectProperty ;
+    rdfs:label "is addressed by" ;
+    rdfs:comment "Indicates that a social issue or political movement is tackled or expressed through an art form" ;
+    rdfs:domain ont:PoliticalMovement,
+        ont:SocialIssue ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:addressesIssue .
+
+ont:isAddressedInArt a owl:ObjectProperty ;
+    rdfs:label "is addressed in art" ;
+    rdfs:comment "Indicates that an environmental issue is tackled or expressed through an art form" ;
+    rdfs:domain ont:EnvironmentalIssue ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:addressesEnvironmentalIssue .
+
+ont:isAddressedInArtForm a owl:ObjectProperty ;
+    rdfs:label "is addressed in art form" ;
+    rdfs:comment "Indicates that themes of cultural heritage or exchange are explored in a specific art form" ;
+    rdfs:domain ont:CulturalExchange,
+        ont:CulturalHeritage ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:addressesTheme .
+
+ont:isBlendedIn a owl:ObjectProperty ;
+    rdfs:label "is blended in" ;
+    rdfs:comment "Indicates that an art technique or style is combined in an art form" ;
+    rdfs:domain ont:ArtStyle,
+        ont:ArtTechnique ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:blendsElements .
+
+ont:isBlendedWithArtForm a owl:ObjectProperty ;
+    rdfs:label "is blended with art form" ;
+    rdfs:comment "Indicates that an art movement's elements are combined with an art form" ;
+    rdfs:domain ont:ArtMovement ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:blendsWithMovement .
+
+ont:isChallengedBy a owl:ObjectProperty ;
+    rdfs:label "is challenged by" ;
+    rdfs:comment "Indicates that the boundaries of public space are questioned by an art form" ;
+    rdfs:domain ont:PublicSpace ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:challengesBoundaries .
+
+ont:isChallengendBy a owl:ObjectProperty ;
+    rdfs:label "is challenged by" ;
+    rdfs:comment "Indicates that traditional concepts of artistic influence or innovation are questioned or redefined by an art form" ;
+    rdfs:domain ont:ArtisticInfluence,
+        ont:ArtisticInnovation ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:challengesNotions .
+
+ont:isCoinedBy a owl:ObjectProperty ;
+    rdfs:label "is coined by" ;
+    rdfs:comment "Indicates that an art form term was created or first used by a person" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Person ;
+    owl:inverseOf ont:coinsTerm .
+
+ont:isEvokedBy a owl:ObjectProperty ;
+    rdfs:label "is evoked by" ;
+    rdfs:comment "Indicates that an emotion is elicited or expressed by an art form" ;
+    rdfs:domain ont:Emotion ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:evokesEmotion .
+
+ont:isExpressedBy a owl:ObjectProperty ;
+    rdfs:label "is expressed by" ;
+    rdfs:comment "Indicates that a cultural identity is expressed through an art form" ;
+    rdfs:domain ont:CulturalIdentity ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:expressesIdentity .
+
+ont:isFosteredBy a owl:ObjectProperty ;
+    rdfs:label "is fostered by" ;
+    rdfs:comment "Indicates that cultural dialogue is promoted by an art form" ;
+    rdfs:domain ont:CulturalDialogue ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:fostersCulturalDialogue .
+
+ont:isImpactedBy a owl:ObjectProperty ;
+    rdfs:label "is impacted by" ;
+    rdfs:comment "Indicates that an artistic community is affected or influenced by a digital platform" ;
+    rdfs:domain ont:ArtisticCommunity ;
+    rdfs:range ont:DigitalPlatform ;
+    owl:inverseOf ont:impactsArtisticCommunity .
+
+ont:isImpactedByTool a owl:ObjectProperty ;
+    rdfs:label "is impacted by tool" ;
+    rdfs:comment "Indicates that an art form's development or change is influenced by a technological tool" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:TechnologicalTool ;
+    owl:inverseOf ont:impactsEvolution .
+
+ont:isIncorporatedBy a owl:ObjectProperty ;
+    rdfs:label "is incorporated by" ;
+    rdfs:comment "Indicates that elements of spiritual practices or religious texts are included in an art form" ;
+    rdfs:domain ont:ReligiousText,
+        ont:SpiritualPractice ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:incorporatesElements .
+
+ont:isIncorporatedIn a owl:ObjectProperty ;
+    rdfs:label "is incorporated in" ;
+    rdfs:comment "Indicates that a mathematical concept or visual element is included in an art form" ;
+    rdfs:domain ont:MathematicalConcept,
+        ont:VisualElement ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:incorporatesPrinciples .
+
+ont:isIncorporatedInArt a owl:ObjectProperty ;
+    rdfs:label "is incorporated in art" ;
+    rdfs:comment "Indicates that aspects of urban aesthetics or development are included in an art form" ;
+    rdfs:domain ont:UrbanAesthetic,
+        ont:UrbanDevelopment ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:incorporatesUrbanElements .
+
+ont:isIncorporatedInArtForm a owl:ObjectProperty ;
+    rdfs:label "is incorporated in art form" ;
+    rdfs:comment "Indicates that a script is included or used in a specific art form" ;
+    rdfs:domain ont:Script ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:incorporatesScript .
+
+ont:isIncorporatedIntoArtForm a owl:ObjectProperty ;
+    rdfs:label "is incorporated into art form" ;
+    rdfs:comment "Indicates that elements of a musical genre are included in an art form" ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:incorporatesMusicalElements .
+
+ont:isInfluencedBy a owl:ObjectProperty ;
+    rdfs:label "is influenced by" ;
+    rdfs:comment "Indicates that an art form's global spread is impacted by social media" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:SocialMedia ;
+    owl:inverseOf ont:influencesSpread .
+
+ont:isInfluencedByLanguage a owl:ObjectProperty ;
+    rdfs:label "is influenced by language" ;
+    rdfs:comment "Indicates that an art form is affected or shaped by language" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Language ;
+    owl:inverseOf ont:playsRoleIn .
+
+ont:isInspiredByLiterature a owl:ObjectProperty ;
+    rdfs:label "is inspired by literature" ;
+    rdfs:comment "Indicates that an art form draws inspiration from a literary work" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:LiteraryWork ;
+    owl:inverseOf ont:inspiresArtForm .
+
+ont:isInvitedBy a owl:ObjectProperty ;
+    rdfs:label "is invited by" ;
+    rdfs:comment "Indicates that an artist is asked by an educational institution to create an art piece" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:EducationalInstitution ;
+    owl:inverseOf ont:invitesArtist .
+
+ont:isInvolvedIn a owl:ObjectProperty ;
+    rdfs:label "is involved in" ;
+    rdfs:comment "Indicates that an artistic process is part of creating an art form" ;
+    rdfs:domain ont:ArtisticProcess ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:involvesProcess .
+
+ont:isServedBy a owl:ObjectProperty ;
+    rdfs:label "is served by" ;
+    rdfs:comment "Indicates that social change or movement is facilitated by an art form" ;
+    rdfs:domain ont:SocialChange,
+        ont:SocialMovement ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:servesAsTool .
+
+ont:isTransformedBy a owl:ObjectProperty ;
+    rdfs:label "is transformed by" ;
+    rdfs:comment "Indicates that an urban space is changed or altered by an art form" ;
+    rdfs:domain ont:UrbanSpace ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:transformsSpace .
+
+ont:isUsedInArtForm a owl:ObjectProperty ;
+    rdfs:label "is used in art form" ;
+    rdfs:comment "Indicates that an art material is utilized in a specific art form" ;
+    rdfs:domain ont:ArtMaterial ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:usesArtMaterial .
+
+ont:madeContribution a owl:ObjectProperty ;
+    rdfs:label "made contribution" ;
+    rdfs:comment "Relates an artist to their specific contribution to the art form" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:ArtisticContribution .
+
+ont:pioneeredArtForm a owl:ObjectProperty ;
+    rdfs:label "pioneered art form" ;
+    rdfs:comment "Indicates that a person played a pioneering role in developing an art form" ;
+    rdfs:domain ont:Pioneer ;
+    rdfs:range ont:ArtForm .
+
+ont:sawEmergenceOf a owl:ObjectProperty ;
+    rdfs:label "saw emergence of" ;
+    rdfs:comment "Indicates that a historical period witnessed the emergence of an art form" ;
+    rdfs:domain ont:HistoricalPeriod ;
+    rdfs:range ont:ArtForm ;
+    owl:inverseOf ont:emergedDuring .
+
+ont:ArtisticContribution a owl:Class ;
+    rdfs:label "Artistic Contribution" ;
+    rdfs:comment "A significant addition or change to the art form made by an artist" .
+
+ont:ArtisticSchool a owl:Class ;
+    rdfs:label "Artistic School" ;
+    rdfs:comment "A group of artists who share similar styles, techniques, or philosophies within the art form" .
+
+ont:CulturalContext a owl:Class ;
+    rdfs:label "Cultural Context" ;
+    rdfs:comment "The cultural environment or background in which the art form exists or develops" .
+
+ont:Documentation a owl:Class ;
+    rdfs:label "Documentation" ;
+    rdfs:comment "Records or materials that provide information about the art form's history and development" .
+
+ont:Evolution a owl:Class ;
+    rdfs:label "Evolution" ;
+    rdfs:comment "The process of gradual change and development in the art form" .
+
+ont:GeographicalSpread a owl:Class ;
+    rdfs:label "Geographical Spread" ;
+    rdfs:comment "The process of an art form's expansion across different locations" .
+
+ont:Pioneer a owl:Class ;
+    rdfs:label "Pioneer" ;
+    rdfs:comment "An artist who played a significant role in the early development of the art form" ;
+    rdfs:subClassOf ont:Person .
+
+ont:TechnologicalAdvancement a owl:Class ;
+    rdfs:label "Technological Advancement" ;
+    rdfs:comment "A significant improvement or innovation in technology related to the art form" .
+
+ont:Timeline a owl:Class ;
+    rdfs:label "Timeline" ;
+    rdfs:comment "A chronological representation of events related to the art form" .
+
+ont:addressesEnvironmentalIssue a owl:ObjectProperty ;
+    rdfs:label "addresses environmental issue" ;
+    rdfs:comment "Indicates that an art form tackles or expresses an environmental issue" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:EnvironmentalIssue .
+
+ont:addressesIssue a owl:ObjectProperty ;
+    rdfs:label "addresses issue" ;
+    rdfs:comment "Indicates that an art form tackles or expresses a social issue or political movement" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:PoliticalMovement,
+        ont:SocialIssue .
+
+ont:addressesTheme a owl:ObjectProperty ;
+    rdfs:label "addresses theme" ;
+    rdfs:comment "Indicates that an art form explores or deals with themes of cultural heritage or exchange" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:CulturalExchange,
+        ont:CulturalHeritage .
+
+ont:blendsElements a owl:ObjectProperty ;
+    rdfs:label "blends elements" ;
+    rdfs:comment "Indicates that an art form combines aspects of different techniques or styles" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ArtStyle,
+        ont:ArtTechnique .
+
+ont:blendsWithMovement a owl:ObjectProperty ;
+    rdfs:label "blends with movement" ;
+    rdfs:comment "Indicates that an art form combines elements from an art movement" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ArtMovement .
+
+ont:challengesBoundaries a owl:ObjectProperty ;
+    rdfs:label "challenges boundaries" ;
+    rdfs:comment "Indicates that an art form questions the distinction between public and gallery spaces" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:PublicSpace .
+
+ont:challengesNotions a owl:ObjectProperty ;
+    rdfs:label "challenges notions" ;
+    rdfs:comment "Indicates that an art form questions or redefines traditional concepts of artistic influence or innovation" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ArtisticInfluence,
+        ont:ArtisticInnovation .
+
+ont:coinsTerm a owl:ObjectProperty ;
+    rdfs:label "coins term" ;
+    rdfs:comment "Indicates that a person created or first used a specific term" ;
+    rdfs:domain ont:Person ;
+    rdfs:range ont:ArtForm .
+
+ont:collaboratesWithArtists a owl:ObjectProperty ;
+    rdfs:label "collaborates with artists" ;
+    rdfs:comment "Indicates that an organization works together with artists of a specific art form" ;
+    rdfs:domain ont:Organization ;
+    rdfs:range ont:ArtForm .
+
+ont:emergedDuring a owl:ObjectProperty ;
+    rdfs:label "emerged during" ;
+    rdfs:comment "Indicates that an art form came into existence during a specific historical period" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:HistoricalPeriod .
+
+ont:evokesEmotion a owl:ObjectProperty ;
+    rdfs:label "evokes emotion" ;
+    rdfs:comment "Indicates that an art form elicits or expresses a particular emotion" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Emotion .
+
+ont:expressesIdentity a owl:ObjectProperty ;
+    rdfs:label "expresses identity" ;
+    rdfs:comment "Indicates that an art form expresses a cultural identity" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:CulturalIdentity .
+
+ont:fostersCulturalDialogue a owl:ObjectProperty ;
+    rdfs:label "fosters cultural dialogue" ;
+    rdfs:comment "Indicates that an art form promotes cultural dialogue" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:CulturalDialogue .
+
+ont:hasVibrantScene a owl:ObjectProperty ;
+    rdfs:label "has vibrant scene" ;
+    rdfs:comment "Indicates that a geographic location has a lively and active art scene" ;
+    rdfs:domain ont:GeographicLocation ;
+    rdfs:range ont:ArtForm .
+
+ont:impactsArtisticCommunity a owl:ObjectProperty ;
+    rdfs:label "impacts artistic community" ;
+    rdfs:comment "Indicates that a digital platform affects or influences an artistic community" ;
+    rdfs:domain ont:DigitalPlatform ;
+    rdfs:range ont:ArtisticCommunity .
+
+ont:impactsEvolution a owl:ObjectProperty ;
+    rdfs:label "impacts evolution" ;
+    rdfs:comment "Indicates that a technological tool influences the development or change of an art form" ;
+    rdfs:domain ont:TechnologicalTool ;
+    rdfs:range ont:ArtForm .
+
+ont:incorporatesElements a owl:ObjectProperty ;
+    rdfs:label "incorporates elements" ;
+    rdfs:comment "Indicates that an art form includes aspects of spiritual practices or religious texts" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ReligiousText,
+        ont:SpiritualPractice .
+
+ont:incorporatesMusicalElements a owl:ObjectProperty ;
+    rdfs:label "incorporates musical elements" ;
+    rdfs:comment "Indicates that an art form includes aspects of a musical genre" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:MusicalGenre .
+
+ont:incorporatesPrinciples a owl:ObjectProperty ;
+    rdfs:label "incorporates principles" ;
+    rdfs:comment "Indicates that an art form includes mathematical concepts or visual elements" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:MathematicalConcept,
+        ont:VisualElement .
+
+ont:incorporatesScript a owl:ObjectProperty ;
+    rdfs:label "incorporates script" ;
+    rdfs:comment "Indicates that an art form includes or uses a specific script" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:Script .
+
+ont:incorporatesUrbanElements a owl:ObjectProperty ;
+    rdfs:label "incorporates urban elements" ;
+    rdfs:comment "Indicates that an art form includes aspects of urban aesthetics or development" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:UrbanAesthetic,
+        ont:UrbanDevelopment .
+
+ont:influencesSpread a owl:ObjectProperty ;
+    rdfs:label "influences spread" ;
+    rdfs:comment "Indicates that social media impacts the global dissemination of an art form" ;
+    rdfs:domain ont:SocialMedia ;
+    rdfs:range ont:ArtForm .
+
+ont:inspiresArtForm a owl:ObjectProperty ;
+    rdfs:label "inspires art form" ;
+    rdfs:comment "Indicates that a literary work provides inspiration for an art form" ;
+    rdfs:domain ont:LiteraryWork ;
+    rdfs:range ont:ArtForm .
+
+ont:invitesArtist a owl:ObjectProperty ;
+    rdfs:label "invites artist" ;
+    rdfs:comment "Indicates that an educational institution asks an artist to create an art piece" ;
+    rdfs:domain ont:EducationalInstitution ;
+    rdfs:range ont:Person .
+
+ont:involvesProcess a owl:ObjectProperty ;
+    rdfs:label "involves process" ;
+    rdfs:comment "Indicates that an art form includes a specific artistic process" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ArtisticProcess .
+
+ont:isIntegratedInto a owl:ObjectProperty ;
+    rdfs:label "is integrated into" ;
+    rdfs:comment "Indicates that an art form is incorporated into brand strategies or advertising media" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:AdvertisingMedium,
+        ont:Brand .
+
+ont:playsRoleIn a owl:ObjectProperty ;
+    rdfs:label "plays role in" ;
+    rdfs:comment "Indicates that language has a significant function in the creation or interpretation of an art form" ;
+    rdfs:domain ont:Language ;
+    rdfs:range ont:ArtForm .
+
+ont:servesAsTool a owl:ObjectProperty ;
+    rdfs:label "serves as tool" ;
+    rdfs:comment "Indicates that an art form is used as a means for social change or movement" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:SocialChange,
+        ont:SocialMovement .
+
+ont:transformsSpace a owl:ObjectProperty ;
+    rdfs:label "transforms space" ;
+    rdfs:comment "Indicates how an art form changes or alters an urban space" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:UrbanSpace .
+
+ont:usesArtMaterial a owl:ObjectProperty ;
+    rdfs:label "uses art material" ;
+    rdfs:comment "Indicates that an art form utilizes specific art materials" ;
+    rdfs:domain ont:ArtForm ;
+    rdfs:range ont:ArtMaterial .
+
+ont:AdvertisingMedium a owl:Class ;
+    rdfs:label "Advertising Medium" ;
+    rdfs:comment "A channel or platform used for advertising" .
+
+ont:ArtMaterial a owl:Class ;
+    rdfs:label "Art Material" ;
+    rdfs:comment "Substances or items used in the creation of artwork" .
+
+ont:ArtMovement a owl:Class ;
+    rdfs:label "Art Movement" ;
+    rdfs:comment "A tendency or style in art with a specific common philosophy or goal" .
+
+ont:ArtStyle a owl:Class ;
+    rdfs:label "Art Style" ;
+    rdfs:comment "A distinctive manner of artistic expression" .
+
+ont:ArtTechnique a owl:Class ;
+    rdfs:label "Art Technique" ;
+    rdfs:comment "A method or approach used in creating art" .
+
+ont:ArtisticCommunity a owl:Class ;
+    rdfs:label "Artistic Community" ;
+    rdfs:comment "A group of artists or art enthusiasts who share common interests or practices" .
+
+ont:ArtisticInfluence a owl:Class ;
+    rdfs:label "Artistic Influence" ;
+    rdfs:comment "The impact or effect of one artist or art form on another" .
+
+ont:ArtisticInnovation a owl:Class ;
+    rdfs:label "Artistic Innovation" ;
+    rdfs:comment "A new method, idea, or product in the field of art" .
+
+ont:ArtisticProcess a owl:Class ;
+    rdfs:label "Artistic Process" ;
+    rdfs:comment "The method or approach used in creating art" .
+
+ont:Brand a owl:Class ;
+    rdfs:label "Brand" ;
+    rdfs:comment "A name, term, design, symbol, or other feature that distinguishes a product or organization" .
+
+ont:CulturalDialogue a owl:Class ;
+    rdfs:label "Cultural Dialogue" ;
+    rdfs:comment "The exchange of ideas between different cultures" .
+
+ont:CulturalExchange a owl:Class ;
+    rdfs:label "Cultural Exchange" ;
+    rdfs:comment "The sharing or exchange of cultural practices, ideas, or artifacts between different cultures" .
+
+ont:CulturalHeritage a owl:Class ;
+    rdfs:label "Cultural Heritage" ;
+    rdfs:comment "The legacy of physical artifacts and intangible attributes of a group or society" .
+
+ont:CulturalIdentity a owl:Class ;
+    rdfs:label "Cultural Identity" ;
+    rdfs:comment "The identity of a group or culture" .
+
+ont:DigitalPlatform a owl:Class ;
+    rdfs:label "Digital Platform" ;
+    rdfs:comment "An online system that enables various digital interactions and services" .
+
+ont:EducationalInstitution a owl:Class ;
+    rdfs:label "Educational Institution" ;
+    rdfs:comment "An organization that provides education or training" .
+
+ont:Emotion a owl:Class ;
+    rdfs:label "Emotion" ;
+    rdfs:comment "A strong feeling deriving from one's circumstances, mood, or relationships" .
+
+ont:EnvironmentalIssue a owl:Class ;
+    rdfs:label "Environmental Issue" ;
+    rdfs:comment "A problem or concern related to the natural environment and its conservation" .
+
+ont:GeographicLocation a owl:Class ;
+    rdfs:label "Geographic Location" ;
+    rdfs:comment "A specific place or area on Earth" .
+
+ont:HistoricalPeriod a owl:Class ;
+    rdfs:label "Historical Period" ;
+    rdfs:comment "A specific era or time frame in history" .
+
+ont:ImpactMeasure a owl:Class ;
+    rdfs:label "Impact Measure" ;
+    rdfs:comment "A quantitative or qualitative assessment of the art form's importance or influence" .
+
+ont:Language a owl:Class ;
+    rdfs:label "Language" ;
+    rdfs:comment "A structured system of communication used by humans" .
+
+ont:LiteraryWork a owl:Class ;
+    rdfs:label "Literary Work" ;
+    rdfs:comment "A written composition, especially one of recognized artistic value" .
+
+ont:MathematicalConcept a owl:Class ;
+    rdfs:label "Mathematical Concept" ;
+    rdfs:comment "A principle or idea in mathematics" .
+
+ont:MusicalGenre a owl:Class ;
+    rdfs:label "Musical Genre" ;
+    rdfs:comment "A category or style of music characterized by a distinct sound and set of conventions" .
+
+ont:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A structured group of people with a particular purpose" .
+
+ont:PoliticalMovement a owl:Class ;
+    rdfs:label "Political Movement" ;
+    rdfs:comment "A collective effort to promote, support, or resist a particular political or social change" .
+
+ont:PublicSpace a owl:Class ;
+    rdfs:label "Public Space" ;
+    rdfs:comment "An area or place that is open and accessible to all people" .
+
+ont:ReligiousText a owl:Class ;
+    rdfs:label "Religious Text" ;
+    rdfs:comment "Written works considered sacred or central to a religion" .
+
+ont:Script a owl:Class ;
+    rdfs:label "Script" ;
+    rdfs:comment "A system of writing or notation" .
+
+ont:SocialChange a owl:Class ;
+    rdfs:label "Social Change" ;
+    rdfs:comment "A significant alteration in social structure or cultural patterns" .
+
+ont:SocialIssue a owl:Class ;
+    rdfs:label "Social Issue" ;
+    rdfs:comment "A problem that influences many individuals within a society" .
+
+ont:SocialMedia a owl:Class ;
+    rdfs:label "Social Media" ;
+    rdfs:comment "Online platforms for social networking and content sharing" .
+
+ont:SocialMovement a owl:Class ;
+    rdfs:label "Social Movement" ;
+    rdfs:comment "A group action focused on specific political or social issues" .
+
+ont:SpiritualPractice a owl:Class ;
+    rdfs:label "Spiritual Practice" ;
+    rdfs:comment "Activities or beliefs related to spiritual or religious experiences" .
+
+ont:TechnologicalTool a owl:Class ;
+    rdfs:label "Technological Tool" ;
+    rdfs:comment "A device or application that uses technology to perform specific functions" .
+
+ont:UrbanAesthetic a owl:Class ;
+    rdfs:label "Urban Aesthetic" ;
+    rdfs:comment "The visual characteristics and style of urban environments" .
+
+ont:UrbanDevelopment a owl:Class ;
+    rdfs:label "Urban Development" ;
+    rdfs:comment "The process of improving and expanding urban areas" .
+
+ont:UrbanSpace a owl:Class ;
+    rdfs:label "Urban Space" ;
+    rdfs:comment "A physical area within an urban environment" .
+
+ont:VisualElement a owl:Class ;
+    rdfs:label "Visual Element" ;
+    rdfs:comment "A component of visual art or design" .
+
+ont:TimelineEvent a owl:Class ;
+    rdfs:label "Timeline Event" ;
+    rdfs:comment "A significant occurrence in the history of the art form" .
+
+ont:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "An individual human being" .
+
+ont:ArtForm a owl:Class ;
+    rdfs:label "Art Form" ;
+    rdfs:comment "A specific form or medium of artistic expression" .
+

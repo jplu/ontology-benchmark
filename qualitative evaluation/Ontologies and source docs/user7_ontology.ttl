@@ -1,0 +1,415 @@
+@prefix ont: <http://example.com/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ont:CulturalPhenomenon a owl:Class ;
+    rdfs:label "Cultural Phenomenon" ;
+    rdfs:comment "A trend, event, or development that has a significant impact on culture and society." .
+
+ont:MusicTheory a owl:Class ;
+    rdfs:label "Music Theory" ;
+    rdfs:comment "The study of the fundamental elements of music and how music is structured and performed." .
+
+ont:addressesSocialIssue a owl:ObjectProperty ;
+    rdfs:label "addresses social issue" ;
+    rdfs:comment "Indicates a social issue addressed in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:SocialIssue .
+
+ont:associatedWith a owl:ObjectProperty ;
+    rdfs:label "associated with" ;
+    rdfs:comment "Indicates a concept, event, or issue associated with a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Event,
+        ont:MusicalConcept,
+        ont:SocialIssue .
+
+ont:characterizedBy a owl:ObjectProperty ;
+    rdfs:label "characterized by" ;
+    rdfs:comment "Indicates a musical concept or technique that characterizes a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalConcept,
+        ont:MusicalTechnique .
+
+ont:contributedTo a owl:ObjectProperty ;
+    rdfs:label "contributed to" ;
+    rdfs:comment "Indicates a social issue or movement that a musical genre contributed to." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalMovement,
+        ont:SocialIssue .
+
+ont:contributesToSound a owl:ObjectProperty ;
+    rdfs:label "contributes to sound" ;
+    rdfs:comment "Indicates a technique or instrument that contributes to a specific sound characteristic." ;
+    rdfs:domain ont:MusicalInstrument,
+        ont:MusicalTechnique ;
+    rdfs:range ont:SoundCharacteristic .
+
+ont:developedFrom a owl:ObjectProperty ;
+    rdfs:label "developed from" ;
+    rdfs:comment "Indicates the musical genre from which another genre developed." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:emergedDuring a owl:ObjectProperty ;
+    rdfs:label "emerged during" ;
+    rdfs:comment "Indicates the time frame when a musical genre emerged." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:TimeFrame .
+
+ont:employedBy a owl:ObjectProperty ;
+    rdfs:label "employed by" ;
+    rdfs:comment "Indicates a person or organization that employs a specific musical technique or concept." ;
+    rdfs:domain ont:MusicalConcept,
+        ont:MusicalTechnique ;
+    rdfs:range ont:Organization,
+        ont:Person .
+
+ont:employsTechnique a owl:ObjectProperty ;
+    rdfs:label "employs technique" ;
+    rdfs:comment "Indicates a musical technique used in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalTechnique .
+
+ont:evokesEmotion a owl:ObjectProperty ;
+    rdfs:label "evokes emotion" ;
+    rdfs:comment "Indicates an emotion typically evoked by a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Emotion .
+
+ont:featuresInstrument a owl:ObjectProperty ;
+    rdfs:label "features instrument" ;
+    rdfs:comment "Indicates a musical instrument prominently featured in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalInstrument .
+
+ont:hasBluesEra a owl:ObjectProperty ;
+    rdfs:label "has Blues era" ;
+    rdfs:comment "Indicates the specific era of Blues music." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesEra .
+
+ont:hasBluesPerformanceStyle a owl:ObjectProperty ;
+    rdfs:label "has Blues performance style" ;
+    rdfs:comment "Indicates a specific Blues performance style or technique." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesPerformanceStyle .
+
+ont:hasBluesTheme a owl:ObjectProperty ;
+    rdfs:label "has Blues theme" ;
+    rdfs:comment "Indicates a thematic element common in Blues music." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesTheme .
+
+ont:hasInfluentialFigure a owl:ObjectProperty ;
+    rdfs:label "has influential figure" ;
+    rdfs:comment "Indicates a person who significantly influenced a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Person .
+
+ont:hasNotableComposition a owl:ObjectProperty ;
+    rdfs:label "has notable composition" ;
+    rdfs:comment "Indicates a notable musical composition within a genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalComposition .
+
+ont:hasOrigin a owl:ObjectProperty ;
+    rdfs:label "has origin" ;
+    rdfs:comment "Indicates the place or time of origin of a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Place .
+
+ont:hasProminentOrganization a owl:ObjectProperty ;
+    rdfs:label "has prominent organization" ;
+    rdfs:comment "Indicates an organization that is prominent in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Organization .
+
+ont:hasRegionalStyle a owl:ObjectProperty ;
+    rdfs:label "has regional style" ;
+    rdfs:comment "Indicates a regional style of Blues music." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesRegion .
+
+ont:hasSignificantContribution a owl:ObjectProperty ;
+    rdfs:label "has significant contribution" ;
+    rdfs:comment "Indicates a significant contribution made by a Blues musician." ;
+    rdfs:domain ont:BluesMusician ;
+    rdfs:range ont:MusicalComposition,
+        ont:MusicalConcept,
+        ont:MusicalTechnique .
+
+ont:hasSoundCharacteristic a owl:ObjectProperty ;
+    rdfs:label "has sound characteristic" ;
+    rdfs:comment "Indicates a distinctive sound characteristic of a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:SoundCharacteristic .
+
+ont:hasStructure a owl:ObjectProperty ;
+    rdfs:label "has structure" ;
+    rdfs:comment "Indicates the musical structure used in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalStructure .
+
+ont:hasSubgenre a owl:ObjectProperty ;
+    rdfs:label "has subgenre" ;
+    rdfs:comment "Indicates a subgenre of a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:impactedBy a owl:ObjectProperty ;
+    rdfs:label "impacted by" ;
+    rdfs:comment "Indicates an event or movement that had a significant impact on a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Event,
+        ont:MusicalMovement .
+
+ont:incorporatesConcept a owl:ObjectProperty ;
+    rdfs:label "incorporates concept" ;
+    rdfs:comment "Indicates a musical concept incorporated in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalConcept .
+
+ont:influencedBluesSubgenre a owl:ObjectProperty ;
+    rdfs:label "influenced Blues subgenre" ;
+    rdfs:comment "Indicates a Blues subgenre influenced by a musician or another genre." ;
+    rdfs:domain ont:BluesMusician,
+        ont:MusicalGenre ;
+    rdfs:range ont:BluesSubgenre .
+
+ont:influencedBy a owl:ObjectProperty ;
+    rdfs:label "influenced by" ;
+    rdfs:comment "Indicates a historical event or musical movement that influenced a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:HistoricalEvent,
+        ont:MusicalMovement .
+
+ont:influencedGenre a owl:ObjectProperty ;
+    rdfs:label "influenced genre" ;
+    rdfs:comment "Indicates a musical genre that was influenced by another genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:influences a owl:ObjectProperty ;
+    rdfs:label "influences" ;
+    rdfs:comment "Indicates a musical genre that influences another genre or movement." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre,
+        ont:MusicalMovement .
+
+ont:innovatedBy a owl:ObjectProperty ;
+    rdfs:label "innovated by" ;
+    rdfs:comment "Indicates a person who introduced innovative techniques or styles to a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Person .
+
+ont:isCharacterizedByInstrument a owl:ObjectProperty ;
+    rdfs:label "is characterized by instrument" ;
+    rdfs:comment "Indicates an instrument that characterizes a Blues subgenre or style." ;
+    rdfs:domain ont:Blues,
+        ont:BluesSubgenre ;
+    rdfs:range ont:MusicalInstrument .
+
+ont:isPerformedAt a owl:ObjectProperty ;
+    rdfs:label "is performed at" ;
+    rdfs:comment "Indicates a festival or venue where Blues music is performed." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesFestival,
+        ont:BluesVenue .
+
+ont:isRecordedBy a owl:ObjectProperty ;
+    rdfs:label "is recorded by" ;
+    rdfs:comment "Indicates a record label that has recorded Blues music." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesRecordLabel .
+
+ont:isSubgenreOf a owl:ObjectProperty ;
+    rdfs:label "is subgenre of" ;
+    rdfs:comment "Indicates the parent genre of a musical subgenre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:originatedFrom a owl:ObjectProperty ;
+    rdfs:label "originated from" ;
+    rdfs:comment "Indicates the musical genre from which another genre originated." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:originatedIn a owl:ObjectProperty ;
+    rdfs:label "originated in" ;
+    rdfs:comment "Indicates the place where a musical genre originated." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Place .
+
+ont:performedAt a owl:ObjectProperty ;
+    rdfs:label "performed at" ;
+    rdfs:comment "Indicates an event where a musical genre is typically performed." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:Event .
+
+ont:usesBluesScale a owl:ObjectProperty ;
+    rdfs:label "uses Blues scale" ;
+    rdfs:comment "Indicates a specific Blues scale used." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesScale .
+
+ont:usesBluesStructure a owl:ObjectProperty ;
+    rdfs:label "uses Blues structure" ;
+    rdfs:comment "Indicates a specific Blues musical structure used." ;
+    rdfs:domain ont:Blues ;
+    rdfs:range ont:BluesStructure .
+
+ont:usesInstrument a owl:ObjectProperty ;
+    rdfs:label "uses instrument" ;
+    rdfs:comment "Indicates a musical instrument used in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalInstrument .
+
+ont:usesPerformanceTechnique a owl:ObjectProperty ;
+    rdfs:label "uses performance technique" ;
+    rdfs:comment "Indicates a performance technique used in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:PerformanceTechnique .
+
+ont:usesScale a owl:ObjectProperty ;
+    rdfs:label "uses scale" ;
+    rdfs:comment "Indicates the musical scale used in a musical genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalScale .
+
+ont:wasInfluencedBy a owl:ObjectProperty ;
+    rdfs:label "was influenced by" ;
+    rdfs:comment "Indicates a musical genre that influenced another genre." ;
+    rdfs:domain ont:MusicalGenre ;
+    rdfs:range ont:MusicalGenre .
+
+ont:BluesEra a owl:Class ;
+    rdfs:label "Blues Era" ;
+    rdfs:comment "A specific period in the history and evolution of Blues music." ;
+    rdfs:subClassOf ont:TimeFrame .
+
+ont:BluesFestival a owl:Class ;
+    rdfs:label "Blues Festival" ;
+    rdfs:comment "A music festival that primarily features Blues music." ;
+    rdfs:subClassOf ont:Event .
+
+ont:BluesPerformanceStyle a owl:Class ;
+    rdfs:label "Blues Performance Style" ;
+    rdfs:comment "A specific style or technique of performing Blues music." ;
+    rdfs:subClassOf ont:PerformanceTechnique .
+
+ont:BluesRecordLabel a owl:Class ;
+    rdfs:label "Blues Record Label" ;
+    rdfs:comment "A record label that specializes in or is significant to Blues music." ;
+    rdfs:subClassOf ont:Organization .
+
+ont:BluesRegion a owl:Class ;
+    rdfs:label "Blues Region" ;
+    rdfs:comment "A geographical area associated with a particular style of Blues music." ;
+    rdfs:subClassOf ont:Place .
+
+ont:BluesScale a owl:Class ;
+    rdfs:label "Blues Scale" ;
+    rdfs:comment "A musical scale commonly used in Blues music, including blue notes." ;
+    rdfs:subClassOf ont:MusicalScale .
+
+ont:BluesStructure a owl:Class ;
+    rdfs:label "Blues Structure" ;
+    rdfs:comment "A specific musical structure commonly used in Blues music, such as the 12-bar blues." ;
+    rdfs:subClassOf ont:MusicalStructure .
+
+ont:BluesTheme a owl:Class ;
+    rdfs:label "Blues Theme" ;
+    rdfs:comment "A common lyrical or thematic element in Blues music." .
+
+ont:BluesVenue a owl:Class ;
+    rdfs:label "Blues Venue" ;
+    rdfs:comment "A venue known for hosting Blues music performances." ;
+    rdfs:subClassOf ont:Place .
+
+ont:Emotion a owl:Class ;
+    rdfs:label "Emotion" ;
+    rdfs:comment "A strong feeling deriving from one's circumstances, mood, or relationships." .
+
+ont:HistoricalEvent a owl:Class ;
+    rdfs:label "Historical Event" ;
+    rdfs:comment "A significant occurrence in history that has influenced or shaped a musical genre." .
+
+ont:BluesMusician a owl:Class ;
+    rdfs:label "Blues Musician" ;
+    rdfs:comment "A musician who primarily performs or composes Blues music." ;
+    rdfs:subClassOf ont:Person .
+
+ont:BluesSubgenre a owl:Class ;
+    rdfs:label "Blues Subgenre" ;
+    rdfs:comment "A specific style or form of Blues music." ;
+    rdfs:subClassOf ont:MusicalGenre .
+
+ont:MusicalComposition a owl:Class ;
+    rdfs:label "Musical Composition" ;
+    rdfs:comment "A piece of music created by a composer or artist." .
+
+ont:MusicalScale a owl:Class ;
+    rdfs:label "Musical Scale" ;
+    rdfs:comment "A set of notes ordered by fundamental frequency or pitch." .
+
+ont:MusicalStructure a owl:Class ;
+    rdfs:label "Musical Structure" ;
+    rdfs:comment "The organization and arrangement of musical elements in a composition." .
+
+ont:PerformanceTechnique a owl:Class ;
+    rdfs:label "Performance Technique" ;
+    rdfs:comment "A specific method or style of performing music." .
+
+ont:SoundCharacteristic a owl:Class ;
+    rdfs:label "Sound Characteristic" ;
+    rdfs:comment "A distinctive quality or feature of a musical sound." .
+
+ont:TimeFrame a owl:Class ;
+    rdfs:label "Time Frame" ;
+    rdfs:comment "A specific period or era in which a musical genre or movement occurred." .
+
+ont:Organization a owl:Class ;
+    rdfs:label "Organization" ;
+    rdfs:comment "A group of people with a particular purpose, such as a band or music label." .
+
+ont:SocialIssue a owl:Class ;
+    rdfs:label "Social Issue" ;
+    rdfs:comment "A problem that influences many individuals within a society." .
+
+ont:Event a owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "An organized occasion or activity related to music." .
+
+ont:MusicalInstrument a owl:Class ;
+    rdfs:label "Musical Instrument" ;
+    rdfs:comment "A device created or adapted to make musical sounds." .
+
+ont:MusicalMovement a owl:Class ;
+    rdfs:label "Musical Movement" ;
+    rdfs:comment "A trend or development in music that is characterized by particular features or goals." .
+
+ont:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "An individual human being." .
+
+ont:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:comment "A geographical location associated with a musical genre or event." .
+
+ont:MusicalConcept a owl:Class ;
+    rdfs:label "Musical Concept" ;
+    rdfs:comment "An abstract idea or general notion in music theory or practice." .
+
+ont:MusicalTechnique a owl:Class ;
+    rdfs:label "Musical Technique" ;
+    rdfs:comment "A method or approach used in creating or performing music." .
+
+ont:Blues a owl:Class ;
+    rdfs:label "Blues" ;
+    rdfs:comment "A genre of music that originated in the African-American communities of the Southern United States around the 1860s." .
+
+ont:MusicalGenre a owl:Class ;
+    rdfs:label "Musical Genre" ;
+    rdfs:comment "A category of musical composition characterized by a particular style or form." .
+
